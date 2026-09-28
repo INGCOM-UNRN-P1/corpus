@@ -1,0 +1,5 @@
+descripcion = "Compila con advertencias pedagógicas: variable sin usar y comparación entre signed y unsigned"
+origen = "sintético"
+
+[herramientas.daedalus]
+comando = ["daedalus", "compile", "main.c", "--json"]

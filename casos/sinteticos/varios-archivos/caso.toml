@@ -1,0 +1,6 @@
+descripcion = "Proyecto con src/ e include/: vasquez compila los módulos juntos con -I y el programa resiste el fallo de malloc"
+origen = "sintético"
+hallazgo = "N-VASQUEZ-02"
+
+[herramientas.vasquez]
+comando = ["vasquez", "check", "src/main.c", "src/lista.c", "-I", "include", "--faults", "malloc:1", "--json"]

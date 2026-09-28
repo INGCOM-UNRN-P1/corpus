@@ -1,0 +1,13 @@
+{
+  "veredicto": true,
+  "hallazgos": [
+    [
+      "-Wunused-variable",
+      6
+    ],
+    [
+      "-Wsign-compare",
+      8
+    ]
+  ]
+}

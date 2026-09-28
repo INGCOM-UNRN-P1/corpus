@@ -1,0 +1,6 @@
+descripcion = "Literales de cadena y carácter con operadores, comas y comentarios adentro: no son código"
+origen = "sintético"
+hallazgo = "N-GAFF-01"
+
+[herramientas.gaff]
+comando = ["gaff", "check", "main.c", "--json"]

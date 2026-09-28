@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  scripts:
+    name: Tests de los scripts y datos personales
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+
+      - name: pytest
+        run: uvx pytest -q tests
+
+      - name: Sin datos personales en los casos
+        run: python3 scripts/anonimizar.py
+
+  corpus:
+    name: Analizadores contra el corpus
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Herramientas del sistema
+        run: sudo apt-get install -y --no-install-recommends gcc binutils
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+
+      - name: Instalar los analizadores desde git
+        run: |
+          for herramienta in gaff kaneda spunkmeyer daedalus vasquez; do
+            uv tool install "git+https://github.com/INGCOM-UNRN-P1/${herramienta}"
+          done
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Correr el corpus
+        run: python3 scripts/correr.py

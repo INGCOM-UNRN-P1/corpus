@@ -1,0 +1,6 @@
+descripcion = "Un switch que asigna el resultado en cada rama y retorna una sola vez: no hay dead store"
+origen = "sintético"
+hallazgo = "N-GAFF-05"
+
+[herramientas.gaff]
+comando = ["gaff", "check", "main.c", "--json"]

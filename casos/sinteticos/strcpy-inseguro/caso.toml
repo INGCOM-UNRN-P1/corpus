@@ -1,0 +1,8 @@
+descripcion = "Copia de cadena sin límite de longitud: seguridad (kaneda) y antipatrón (spunkmeyer) en la misma línea"
+origen = "sintético"
+
+[herramientas.kaneda]
+comando = ["kaneda", "audit", "main.c", "--json"]
+
+[herramientas.spunkmeyer]
+comando = ["spunkmeyer", "detect", "main.c", "--json"]
