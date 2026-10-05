@@ -50,8 +50,11 @@ def firma(datos) -> dict:
             clave = next((c for c in CLAVES_CODIGO if c in nodo), None)
             if clave and "linea" in nodo:
                 hallazgos.append([str(nodo[clave]), nodo["linea"]])
-            for valor in nodo.values():
-                recorrer(valor)
+            for clave_hija, valor in nodo.items():
+                # `hallazgos` es la misma información en la forma común del ecosistema
+                # (yutani.hallazgos): contarla duplicaría cada hallazgo.
+                if clave_hija != "hallazgos":
+                    recorrer(valor)
         elif isinstance(nodo, list):
             for valor in nodo:
                 recorrer(valor)
