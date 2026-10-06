@@ -1,0 +1,66 @@
+## Resumen de Evaluación por Archivo
+
+| Archivo | Estado Compilación | Evaluación de Estilo | Valgrind (Fugas) | Observaciones Cátedra |
+| :--- | :---: | :---: | :---: | :--- |
+| `[ARCHIVOS_BINARIOS]` | ❌ ERROR (43 filtrados) | 0.0/10 | — | Se detectaron binarios prohibidos (.o/.exe) en la entrega |
+| `cadena_dinamica.c` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 5 advertencias |
+| `cadena_dinamica.h` | ✓ Compilación OK | 8.0/10 | ✓ Limpio (0 fugas) | 4 advertencias |
+| `cadenas.c` | ✓ Compilación OK | 9.0/10 | ✓ Limpio (0 fugas) | 25 advertencias |
+| `cadenas.h` | ✓ Compilación OK | 0.0/10 | ✓ Limpio (0 fugas) | 27 advertencias |
+| `consulta_csv.c` | ✓ Compilación OK | 6.0/10 | ✓ Limpio (0 fugas) | 67 advertencias |
+| `consulta_csv.h` | ✓ Compilación OK | 0.0/10 | ✓ Limpio (0 fugas) | 30 advertencias |
+| `ejercicios/ejercicio1/main.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio1/programa` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio1/prueba.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio1/test_bin` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio1/vector_enteros.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio2/main.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio2/programa` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio2/prueba.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio2/test_bin` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio2/texto_dinamico.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio3/cadena_dinamica.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio3/main.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio3/programa` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio3/prueba.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio3/test_bin` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio4/main.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio4/matriz_dinamica.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio4/programa` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio4/prueba.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio4/test_bin` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio5/main.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio5/programa` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio5/prueba.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio5/registro_csv.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio5/test_bin` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio6/consulta_csv.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio6/main.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio6/programa` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio6/prueba.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `ejercicios/ejercicio6/test_bin` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `libs/p1_test/build/libp1_test.a` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `libs/p1_test/build/p1_test.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `libs/p1_test/libp1_test.a` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `libs/p1_test/prueba.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `libs/p1_test/test_bin` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `libs/string/cadenas.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `libs/string/libstring.a` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `libs/string/prueba.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `libs/string/test_bin` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `libs/vector/libvector.a` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `libs/vector/prueba.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `libs/vector/test_bin` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `libs/vector/vector.o` | ✓ Compilación OK | 10.0/10 | ✓ Limpio (0 fugas) | 1 advertencias |
+| `main.c` | ✓ Compilación OK | 5.5/10 | ✓ Limpio (0 fugas) | 59 advertencias |
+| `matriz_dinamica.c` | ✓ Compilación OK | 7.5/10 | ✓ Limpio (0 fugas) | 44 advertencias |
+| `matriz_dinamica.h` | ✓ Compilación OK | 2.5/10 | ✓ Limpio (0 fugas) | 15 advertencias |
+| `prueba.c` | ✓ Compilación OK | 0.0/10 | ✓ Limpio (0 fugas) | 80 advertencias |
+| `registro_csv.c` | ✓ Compilación OK | 8.5/10 | ✓ Limpio (0 fugas) | 25 advertencias |
+| `registro_csv.h` | ✓ Compilación OK | 2.5/10 | ✓ Limpio (0 fugas) | 15 advertencias |
+| `texto_dinamico.c` | ✓ Compilación OK | 9.0/10 | ✓ Limpio (0 fugas) | 14 advertencias |
+| `texto_dinamico.h` | ✓ Compilación OK | 6.5/10 | ✓ Limpio (0 fugas) | 7 advertencias |
+| `vector.c` | ✓ Compilación OK | 7.5/10 | ✓ Limpio (0 fugas) | 26 advertencias |
+| `vector.h` | ✓ Compilación OK | 1.0/10 | ✓ Limpio (0 fugas) | 18 advertencias |
+| `vector_enteros.c` | ✓ Compilación OK | 9.0/10 | ✓ Limpio (0 fugas) | 17 advertencias |
+| `vector_enteros.h` | ✓ Compilación OK | 6.5/10 | ✓ Limpio (0 fugas) | 7 advertencias |

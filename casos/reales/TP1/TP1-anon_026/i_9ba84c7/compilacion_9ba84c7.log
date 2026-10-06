@@ -1,0 +1,51 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP1
+Estudiante: TP1-anon_026
+Revisión: 9ba84c7
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_026/repo'
+Compilando librería en libs/consola...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_026/repo/libs/consola'
+Compilando consola.c
+cc -Wall -Wextra -pedantic -g -c consola.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_026/repo/libs/consola'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_026/repo'
+consola.c: In function ‘leer_logico’:
+consola.c:113:21: error: implicit declaration of function ‘tolower’ [-Wimplicit-function-declaration]
+  113 |         respuesta = tolower((unsigned char)respuesta);
+      |                     ^~~~~~~
+consola.c:3:1: note: include ‘<ctype.h>’ or provide a declaration of ‘tolower’
+    2 | #include <stdio.h>
+  +++ |+#include <ctype.h>
+    3 | 
+make[1]: *** [Makefile:37: consola.o] Error 1
+make: *** [Makefile:17: libs/consola] Error 1
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_026/repo'
+Compilando librería en libs/consola...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_026/repo/libs/consola'
+Compilando consola.c
+cc -Wall -Wextra -pedantic -g -c consola.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_026/repo/libs/consola'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_026/repo'
+
+consola.c: In function ‘leer_logico’:
+consola.c:113:21: error: implicit declaration of function ‘tolower’ [-Wimplicit-function-declaration]
+  113 |         respuesta = tolower((unsigned char)respuesta);
+      |                     ^~~~~~~
+consola.c:3:1: note: include ‘<ctype.h>’ or provide a declaration of ‘tolower’
+    2 | #include <stdio.h>
+  +++ |+#include <ctype.h>
+    3 | 
+make[1]: *** [Makefile:37: consola.o] Error 1
+make: *** [Makefile:17: libs/consola] Error 1
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

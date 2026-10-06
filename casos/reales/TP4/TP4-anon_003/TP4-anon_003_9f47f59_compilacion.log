@@ -1,0 +1,72 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP4
+Estudiante: TP4-anon_003
+Revisión: 9f47f59
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_003/repo'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_003/repo/libs/p1_test'
+mkdir -p build
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -c src/p1_test.c -o build/p1_test.o
+ar rcs build/libp1_test.a build/p1_test.o
+cp build/libp1_test.a libp1_test.a
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -c prueba.c -o prueba.o
+Compilando pruebas de p1_test...
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -o test_bin prueba.o -Lbuild -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_003/repo/libs/p1_test'
+Compilando librería en libs/string...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_003/repo/libs/string'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_003/repo/libs/string'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_003/repo'
+cadenas.c: In function ‘cadena_duplicar_segura’:
+cadenas.c:24:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   24 |         for ( int i = 0; i < longitud + 1 ; i ++ ){
+      |                            ^
+cadenas.c: In function ‘cadena_subcadena_dinamica’:
+cadenas.c:100:16: error: assignment to ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+  100 |     destino[0] = "";
+      |                ^
+cadenas.c:103:8: warning: unused variable ‘restante’ [-Wunused-variable]
+  103 | size_t restante = longitud_origen - inicio;
+      |        ^~~~~~~~
+make[1]: *** [Makefile:61: cadenas.o] Error 1
+make: *** [Makefile:17: libs/string] Error 1
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_003/repo'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_003/repo/libs/p1_test'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_003/repo/libs/p1_test'
+Compilando librería en libs/string...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_003/repo/libs/string'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_003/repo/libs/string'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_003/repo'
+
+cadenas.c: In function ‘cadena_duplicar_segura’:
+cadenas.c:24:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   24 |         for ( int i = 0; i < longitud + 1 ; i ++ ){
+      |                            ^
+cadenas.c: In function ‘cadena_subcadena_dinamica’:
+cadenas.c:100:16: error: assignment to ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+  100 |     destino[0] = "";
+      |                ^
+cadenas.c:103:8: warning: unused variable ‘restante’ [-Wunused-variable]
+  103 | size_t restante = longitud_origen - inicio;
+      |        ^~~~~~~~
+make[1]: *** [Makefile:61: cadenas.o] Error 1
+make: *** [Makefile:17: libs/string] Error 1
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

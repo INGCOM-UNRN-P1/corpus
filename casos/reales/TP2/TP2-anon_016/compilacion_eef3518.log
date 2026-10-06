@@ -1,0 +1,79 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP2
+Estudiante: TP2-anon_016
+Revisión: eef3518
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_016/repo'
+Compilando librería en libs/arreglos...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_016/repo/libs/arreglos'
+Compilando arreglos.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c arreglos.c
+Generando librería estática libarreglos.a
+ar rcs libarreglos.a arreglos.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando dependencia p1_test...
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin arreglos.o prueba.o -L../../libs/p1_test -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_016/repo/libs/arreglos'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_016/repo/libs/cadenas'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_016/repo/libs/cadenas'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_016/repo'
+In file included from cadenas.c:12:
+cadenas.h:185:1: warning: ‘/*’ within comment [-Wcomment]
+  185 | /* =========================================================================
+cadenas.c: In function ‘cadena_subcadena’:
+cadenas.c:143:51: error: ‘SIZE_MAX’ undeclared (first use in this function)
+  143 |     size_t largo_origen = cadena_longitud(origen, SIZE_MAX);
+      |                                                   ^~~~~~~~
+cadenas.c:16:1: note: ‘SIZE_MAX’ is defined in header ‘<stdint.h>’; this is probably fixable by adding ‘#include <stdint.h>’
+   15 | #include <ctype.h>
+  +++ |+#include <stdint.h>
+   16 | 
+cadenas.c:143:51: note: each undeclared identifier is reported only once for each function it appears in
+  143 |     size_t largo_origen = cadena_longitud(origen, SIZE_MAX);
+      |                                                   ^~~~~~~~
+make[1]: *** [Makefile:61: cadenas.o] Error 1
+make: *** [Makefile:17: libs/cadenas] Error 1
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_016/repo'
+Compilando librería en libs/arreglos...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_016/repo/libs/arreglos'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_016/repo/libs/arreglos'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_016/repo/libs/cadenas'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_016/repo/libs/cadenas'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_016/repo'
+
+In file included from cadenas.c:12:
+cadenas.h:185:1: warning: ‘/*’ within comment [-Wcomment]
+  185 | /* =========================================================================
+cadenas.c: In function ‘cadena_subcadena’:
+cadenas.c:143:51: error: ‘SIZE_MAX’ undeclared (first use in this function)
+  143 |     size_t largo_origen = cadena_longitud(origen, SIZE_MAX);
+      |                                                   ^~~~~~~~
+cadenas.c:16:1: note: ‘SIZE_MAX’ is defined in header ‘<stdint.h>’; this is probably fixable by adding ‘#include <stdint.h>’
+   15 | #include <ctype.h>
+  +++ |+#include <stdint.h>
+   16 | 
+cadenas.c:143:51: note: each undeclared identifier is reported only once for each function it appears in
+  143 |     size_t largo_origen = cadena_longitud(origen, SIZE_MAX);
+      |                                                   ^~~~~~~~
+make[1]: *** [Makefile:61: cadenas.o] Error 1
+make: *** [Makefile:17: libs/cadenas] Error 1
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

@@ -1,0 +1,96 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP2
+Estudiante: TP2-anon_017
+Revisión: ef5efe1
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_017/repo'
+Compilando librería en libs/arreglos...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_017/repo/libs/arreglos'
+Compilando arreglos.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c arreglos.c
+Generando librería estática libarreglos.a
+ar rcs libarreglos.a arreglos.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando dependencia p1_test...
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin arreglos.o prueba.o -L../../libs/p1_test -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_017/repo/libs/arreglos'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_017/repo/libs/cadenas'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_017/repo/libs/cadenas'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_017/repo'
+In file included from prueba.c:9:
+../../libs/p1_test/include/p1_test.h:573:32: warning: ‘_p1_test_func_prueba_arreglo_compactar’ defined but not used [-Wunused-function]
+  573 | #define TEST(name) static void _p1_test_func_##name(void)
+      |                                ^~~~~~~~~~~~~~
+prueba.c:99:1: note: in expansion of macro ‘TEST’
+   99 | TEST(prueba_arreglo_compactar)
+      | ^~~~
+cadenas.c: In function ‘cadena_longitud’:
+cadenas.c:25:20: warning: ordered comparison of pointer with integer zero [-Wpedantic]
+   25 |     else if(cadena > 0)
+      |                    ^
+cadenas.c:28:55: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   28 |         while((cadena[contador] != '\0') && (contador < capacidad))
+      |                                                       ^
+cadenas.c: In function ‘cadena_copiar’:
+cadenas.c:52:15: error: ‘i’ undeclared (first use in this function)
+   52 |         while(i < capacacidad && arreglo[i] != 0)
+      |               ^
+cadenas.c:52:15: note: each undeclared identifier is reported only once for each function it appears in
+cadenas.c:52:19: error: ‘capacacidad’ undeclared (first use in this function); did you mean ‘capacidad’?
+   52 |         while(i < capacacidad && arreglo[i] != 0)
+      |                   ^~~~~~~~~~~
+      |                   capacidad
+cadenas.c:52:34: error: ‘arreglo’ undeclared (first use in this function)
+   52 |         while(i < capacacidad && arreglo[i] != 0)
+      |                                  ^~~~~~~
+make[1]: *** [Makefile:61: cadenas.o] Error 1
+make: *** [Makefile:17: libs/cadenas] Error 1
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_017/repo'
+Compilando librería en libs/arreglos...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_017/repo/libs/arreglos'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_017/repo/libs/arreglos'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_017/repo/libs/cadenas'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_017/repo/libs/cadenas'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_017/repo'
+
+cadenas.c: In function ‘cadena_longitud’:
+cadenas.c:25:20: warning: ordered comparison of pointer with integer zero [-Wpedantic]
+   25 |     else if(cadena > 0)
+      |                    ^
+cadenas.c:28:55: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   28 |         while((cadena[contador] != '\0') && (contador < capacidad))
+      |                                                       ^
+cadenas.c: In function ‘cadena_copiar’:
+cadenas.c:52:15: error: ‘i’ undeclared (first use in this function)
+   52 |         while(i < capacacidad && arreglo[i] != 0)
+      |               ^
+cadenas.c:52:15: note: each undeclared identifier is reported only once for each function it appears in
+cadenas.c:52:19: error: ‘capacacidad’ undeclared (first use in this function); did you mean ‘capacidad’?
+   52 |         while(i < capacacidad && arreglo[i] != 0)
+      |                   ^~~~~~~~~~~
+      |                   capacidad
+cadenas.c:52:34: error: ‘arreglo’ undeclared (first use in this function)
+   52 |         while(i < capacacidad && arreglo[i] != 0)
+      |                                  ^~~~~~~
+make[1]: *** [Makefile:61: cadenas.o] Error 1
+make: *** [Makefile:17: libs/cadenas] Error 1
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

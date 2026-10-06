@@ -1,0 +1,255 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP4
+Estudiante: TP4-anon_001
+Revisión: e0bfb42
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_001/repo'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_001/repo/libs/cadenas'
+Compilando cadenas_tp2.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas_tp2.c
+Generando librería estática libcadenas.a
+ar rcs libcadenas.a cadenas_tp2.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_001/repo/libs/cadenas'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_001/repo'
+In file included from prueba.c:9:
+prueba.c: In function ‘main’:
+../../libs/p1_test/include/p1_test.h:783:13: error: expected ‘)’ before ‘_p1_prev_segv’
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |             ^~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:80:5: note: in expansion of macro ‘RUN_TEST’
+   80 |     RUN_TEST(prueba_cadena_longitud);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:783:27: error: expected ‘)’ before ‘(’ token
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |     ~                     ^
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:80:5: note: in expansion of macro ‘RUN_TEST’
+   80 |     RUN_TEST(prueba_cadena_longitud);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:1109:27: error: ‘_p1_prev_segv’ undeclared (first use in this function)
+ 1109 |         _P1_SETUP_SIGNALS(_p1_prev_segv, _p1_prev_fpe, _p1_prev_alrm);         \
+      |                           ^~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:780:57: note: in definition of macro ‘_P1_SETUP_SIGNALS’
+  780 | #define _P1_SETUP_SIGNALS(s, f, a) (_p1_setup_signals(&(s), &(f), &(a)))
+      |                                                         ^
+prueba.c:80:5: note: in expansion of macro ‘RUN_TEST’
+   80 |     RUN_TEST(prueba_cadena_longitud);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:1109:27: note: each undeclared identifier is reported only once for each function it appears in
+../../libs/p1_test/include/p1_test.h:780:57: note: in definition of macro ‘_P1_SETUP_SIGNALS’
+  780 | #define _P1_SETUP_SIGNALS(s, f, a) (_p1_setup_signals(&(s), &(f), &(a)))
+      |                                                         ^
+prueba.c:80:5: note: in expansion of macro ‘RUN_TEST’
+   80 |     RUN_TEST(prueba_cadena_longitud);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:1109:42: error: ‘_p1_prev_fpe’ undeclared (first use in this function)
+ 1109 |         _P1_SETUP_SIGNALS(_p1_prev_segv, _p1_prev_fpe, _p1_prev_alrm);         \
+      |                                          ^~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:780:63: note: in definition of macro ‘_P1_SETUP_SIGNALS’
+  780 | #define _P1_SETUP_SIGNALS(s, f, a) (_p1_setup_signals(&(s), &(f), &(a)))
+      |                                                               ^
+prueba.c:80:5: note: in expansion of macro ‘RUN_TEST’
+   80 |     RUN_TEST(prueba_cadena_longitud);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:1109:56: error: ‘_p1_prev_alrm’ undeclared (first use in this function)
+ 1109 |         _P1_SETUP_SIGNALS(_p1_prev_segv, _p1_prev_fpe, _p1_prev_alrm);         \
+      |                                                        ^~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:780:69: note: in definition of macro ‘_P1_SETUP_SIGNALS’
+  780 | #define _P1_SETUP_SIGNALS(s, f, a) (_p1_setup_signals(&(s), &(f), &(a)))
+      |                                                                     ^
+prueba.c:80:5: note: in expansion of macro ‘RUN_TEST’
+   80 |     RUN_TEST(prueba_cadena_longitud);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:783:13: error: expected ‘)’ before ‘_p1_prev_segv’
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |             ^~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:81:5: note: in expansion of macro ‘RUN_TEST’
+   81 |     RUN_TEST(prueba_cadena_copiar);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:783:27: error: expected ‘)’ before ‘(’ token
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |     ~                     ^
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:81:5: note: in expansion of macro ‘RUN_TEST’
+   81 |     RUN_TEST(prueba_cadena_copiar);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:783:13: error: expected ‘)’ before ‘_p1_prev_segv’
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |             ^~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:82:5: note: in expansion of macro ‘RUN_TEST’
+   82 |     RUN_TEST(prueba_cadena_concatenar);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:783:27: error: expected ‘)’ before ‘(’ token
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |     ~                     ^
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:82:5: note: in expansion of macro ‘RUN_TEST’
+   82 |     RUN_TEST(prueba_cadena_concatenar);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:783:13: error: expected ‘)’ before ‘_p1_prev_segv’
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |             ^~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:83:5: note: in expansion of macro ‘RUN_TEST’
+   83 |     RUN_TEST(prueba_cadena_a_mayusculas);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:783:27: error: expected ‘)’ before ‘(’ token
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |     ~                     ^
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:83:5: note: in expansion of macro ‘RUN_TEST’
+   83 |     RUN_TEST(prueba_cadena_a_mayusculas);
+      |     ^~~~~~~~
+make[1]: *** [Makefile:56: prueba.o] Error 1
+make: *** [Makefile:17: libs/cadenas] Error 1
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_001/repo'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_001/repo/libs/cadenas'
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_001/repo/libs/cadenas'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_001/repo'
+
+In file included from prueba.c:9:
+prueba.c: In function ‘main’:
+../../libs/p1_test/include/p1_test.h:783:13: error: expected ‘)’ before ‘_p1_prev_segv’
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |             ^~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:80:5: note: in expansion of macro ‘RUN_TEST’
+   80 |     RUN_TEST(prueba_cadena_longitud);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:783:27: error: expected ‘)’ before ‘(’ token
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |     ~                     ^
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:80:5: note: in expansion of macro ‘RUN_TEST’
+   80 |     RUN_TEST(prueba_cadena_longitud);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:1109:27: error: ‘_p1_prev_segv’ undeclared (first use in this function)
+ 1109 |         _P1_SETUP_SIGNALS(_p1_prev_segv, _p1_prev_fpe, _p1_prev_alrm);         \
+      |                           ^~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:780:57: note: in definition of macro ‘_P1_SETUP_SIGNALS’
+  780 | #define _P1_SETUP_SIGNALS(s, f, a) (_p1_setup_signals(&(s), &(f), &(a)))
+      |                                                         ^
+prueba.c:80:5: note: in expansion of macro ‘RUN_TEST’
+   80 |     RUN_TEST(prueba_cadena_longitud);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:1109:27: note: each undeclared identifier is reported only once for each function it appears in
+../../libs/p1_test/include/p1_test.h:780:57: note: in definition of macro ‘_P1_SETUP_SIGNALS’
+  780 | #define _P1_SETUP_SIGNALS(s, f, a) (_p1_setup_signals(&(s), &(f), &(a)))
+      |                                                         ^
+prueba.c:80:5: note: in expansion of macro ‘RUN_TEST’
+   80 |     RUN_TEST(prueba_cadena_longitud);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:1109:42: error: ‘_p1_prev_fpe’ undeclared (first use in this function)
+ 1109 |         _P1_SETUP_SIGNALS(_p1_prev_segv, _p1_prev_fpe, _p1_prev_alrm);         \
+      |                                          ^~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:780:63: note: in definition of macro ‘_P1_SETUP_SIGNALS’
+  780 | #define _P1_SETUP_SIGNALS(s, f, a) (_p1_setup_signals(&(s), &(f), &(a)))
+      |                                                               ^
+prueba.c:80:5: note: in expansion of macro ‘RUN_TEST’
+   80 |     RUN_TEST(prueba_cadena_longitud);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:1109:56: error: ‘_p1_prev_alrm’ undeclared (first use in this function)
+ 1109 |         _P1_SETUP_SIGNALS(_p1_prev_segv, _p1_prev_fpe, _p1_prev_alrm);         \
+      |                                                        ^~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:780:69: note: in definition of macro ‘_P1_SETUP_SIGNALS’
+  780 | #define _P1_SETUP_SIGNALS(s, f, a) (_p1_setup_signals(&(s), &(f), &(a)))
+      |                                                                     ^
+prueba.c:80:5: note: in expansion of macro ‘RUN_TEST’
+   80 |     RUN_TEST(prueba_cadena_longitud);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:783:13: error: expected ‘)’ before ‘_p1_prev_segv’
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |             ^~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:81:5: note: in expansion of macro ‘RUN_TEST’
+   81 |     RUN_TEST(prueba_cadena_copiar);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:783:27: error: expected ‘)’ before ‘(’ token
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |     ~                     ^
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:81:5: note: in expansion of macro ‘RUN_TEST’
+   81 |     RUN_TEST(prueba_cadena_copiar);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:783:13: error: expected ‘)’ before ‘_p1_prev_segv’
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |             ^~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:82:5: note: in expansion of macro ‘RUN_TEST’
+   82 |     RUN_TEST(prueba_cadena_concatenar);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:783:27: error: expected ‘)’ before ‘(’ token
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |     ~                     ^
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:82:5: note: in expansion of macro ‘RUN_TEST’
+   82 |     RUN_TEST(prueba_cadena_concatenar);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:783:13: error: expected ‘)’ before ‘_p1_prev_segv’
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |             ^~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:83:5: note: in expansion of macro ‘RUN_TEST’
+   83 |     RUN_TEST(prueba_cadena_a_mayusculas);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:783:27: error: expected ‘)’ before ‘(’ token
+  783 |     (void (*_p1_prev_segv)(int) = NULL; void (*_p1_prev_fpe)(int) = NULL;      \
+      |     ~                     ^
+../../libs/p1_test/include/p1_test.h:1108:9: note: in expansion of macro ‘_P1_SIG_VARS’
+ 1108 |         _P1_SIG_VARS;                                                          \
+      |         ^~~~~~~~~~~~
+prueba.c:83:5: note: in expansion of macro ‘RUN_TEST’
+   83 |     RUN_TEST(prueba_cadena_a_mayusculas);
+      |     ^~~~~~~~
+make[1]: *** [Makefile:56: prueba.o] Error 1
+make: *** [Makefile:17: libs/cadenas] Error 1
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

@@ -1,0 +1,100 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP3
+Estudiante: TP3-anon_007
+Revisión: 05b2f7b
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo'
+Compilando librería en libs/arreglos...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo/libs/arreglos'
+Compilando arreglos.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c arreglos.c
+Generando librería estática libarreglos.a
+ar rcs libarreglos.a arreglos.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando dependencia p1_test...
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin arreglos.o prueba.o -L../../libs/p1_test -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo/libs/arreglos'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo/libs/cadenas'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+Generando librería estática libcadenas.a
+ar rcs libcadenas.a cadenas.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin cadenas.o prueba.o -L../../libs/p1_test/build -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo/libs/cadenas'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo/libs/p1_test'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo/libs/p1_test'
+Compilando librería en libs/punteros...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo/libs/punteros'
+Compilando punteros.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c punteros.c
+Generando librería estática libpunteros.a
+ar rcs libpunteros.a punteros.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin punteros.o prueba.o -L../../libs/p1_test/build -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo/libs/punteros'
+Compilando ejercicio en ejercicios/ejercicio1...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo/ejercicios/ejercicio1'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando intercambio.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c intercambio.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o intercambio.o -L../../libs/arreglos -L../../libs/cadenas -L../../libs/punteros -L../../libs/p1_test/build -larreglos -lcadenas -lpunteros -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o intercambio.o -L../../libs/arreglos -L../../libs/cadenas -L../../libs/punteros -L../../libs/p1_test/build -larreglos -lcadenas -lpunteros -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo/ejercicios/ejercicio1'
+Compilando ejercicio en ejercicios/ejercicio2...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo/ejercicios/ejercicio2'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando estadistica.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c estadistica.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o estadistica.o -L../../libs/arreglos -L../../libs/cadenas -L../../libs/punteros -L../../libs/p1_test/build -larreglos -lcadenas -lpunteros -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o estadistica.o -L../../libs/arreglos -L../../libs/cadenas -L../../libs/punteros -L../../libs/p1_test/build -larreglos -lcadenas -lpunteros -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo/ejercicios/ejercicio2'
+Compilando ejercicio en ejercicios/ejercicio3...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo/ejercicios/ejercicio3'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo/ejercicios/ejercicio3'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_007/repo'
+arreglos.c: In function ‘arreglo_ok’:
+arreglos.c:17:37: warning: comparison of unsigned expression in ‘>= 0’ is always true [-Wtype-limits]
+   17 |     if (arreglo != NULL && cantidad >= 0)
+      |                                     ^~
+cadenas.c: In function ‘cadena_segura’:
+cadenas.c:18:12: warning: unused variable ‘contador’ [-Wunused-variable]
+   18 |     size_t contador = 0;
+      |            ^~~~~~~~
+estadistica.c: In function ‘contar_en_rango’:
+estadistica.c:62:28: warning: comparison of unsigned expression in ‘>= 0’ is always true [-Wtype-limits]
+   62 |         if (*coincidencias >= 0)
+      |                            ^~
+main.c: In function ‘main’:
+main.c:18:5: error: implicit declaration of function ‘imprimir_arreglo’; did you mean ‘invertir_arreglo’? [-Wimplicit-function-declaration]
+   18 |     imprimir_arreglo(arreglo, cantidad_arreglo);
+      |     ^~~~~~~~~~~~~~~~
+      |     invertir_arreglo
+make[1]: *** [Makefile:47: main.o] Error 1
+make: *** [Makefile:24: ejercicios/ejercicio3] Error 1
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

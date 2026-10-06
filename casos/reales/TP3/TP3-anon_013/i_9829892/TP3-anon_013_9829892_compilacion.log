@@ -1,0 +1,221 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP3
+Estudiante: TP3-anon_013
+Revisión: 9829892
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo'
+Compilando librería en libs/arreglos...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/arreglos'
+Compilando arreglos.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c arreglos.c
+Generando librería estática libarreglos.a
+ar rcs libarreglos.a arreglos.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando dependencia p1_test...
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin arreglos.o prueba.o -L../../libs/p1_test -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/arreglos'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/cadenas'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+Generando librería estática libcadenas.a
+ar rcs libcadenas.a cadenas.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin cadenas.o prueba.o -L../../libs/p1_test/build -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/cadenas'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/p1_test'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/p1_test'
+Compilando librería en libs/punteros...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/punteros'
+Compilando punteros.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c punteros.c
+Generando librería estática libpunteros.a
+ar rcs libpunteros.a punteros.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin punteros.o prueba.o -L../../libs/p1_test/build -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/punteros'
+Compilando ejercicio en ejercicios/ejercicio1...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/ejercicios/ejercicio1'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando intercambio.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c intercambio.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o intercambio.o -L../../libs/arreglos -L../../libs/cadenas -L../../libs/punteros -L../../libs/p1_test/build -larreglos -lcadenas -lpunteros -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o intercambio.o -L../../libs/arreglos -L../../libs/cadenas -L../../libs/punteros -L../../libs/p1_test/build -larreglos -lcadenas -lpunteros -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/ejercicios/ejercicio1'
+Compilando ejercicio en ejercicios/ejercicio2...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/ejercicios/ejercicio2'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando estadistica.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c estadistica.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o estadistica.o -L../../libs/arreglos -L../../libs/cadenas -L../../libs/punteros -L../../libs/p1_test/build -larreglos -lcadenas -lpunteros -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o estadistica.o -L../../libs/arreglos -L../../libs/cadenas -L../../libs/punteros -L../../libs/p1_test/build -larreglos -lcadenas -lpunteros -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/ejercicios/ejercicio2'
+Compilando ejercicio en ejercicios/ejercicio3...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/ejercicios/ejercicio3'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando recorrido.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c recorrido.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o recorrido.o -L../../libs/arreglos -L../../libs/cadenas -L../../libs/punteros -L../../libs/p1_test/build -larreglos -lcadenas -lpunteros -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/cadenas -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/ejercicios/ejercicio3'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo'
+In file included from prueba.c:10:
+prueba.c: In function ‘_p1_test_func_prueba_arreglo_fusionar’:
+prueba.c:135:27: warning: ‘destinonull’ is used uninitialized [-Wuninitialized]
+  135 |     ASSERT_INT_EQ(0, (int)arreglo_fusionar(arreglo1_2, 5, arreglo2_2, 5, destinonull, 6));
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:832:34: note: in definition of macro ‘ASSERT_INT_EQ_MSG’
+  832 |     long long _act = (long long)(actual); \
+      |                                  ^~~~~~
+prueba.c:135:5: note: in expansion of macro ‘ASSERT_INT_EQ’
+  135 |     ASSERT_INT_EQ(0, (int)arreglo_fusionar(arreglo1_2, 5, arreglo2_2, 5, destinonull, 6));
+      |     ^~~~~~~~~~~~~
+prueba.c:134:10: note: ‘destinonull’ was declared here
+  134 |     int *destinonull;
+      |          ^~~~~~~~~~~
+prueba.c:137:27: warning: ‘arreglonull’ is used uninitialized [-Wuninitialized]
+  137 |     ASSERT_INT_EQ(0, (int)arreglo_fusionar(arreglonull, 5, arreglo2_2, 5, destino_2, 6));
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:832:34: note: in definition of macro ‘ASSERT_INT_EQ_MSG’
+  832 |     long long _act = (long long)(actual); \
+      |                                  ^~~~~~
+prueba.c:137:5: note: in expansion of macro ‘ASSERT_INT_EQ’
+  137 |     ASSERT_INT_EQ(0, (int)arreglo_fusionar(arreglonull, 5, arreglo2_2, 5, destino_2, 6));
+      |     ^~~~~~~~~~~~~
+prueba.c:136:10: note: ‘arreglonull’ was declared here
+  136 |     int *arreglonull;
+      |          ^~~~~~~~~~~
+In file included from prueba.c:12:
+prueba.c: In function ‘_p1_test_func_prueba_cadena_subcadena’:
+prueba.c:99:18: warning: ‘destinonull’ is used uninitialized [-Wuninitialized]
+   99 |     ASSERT_FALSE(cadena_subcadena(destinonull, sizeof(destino), origen, 0, 4));
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:820:9: note: in definition of macro ‘ASSERT_FALSE_MSG’
+  820 |     if (cond) { \
+      |         ^~~~
+prueba.c:99:5: note: in expansion of macro ‘ASSERT_FALSE’
+   99 |     ASSERT_FALSE(cadena_subcadena(destinonull, sizeof(destino), origen, 0, 4));
+      |     ^~~~~~~~~~~~
+prueba.c:97:11: note: ‘destinonull’ was declared here
+   97 |     char *destinonull;
+      |           ^~~~~~~~~~~
+prueba.c:100:18: warning: ‘origennull’ is used uninitialized [-Wuninitialized]
+  100 |     ASSERT_FALSE(cadena_subcadena(destino, sizeof(destino), origennull, 0, 4));
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:820:9: note: in definition of macro ‘ASSERT_FALSE_MSG’
+  820 |     if (cond) { \
+      |         ^~~~
+prueba.c:100:5: note: in expansion of macro ‘ASSERT_FALSE’
+  100 |     ASSERT_FALSE(cadena_subcadena(destino, sizeof(destino), origennull, 0, 4));
+      |     ^~~~~~~~~~~~
+prueba.c:98:11: note: ‘origennull’ was declared here
+   98 |     char *origennull;
+      |           ^~~~~~~~~~
+prueba.c: In function ‘_p1_test_func_prueba_cadena_de_entero’:
+prueba.c:124:18: warning: ‘destino2’ is used uninitialized [-Wuninitialized]
+  124 |     ASSERT_FALSE(cadena_de_entero(destino2, sizeof(destino), numero));
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:820:9: note: in definition of macro ‘ASSERT_FALSE_MSG’
+  820 |     if (cond) { \
+      |         ^~~~
+prueba.c:124:5: note: in expansion of macro ‘ASSERT_FALSE’
+  124 |     ASSERT_FALSE(cadena_de_entero(destino2, sizeof(destino), numero));
+      |     ^~~~~~~~~~~~
+prueba.c:122:11: note: ‘destino2’ was declared here
+  122 |     char *destino2;
+      |           ^~~~~~~~
+prueba.c: In function ‘_p1_test_func_prueba_invertir_arreglo’:
+prueba.c:63:22: warning: ISO C forbids empty initializer braces before C23 [-Wpedantic]
+   63 |     int arreglo2[] = {};
+      |                      ^
+prueba.c:63:9: error: zero or negative size array ‘arreglo2’
+   63 |     int arreglo2[] = {};
+      |         ^~~~~~~~
+prueba.c:64:23: warning: ISO C forbids empty initializer braces before C23 [-Wpedantic]
+   64 |     int esperado2[] = {};
+      |                       ^
+prueba.c:64:9: error: zero or negative size array ‘esperado2’
+   64 |     int esperado2[] = {};
+      |         ^~~~~~~~~
+make[1]: *** [Makefile:47: prueba.o] Error 1
+make: *** [Makefile:24: ejercicios/ejercicio3] Error 1
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo'
+Compilando librería en libs/arreglos...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/arreglos'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/arreglos'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/cadenas'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/cadenas'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/p1_test'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/p1_test'
+Compilando librería en libs/punteros...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/punteros'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/punteros'
+Ejecutando pruebas de librerías...
+--- Probando librería libs/arreglos ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/arreglos'
+Probando librería...
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: libarreglos ===
+
+  [CORRIENDO] prueba_arreglo_sumar                ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_arreglo_buscar               ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_arreglo_invertir             ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_arreglo_ordenado             ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_arreglo_contar               ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_arreglo_compactar            ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_arreglo_fusionar             ...   [RESULTADO] FALLÓ (0.02 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: libarreglos
+============================================================
+  Total de tests ejecutados : 7
+  Tests aprobados           : 6
+  Tests desaprobados        : 1
+  Tests salteados           : 0
+  Aserciones evaluadas      : 65 (falladas: 1)
+============================================================
+>>> ESTADO: SE DETECTARON FALLOS EN LAS PRUEBAS <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo/libs/arreglos'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_013/repo'
+
+
+  [CRASH: SIGSEGV (Violación de segmento / Puntero inválido)]
+    en test: prueba_arreglo_fusionar
+    en subcaso: Arreglos nulos
+make[1]: *** [Makefile:67: test] Error 1
+make: *** [Makefile:40: test] Error 1
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

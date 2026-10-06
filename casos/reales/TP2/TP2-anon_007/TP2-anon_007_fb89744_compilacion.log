@@ -1,0 +1,165 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP2
+Estudiante: TP2-anon_007
+Revisión: fb89744
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo'
+Compilando librería en libs/arreglos...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/arreglos'
+Compilando arreglos.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c arreglos.c
+Generando librería estática libarreglos.a
+ar rcs libarreglos.a arreglos.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando dependencia p1_test...
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin arreglos.o prueba.o -L../../libs/p1_test -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/arreglos'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/cadenas'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+Generando librería estática libcadenas.a
+ar rcs libcadenas.a cadenas.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin cadenas.o prueba.o -L../../libs/p1_test/build -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/cadenas'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/p1_test'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/p1_test'
+Compilando ejercicio en ejercicios/ejercicio1...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/ejercicios/ejercicio1'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/p1_test/include -c main.c
+Compilando operaciones.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/p1_test/include -c operaciones.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o operaciones.o -L../../libs/arreglos -L../../libs/p1_test/build -larreglos -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/p1_test/include -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o operaciones.o -L../../libs/arreglos -L../../libs/p1_test/build -larreglos -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/ejercicios/ejercicio1'
+Compilando ejercicio en ejercicios/ejercicio2...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/ejercicios/ejercicio2'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/cadenas -I../../libs/p1_test/include -c main.c
+Compilando texto.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/cadenas -I../../libs/p1_test/include -c texto.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o texto.o -L../../libs/cadenas -L../../libs/p1_test/build -lcadenas -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/cadenas -I../../libs/p1_test/include -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o texto.o -L../../libs/cadenas -L../../libs/p1_test/build -lcadenas -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/ejercicios/ejercicio2'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo'
+arreglos.c: In function ‘arreglo_ok’:
+arreglos.c:17:37: warning: comparison of unsigned expression in ‘>= 0’ is always true [-Wtype-limits]
+   17 |     if (arreglo != NULL && cantidad >= 0)
+      |                                     ^~
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo'
+Compilando librería en libs/arreglos...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/arreglos'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/arreglos'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/cadenas'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/cadenas'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/p1_test'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/p1_test'
+Ejecutando pruebas de librerías...
+--- Probando librería libs/arreglos ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/arreglos'
+Probando librería...
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: libarreglos ===
+
+  [CORRIENDO] prueba_arreglo_sumar                ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_arreglo_buscar               ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_arreglo_invertir             ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_arreglo_ordenado             ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_arreglo_contar               ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_arreglo_compactar            ... PASÓ (0.00 ms)
+  [CORRIENDO] prueba_arreglo_concatenar           ... PASÓ (0.01 ms)
+Todos los tests de la libreria arreglos.h pasaron exitosamente.
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: libarreglos
+============================================================
+  Total de tests ejecutados : 7
+  Tests aprobados           : 7
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 47 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/arreglos'
+--- Probando librería libs/cadenas ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/cadenas'
+Probando librería...
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: libcadenas ===
+
+  [CORRIENDO] prueba_cadena_longitud              ...   [RESULTADO] FALLÓ (0.03 ms)
+  [CORRIENDO] prueba_cadena_copiar                ...   [RESULTADO] FALLÓ (0.04 ms)
+  [CORRIENDO] prueba_cadena_concatenar            ...   [RESULTADO] FALLÓ (0.02 ms)
+  [CORRIENDO] prueba_cadena_a_mayusculas          ...   [RESULTADO] FALLÓ (0.02 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: libcadenas
+============================================================
+  Total de tests ejecutados : 4
+  Tests aprobados           : 0
+  Tests desaprobados        : 4
+  Tests salteados           : 0
+  Aserciones evaluadas      : 7 (falladas: 4)
+============================================================
+>>> ESTADO: SE DETECTARON FALLOS EN LAS PRUEBAS <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/cadenas'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo'
+
+
+  [FALLO] prueba.c:21: ASSERT_INT_EQ(4, (int)cadena_longitud("hola", 10))
+    en test: prueba_cadena_longitud
+    en subcaso: Medicion dentro del limite
+    esperado: igual a 4
+    obtenido: 0
+
+  [FALLO] prueba.c:32: ASSERT_TRUE(cadena_copiar(destino, sizeof(destino), "hola"))
+    en test: prueba_cadena_copiar
+    en subcaso: Copia normal sin truncamiento
+    esperado: verdadero (distinto de 0)
+    obtenido: falso (0)
+
+  [FALLO] prueba.c:50: ASSERT_TRUE(cadena_copiar(destino, sizeof(destino), "Hola "))
+    en test: prueba_cadena_concatenar
+    en subcaso: Concatenacion exitosa
+    esperado: verdadero (distinto de 0)
+    obtenido: falso (0)
+
+  [FALLO] prueba.c:67: ASSERT_TRUE(cadena_copiar(texto, sizeof(texto), "Hola Mundo 123!"))
+    en test: prueba_cadena_a_mayusculas
+    en subcaso: Conversion estandar
+    esperado: verdadero (distinto de 0)
+    obtenido: falso (0)
+make[1]: *** [Makefile:67: test] Error 1
+make: *** [Makefile:40: test] Error 1
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

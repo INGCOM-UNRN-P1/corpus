@@ -1,0 +1,293 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP1
+Estudiante: TP1-anon_029
+Revisión: a3adbca
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_029/repo'
+Compilando librería en libs/consola...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_029/repo/libs/consola'
+Compilando consola.c
+cc -Wall -Wextra -pedantic -g -c consola.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_029/repo/libs/consola'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_029/repo'
+consola.c: In function ‘limpiar_buffer_entrada’:
+consola.c:9:1: error: version control conflict marker in file
+    9 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:12:9: error: invalid suffix ‘f4143’ on integer constant
+   12 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c: In function ‘esta_en_rango_entero’:
+consola.c:18:1: error: version control conflict marker in file
+   18 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:28:9: error: invalid suffix ‘f4143’ on integer constant
+   28 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c:16:31: warning: unused parameter ‘valor’ [-Wunused-parameter]
+   16 | bool esta_en_rango_entero(int valor, int min, int max)
+      |                           ~~~~^~~~~
+consola.c:16:42: warning: unused parameter ‘min’ [-Wunused-parameter]
+   16 | bool esta_en_rango_entero(int valor, int min, int max)
+      |                                      ~~~~^~~
+consola.c:16:51: warning: unused parameter ‘max’ [-Wunused-parameter]
+   16 | bool esta_en_rango_entero(int valor, int min, int max)
+      |                                               ~~~~^~~
+consola.c: In function ‘esta_en_rango_flotante’:
+consola.c:34:1: error: version control conflict marker in file
+   34 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:36:1: error: version control conflict marker in file
+   36 | =======
+      | ^~~~~~~
+consola.c:45:9: error: invalid suffix ‘f4143’ on integer constant
+   45 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c:32:35: warning: unused parameter ‘valor’ [-Wunused-parameter]
+   32 | bool esta_en_rango_flotante(float valor, float min, float max)
+      |                             ~~~~~~^~~~~
+consola.c:32:48: warning: unused parameter ‘min’ [-Wunused-parameter]
+   32 | bool esta_en_rango_flotante(float valor, float min, float max)
+      |                                          ~~~~~~^~~
+consola.c:32:59: warning: unused parameter ‘max’ [-Wunused-parameter]
+   32 | bool esta_en_rango_flotante(float valor, float min, float max)
+      |                                                     ~~~~~~^~~
+consola.c: In function ‘leer_entero’:
+consola.c:50:1: error: version control conflict marker in file
+   50 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:66:34: error: ‘valor’ undeclared (first use in this function)
+   66 |         resultado = scanf("%d", &valor);
+      |                                  ^~~~~
+consola.c:66:34: note: each undeclared identifier is reported only once for each function it appears in
+consola.c:76:1: error: version control conflict marker in file
+   76 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      | ^~~~~~~
+consola.c:76:9: error: invalid suffix ‘f4143’ on integer constant
+   76 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c: In function ‘leer_entero_entre’:
+consola.c:82:1: error: version control conflict marker in file
+   82 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:95:9: error: ‘valor’ undeclared (first use in this function)
+   95 |         valor = leer_flotante(mensaje);
+      |         ^~~~~
+consola.c:103:1: error: version control conflict marker in file
+  103 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      | ^~~~~~~
+consola.c:103:9: error: invalid suffix ‘f4143’ on integer constant
+  103 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c: In function ‘leer_flotante’:
+consola.c:109:1: error: version control conflict marker in file
+  109 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:125:9: error: ‘resultado’ undeclared (first use in this function)
+  125 |         resultado = scanf("%f", &valor);
+      |         ^~~~~~~~~
+consola.c:133:1: error: version control conflict marker in file
+  133 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      | ^~~~~~~
+consola.c:133:9: error: invalid suffix ‘f4143’ on integer constant
+  133 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c: In function ‘leer_flotante_entre’:
+consola.c:139:1: error: version control conflict marker in file
+  139 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:152:9: error: ‘valor’ undeclared (first use in this function)
+  152 |         valor = leer_flotante(mensaje);
+      |         ^~~~~
+consola.c:160:1: error: version control conflict marker in file
+  160 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      | ^~~~~~~
+consola.c:160:9: error: invalid suffix ‘f4143’ on integer constant
+  160 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c: In function ‘leer_caracter’:
+consola.c:166:1: error: version control conflict marker in file
+  166 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:177:19: error: ‘caracter’ undeclared (first use in this function)
+  177 |     scanf(" %c", &caracter);
+      |                   ^~~~~~~~
+consola.c:184:1: error: version control conflict marker in file
+  184 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      | ^~~~~~~
+consola.c:184:9: error: invalid suffix ‘f4143’ on integer constant
+  184 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c: In function ‘leer_logico’:
+consola.c:190:1: error: version control conflict marker in file
+  190 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:204:13: error: ‘caracter’ undeclared (first use in this function)
+  204 |         if (caracter == 's' || caracter == 'S')
+      |             ^~~~~~~~
+consola.c:216:1: error: version control conflict marker in file
+  216 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      | ^~~~~~~
+consola.c:216:9: error: invalid suffix ‘f4143’ on integer constant
+  216 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c: In function ‘esta_en_rango_entero’:
+consola.c:30:1: warning: control reaches end of non-void function [-Wreturn-type]
+   30 | }
+      | ^
+consola.c: In function ‘esta_en_rango_flotante’:
+consola.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+   46 | }
+      | ^
+make[1]: *** [Makefile:37: consola.o] Error 1
+make: *** [Makefile:17: libs/consola] Error 1
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_029/repo'
+Compilando librería en libs/consola...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_029/repo/libs/consola'
+Compilando consola.c
+cc -Wall -Wextra -pedantic -g -c consola.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_029/repo/libs/consola'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_029/repo'
+
+consola.c: In function ‘limpiar_buffer_entrada’:
+consola.c:9:1: error: version control conflict marker in file
+    9 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:12:9: error: invalid suffix ‘f4143’ on integer constant
+   12 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c: In function ‘esta_en_rango_entero’:
+consola.c:18:1: error: version control conflict marker in file
+   18 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:28:9: error: invalid suffix ‘f4143’ on integer constant
+   28 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c:16:31: warning: unused parameter ‘valor’ [-Wunused-parameter]
+   16 | bool esta_en_rango_entero(int valor, int min, int max)
+      |                           ~~~~^~~~~
+consola.c:16:42: warning: unused parameter ‘min’ [-Wunused-parameter]
+   16 | bool esta_en_rango_entero(int valor, int min, int max)
+      |                                      ~~~~^~~
+consola.c:16:51: warning: unused parameter ‘max’ [-Wunused-parameter]
+   16 | bool esta_en_rango_entero(int valor, int min, int max)
+      |                                               ~~~~^~~
+consola.c: In function ‘esta_en_rango_flotante’:
+consola.c:34:1: error: version control conflict marker in file
+   34 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:36:1: error: version control conflict marker in file
+   36 | =======
+      | ^~~~~~~
+consola.c:45:9: error: invalid suffix ‘f4143’ on integer constant
+   45 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c:32:35: warning: unused parameter ‘valor’ [-Wunused-parameter]
+   32 | bool esta_en_rango_flotante(float valor, float min, float max)
+      |                             ~~~~~~^~~~~
+consola.c:32:48: warning: unused parameter ‘min’ [-Wunused-parameter]
+   32 | bool esta_en_rango_flotante(float valor, float min, float max)
+      |                                          ~~~~~~^~~
+consola.c:32:59: warning: unused parameter ‘max’ [-Wunused-parameter]
+   32 | bool esta_en_rango_flotante(float valor, float min, float max)
+      |                                                     ~~~~~~^~~
+consola.c: In function ‘leer_entero’:
+consola.c:50:1: error: version control conflict marker in file
+   50 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:66:34: error: ‘valor’ undeclared (first use in this function)
+   66 |         resultado = scanf("%d", &valor);
+      |                                  ^~~~~
+consola.c:66:34: note: each undeclared identifier is reported only once for each function it appears in
+consola.c:76:1: error: version control conflict marker in file
+   76 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      | ^~~~~~~
+consola.c:76:9: error: invalid suffix ‘f4143’ on integer constant
+   76 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c: In function ‘leer_entero_entre’:
+consola.c:82:1: error: version control conflict marker in file
+   82 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:95:9: error: ‘valor’ undeclared (first use in this function)
+   95 |         valor = leer_flotante(mensaje);
+      |         ^~~~~
+consola.c:103:1: error: version control conflict marker in file
+  103 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      | ^~~~~~~
+consola.c:103:9: error: invalid suffix ‘f4143’ on integer constant
+  103 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c: In function ‘leer_flotante’:
+consola.c:109:1: error: version control conflict marker in file
+  109 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:125:9: error: ‘resultado’ undeclared (first use in this function)
+  125 |         resultado = scanf("%f", &valor);
+      |         ^~~~~~~~~
+consola.c:133:1: error: version control conflict marker in file
+  133 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      | ^~~~~~~
+consola.c:133:9: error: invalid suffix ‘f4143’ on integer constant
+  133 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c: In function ‘leer_flotante_entre’:
+consola.c:139:1: error: version control conflict marker in file
+  139 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:152:9: error: ‘valor’ undeclared (first use in this function)
+  152 |         valor = leer_flotante(mensaje);
+      |         ^~~~~
+consola.c:160:1: error: version control conflict marker in file
+  160 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      | ^~~~~~~
+consola.c:160:9: error: invalid suffix ‘f4143’ on integer constant
+  160 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c: In function ‘leer_caracter’:
+consola.c:166:1: error: version control conflict marker in file
+  166 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:177:19: error: ‘caracter’ undeclared (first use in this function)
+  177 |     scanf(" %c", &caracter);
+      |                   ^~~~~~~~
+consola.c:184:1: error: version control conflict marker in file
+  184 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      | ^~~~~~~
+consola.c:184:9: error: invalid suffix ‘f4143’ on integer constant
+  184 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c: In function ‘leer_logico’:
+consola.c:190:1: error: version control conflict marker in file
+  190 | <<<<<<< HEAD
+      | ^~~~~~~
+consola.c:204:13: error: ‘caracter’ undeclared (first use in this function)
+  204 |         if (caracter == 's' || caracter == 'S')
+      |             ^~~~~~~~
+consola.c:216:1: error: version control conflict marker in file
+  216 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      | ^~~~~~~
+consola.c:216:9: error: invalid suffix ‘f4143’ on integer constant
+  216 | >>>>>>> 45f4143 (Entrega tp 1 completa)
+      |         ^~~~~~~
+consola.c: In function ‘esta_en_rango_entero’:
+consola.c:30:1: warning: control reaches end of non-void function [-Wreturn-type]
+   30 | }
+      | ^
+consola.c: In function ‘esta_en_rango_flotante’:
+consola.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+   46 | }
+      | ^
+make[1]: *** [Makefile:37: consola.o] Error 1
+make: *** [Makefile:17: libs/consola] Error 1
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

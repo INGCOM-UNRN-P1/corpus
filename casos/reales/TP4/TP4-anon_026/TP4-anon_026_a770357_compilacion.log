@@ -1,0 +1,113 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP4
+Estudiante: TP4-anon_026
+Revisión: a770357
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo/libs/p1_test'
+mkdir -p build
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -c src/p1_test.c -o build/p1_test.o
+ar rcs build/libp1_test.a build/p1_test.o
+cp build/libp1_test.a libp1_test.a
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -c prueba.c -o prueba.o
+Compilando pruebas de p1_test...
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -o test_bin prueba.o -Lbuild -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo/libs/p1_test'
+Compilando librería en libs/string...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo/libs/string'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+Generando librería estática libstring.a
+ar rcs libstring.a cadenas.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin cadenas.o prueba.o -L../../libs/p1_test/build -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo/libs/string'
+Compilando librería en libs/vector...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo/libs/vector'
+Compilando vector.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c vector.c
+Generando librería estática libvector.a
+ar rcs libvector.a vector.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo/libs/vector'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo'
+prueba.c:181:1: error: expected identifier or ‘(’ before ‘}’ token
+  181 | }
+      | ^
+In file included from prueba.c:10:
+../../libs/p1_test/include/p1_test.h:573:32: warning: ‘_p1_test_func_prueba_agregar_al_bloque_enteros’ defined but not used [-Wunused-function]
+  573 | #define TEST(name) static void _p1_test_func_##name(void)
+      |                                ^~~~~~~~~~~~~~
+prueba.c:129:1: note: in expansion of macro ‘TEST’
+  129 | TEST(prueba_agregar_al_bloque_enteros)
+      | ^~~~
+../../libs/p1_test/include/p1_test.h:573:32: warning: ‘_p1_test_func_prueba_fusionar_bloques_enteros’ defined but not used [-Wunused-function]
+  573 | #define TEST(name) static void _p1_test_func_##name(void)
+      |                                ^~~~~~~~~~~~~~
+prueba.c:83:1: note: in expansion of macro ‘TEST’
+   83 | TEST(prueba_fusionar_bloques_enteros)
+      | ^~~~
+../../libs/p1_test/include/p1_test.h:573:32: warning: ‘_p1_test_func_prueba_bloque_enteros_redimensionar_casos_borde’ defined but not used [-Wunused-function]
+  573 | #define TEST(name) static void _p1_test_func_##name(void)
+      |                                ^~~~~~~~~~~~~~
+prueba.c:55:1: note: in expansion of macro ‘TEST’
+   55 | TEST(prueba_bloque_enteros_redimensionar_casos_borde)
+      | ^~~~
+make[1]: *** [Makefile:56: prueba.o] Error 1
+make: *** [Makefile:17: libs/vector] Error 1
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo/libs/p1_test'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo/libs/p1_test'
+Compilando librería en libs/string...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo/libs/string'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo/libs/string'
+Compilando librería en libs/vector...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo/libs/vector'
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo/libs/vector'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_026/repo'
+
+prueba.c:181:1: error: expected identifier or ‘(’ before ‘}’ token
+  181 | }
+      | ^
+In file included from prueba.c:10:
+../../libs/p1_test/include/p1_test.h:573:32: warning: ‘_p1_test_func_prueba_agregar_al_bloque_enteros’ defined but not used [-Wunused-function]
+  573 | #define TEST(name) static void _p1_test_func_##name(void)
+      |                                ^~~~~~~~~~~~~~
+prueba.c:129:1: note: in expansion of macro ‘TEST’
+  129 | TEST(prueba_agregar_al_bloque_enteros)
+      | ^~~~
+../../libs/p1_test/include/p1_test.h:573:32: warning: ‘_p1_test_func_prueba_fusionar_bloques_enteros’ defined but not used [-Wunused-function]
+  573 | #define TEST(name) static void _p1_test_func_##name(void)
+      |                                ^~~~~~~~~~~~~~
+prueba.c:83:1: note: in expansion of macro ‘TEST’
+   83 | TEST(prueba_fusionar_bloques_enteros)
+      | ^~~~
+../../libs/p1_test/include/p1_test.h:573:32: warning: ‘_p1_test_func_prueba_bloque_enteros_redimensionar_casos_borde’ defined but not used [-Wunused-function]
+  573 | #define TEST(name) static void _p1_test_func_##name(void)
+      |                                ^~~~~~~~~~~~~~
+prueba.c:55:1: note: in expansion of macro ‘TEST’
+   55 | TEST(prueba_bloque_enteros_redimensionar_casos_borde)
+      | ^~~~
+make[1]: *** [Makefile:56: prueba.o] Error 1
+make: *** [Makefile:17: libs/vector] Error 1
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

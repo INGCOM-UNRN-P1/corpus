@@ -1,0 +1,414 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP4
+Estudiante: TP4-anon_020
+Revisión: fc0a9b3
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo'
+Compilando librería en libs/consola...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/consola'
+Compilando consola.c
+cc -Wall -Wextra -pedantic -g -c consola.c
+Generando librería estática libconsola.a
+ar rcs libconsola.a consola.o
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -g -c prueba.c
+Compilando test_bin
+cc -Wall -Wextra -pedantic -g -o test_bin consola.o prueba.o
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/consola'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/p1_test'
+mkdir -p build
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -c src/p1_test.c -o build/p1_test.o
+ar rcs build/libp1_test.a build/p1_test.o
+cp build/libp1_test.a libp1_test.a
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -c prueba.c -o prueba.o
+Compilando pruebas de p1_test...
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -o test_bin prueba.o -Lbuild -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/p1_test'
+Compilando librería en libs/punteros...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/punteros'
+Compilando punteros.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c punteros.c
+Generando librería estática libpunteros.a
+ar rcs libpunteros.a punteros.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin punteros.o prueba.o -L../../libs/p1_test/build -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/punteros'
+Compilando librería en libs/string...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/string'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+Generando librería estática libstring.a
+ar rcs libstring.a cadenas.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin cadenas.o prueba.o -L../../libs/p1_test/build -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/string'
+Compilando librería en libs/vector...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/vector'
+Compilando vector.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c vector.c
+Generando librería estática libvector.a
+ar rcs libvector.a vector.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin vector.o prueba.o -L../../libs/p1_test/build -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/vector'
+Compilando ejercicio en ejercicios/ejercicio1...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio1'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando vector_enteros.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c vector_enteros.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o vector_enteros.o -L../../libs/consola -L../../libs/punteros -L../../libs/string -L../../libs/vector -L../../libs/p1_test/build -lconsola -lpunteros -lstring -lvector -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o vector_enteros.o -L../../libs/consola -L../../libs/punteros -L../../libs/string -L../../libs/vector -L../../libs/p1_test/build -lconsola -lpunteros -lstring -lvector -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio1'
+Compilando ejercicio en ejercicios/ejercicio2...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio2'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando texto_dinamico.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c texto_dinamico.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o texto_dinamico.o -L../../libs/consola -L../../libs/punteros -L../../libs/string -L../../libs/vector -L../../libs/p1_test/build -lconsola -lpunteros -lstring -lvector -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o texto_dinamico.o -L../../libs/consola -L../../libs/punteros -L../../libs/string -L../../libs/vector -L../../libs/p1_test/build -lconsola -lpunteros -lstring -lvector -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio2'
+Compilando ejercicio en ejercicios/ejercicio3...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio3'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando cadena_dinamica.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c cadena_dinamica.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o cadena_dinamica.o -L../../libs/consola -L../../libs/punteros -L../../libs/string -L../../libs/vector -L../../libs/p1_test/build -lconsola -lpunteros -lstring -lvector -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o cadena_dinamica.o -L../../libs/consola -L../../libs/punteros -L../../libs/string -L../../libs/vector -L../../libs/p1_test/build -lconsola -lpunteros -lstring -lvector -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio3'
+Compilando ejercicio en ejercicios/ejercicio4...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio4'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando matriz_dinamica.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c matriz_dinamica.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o matriz_dinamica.o -L../../libs/consola -L../../libs/punteros -L../../libs/string -L../../libs/vector -L../../libs/p1_test/build -lconsola -lpunteros -lstring -lvector -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o matriz_dinamica.o -L../../libs/consola -L../../libs/punteros -L../../libs/string -L../../libs/vector -L../../libs/p1_test/build -lconsola -lpunteros -lstring -lvector -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio4'
+Compilando ejercicio en ejercicios/ejercicio5...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio5'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando registro_csv.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c registro_csv.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o registro_csv.o -L../../libs/consola -L../../libs/punteros -L../../libs/string -L../../libs/vector -L../../libs/p1_test/build -lconsola -lpunteros -lstring -lvector -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o registro_csv.o -L../../libs/consola -L../../libs/punteros -L../../libs/string -L../../libs/vector -L../../libs/p1_test/build -lconsola -lpunteros -lstring -lvector -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio5'
+Compilando ejercicio en ejercicios/ejercicio6...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio6'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio6'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo'
+main.c: In function ‘main’:
+main.c:54:9: error: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   54 |         free(promedios);
+      |         ^~~~
+main.c:9:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+    8 | #include "consulta_csv.h"
+  +++ |+#include <stdlib.h>
+    9 | 
+main.c:54:9: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+   54 |         free(promedios);
+      |         ^~~~
+main.c:54:9: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+make[1]: *** [Makefile:47: main.o] Error 1
+make: *** [Makefile:24: ejercicios/ejercicio6] Error 1
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo'
+Compilando librería en libs/consola...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/consola'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/consola'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/p1_test'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/p1_test'
+Compilando librería en libs/punteros...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/punteros'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/punteros'
+Compilando librería en libs/string...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/string'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/string'
+Compilando librería en libs/vector...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/vector'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/vector'
+Ejecutando pruebas de librerías...
+--- Probando librería libs/consola ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/consola'
+Probando librería...
+./test_bin
+Ejecutando pruebas unitarias de la libreria consola...
+Todos los tests de la libreria consola pasaron exitosamente.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/consola'
+--- Probando librería libs/p1_test ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/p1_test'
+Probando librería p1_test...
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: Librería p1_test ===
+
+  [CORRIENDO] prueba_aserciones_basicas           ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_aserciones_arreglos          ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_aserciones_archivos          ... PASÓ (0.08 ms)
+  [CORRIENDO] prueba_captura_y_mock_stdio         ... PASÓ (0.09 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: Librería p1_test
+============================================================
+  Total de tests ejecutados : 4
+  Tests aprobados           : 4
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 34 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/p1_test'
+--- Probando librería libs/punteros ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/punteros'
+Probando librería...
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: libpunteros ===
+
+  [CORRIENDO] prueba_intercambiar                 ... PASÓ (0.02 ms)
+  [CORRIENDO] prueba_obtener_min_max              ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_leer_arreglo_int             ... PASÓ (0.14 ms)
+  [CORRIENDO] prueba_mostrar_arreglo_int          ... PASÓ (0.06 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: libpunteros
+============================================================
+  Total de tests ejecutados : 4
+  Tests aprobados           : 4
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 26 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/punteros'
+--- Probando librería libs/string ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/string'
+Probando librería...
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: libstring ===
+
+  [CORRIENDO] prueba_cadena_duplicar_segura       ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_cadena_unir_dinamica         ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_cadena_subcadena_dinamica    ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_cadena_invertir_dinamica     ... PASÓ (0.01 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: libstring
+============================================================
+  Total de tests ejecutados : 4
+  Tests aprobados           : 4
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 23 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/string'
+--- Probando librería libs/vector ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/vector'
+Probando librería...
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: libvector ===
+
+  [CORRIENDO] prueba_bloque_enteros_creacion_liberacion ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_bloque_enteros_redimensionar ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_bloque_enteros_fusionar      ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_bloque_enteros_agregar       ... PASÓ (0.01 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: libvector
+============================================================
+  Total de tests ejecutados : 4
+  Tests aprobados           : 4
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 32 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/libs/vector'
+Ejecutando pruebas de ejercicios...
+--- Probando ejercicio ejercicios/ejercicio1 ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio1'
+Ejecutando pruebas
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: Ejercicio 1 ===
+
+  [CORRIENDO] prueba_clonar_arreglo_enteros       ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_filtrar_arreglo_pares        ... PASÓ (0.01 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: Ejercicio 1
+============================================================
+  Total de tests ejecutados : 2
+  Tests aprobados           : 2
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 16 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio1'
+--- Probando ejercicio ejercicios/ejercicio2 ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio2'
+Ejecutando pruebas
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: Ejercicio 2 ===
+
+  [CORRIENDO] prueba_cadena_recortar_espacios     ... PASÓ (0.03 ms)
+  [CORRIENDO] prueba_cadena_repetir               ... PASÓ (0.01 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: Ejercicio 2
+============================================================
+  Total de tests ejecutados : 2
+  Tests aprobados           : 2
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 9 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio2'
+--- Probando ejercicio ejercicios/ejercicio3 ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio3'
+Ejecutando pruebas
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: Ejercicio 3 ===
+
+  [CORRIENDO] prueba_clonar_cadena                ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_unir_cadenas_dinamicas       ... PASÓ (0.01 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: Ejercicio 3
+============================================================
+  Total de tests ejecutados : 2
+  Tests aprobados           : 2
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 13 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio3'
+--- Probando ejercicio ejercicios/ejercicio4 ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio4'
+Ejecutando pruebas
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: Ejercicio 4 ===
+
+  [CORRIENDO] prueba_crear_y_acceder_matriz_plana ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_matriz_por_filas             ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_matriz_cargar_desde_csv      ... PASÓ (0.29 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: Ejercicio 4
+============================================================
+  Total de tests ejecutados : 3
+  Tests aprobados           : 3
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 23 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio4'
+--- Probando ejercicio ejercicios/ejercicio5 ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio5'
+Ejecutando pruebas
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: Ejercicio 5 ===
+
+  [CORRIENDO] prueba_dividir_linea_csv            ... PASÓ (0.02 ms)
+  [CORRIENDO] prueba_lista_cadenas                ... PASÓ (0.01 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: Ejercicio 5
+============================================================
+  Total de tests ejecutados : 2
+  Tests aprobados           : 2
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 23 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio5'
+--- Probando ejercicio ejercicios/ejercicio6 ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio6'
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando consulta_csv.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/consola -I../../libs/punteros -I../../libs/string -I../../libs/vector -I../../libs/p1_test/include -I../../libs/p1_test -c consulta_csv.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o consulta_csv.o -L../../libs/consola -L../../libs/punteros -L../../libs/string -L../../libs/vector -L../../libs/p1_test/build -lconsola -lpunteros -lstring -lvector -lp1_test
+Ejecutando pruebas
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: Ejercicio 6 ===
+
+  [CORRIENDO] prueba_cargar_matriz_csv            ... PASÓ (0.19 ms)
+  [CORRIENDO] prueba_filtrar_matriz_por_columna   ... PASÓ (0.23 ms)
+  [CORRIENDO] prueba_estadisticas_columnas        ... PASÓ (0.11 ms)
+  [CORRIENDO] prueba_exportar_matriz_csv          ... PASÓ (0.20 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: Ejercicio 6
+============================================================
+  Total de tests ejecutados : 4
+  Tests aprobados           : 4
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 33 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo/ejercicios/ejercicio6'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_020/repo'
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

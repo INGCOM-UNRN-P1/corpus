@@ -1,0 +1,297 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP3
+Estudiante: TP3-anon_019
+Revisión: bebc47e
+Compilador / Modo: MAKE_PROYECTO
+Estado general: EXITOSA
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/libs/p1_test'
+mkdir -p build
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -c src/p1_test.c -o build/p1_test.o
+ar rcs build/libp1_test.a build/p1_test.o
+cp build/libp1_test.a libp1_test.a
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -c prueba.c -o prueba.o
+Compilando pruebas de p1_test...
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -o test_bin prueba.o -Lbuild -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/libs/p1_test'
+Compilando librería en libs/punteros...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/libs/punteros'
+Compilando punteros.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c punteros.c
+Generando librería estática libpunteros.a
+ar rcs libpunteros.a punteros.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin punteros.o prueba.o -L../../libs/p1_test/build -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/libs/punteros'
+Compilando ejercicio en ejercicios/ejercicio1...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio1'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando intercambio.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c intercambio.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o intercambio.o -L../../libs/punteros -L../../libs/p1_test/build -lpunteros -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o intercambio.o -L../../libs/punteros -L../../libs/p1_test/build -lpunteros -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio1'
+Compilando ejercicio en ejercicios/ejercicio2...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio2'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando estadistica.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c estadistica.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o estadistica.o -L../../libs/punteros -L../../libs/p1_test/build -lpunteros -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o estadistica.o -L../../libs/punteros -L../../libs/p1_test/build -lpunteros -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio2'
+Compilando ejercicio en ejercicios/ejercicio3...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio3'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando recorrido.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c recorrido.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o recorrido.o -L../../libs/punteros -L../../libs/p1_test/build -lpunteros -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o recorrido.o -L../../libs/punteros -L../../libs/p1_test/build -lpunteros -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio3'
+Compilando ejercicio en ejercicios/ejercicio4...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio4'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando busqueda.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c busqueda.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o busqueda.o -L../../libs/punteros -L../../libs/p1_test/build -lpunteros -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o busqueda.o -L../../libs/punteros -L../../libs/p1_test/build -lpunteros -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio4'
+Compilando ejercicio en ejercicios/ejercicio5...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio5'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando puntero_cadena.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c puntero_cadena.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o puntero_cadena.o -L../../libs/punteros -L../../libs/p1_test/build -lpunteros -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o puntero_cadena.o -L../../libs/punteros -L../../libs/p1_test/build -lpunteros -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio5'
+Compilando ejercicio en ejercicios/ejercicio6...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio6'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c main.c
+Compilando ordenamiento.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c ordenamiento.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o ordenamiento.o -L../../libs/punteros -L../../libs/p1_test/build -lpunteros -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/punteros -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o ordenamiento.o -L../../libs/punteros -L../../libs/p1_test/build -lpunteros -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio6'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo'
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/libs/p1_test'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/libs/p1_test'
+Compilando librería en libs/punteros...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/libs/punteros'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/libs/punteros'
+Ejecutando pruebas de librerías...
+--- Probando librería libs/p1_test ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/libs/p1_test'
+Probando librería p1_test...
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: Librería p1_test ===
+
+  [CORRIENDO] prueba_aserciones_basicas           ... PASÓ (0.02 ms)
+  [CORRIENDO] prueba_aserciones_arreglos          ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_aserciones_archivos          ... PASÓ (0.09 ms)
+  [CORRIENDO] prueba_captura_y_mock_stdio         ... PASÓ (0.08 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: Librería p1_test
+============================================================
+  Total de tests ejecutados : 4
+  Tests aprobados           : 4
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 34 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/libs/p1_test'
+--- Probando librería libs/punteros ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/libs/punteros'
+Probando librería...
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: libpunteros ===
+
+  [CORRIENDO] prueba_intercambiar                 ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_obtener_min_max              ... PASÓ (0.01 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: libpunteros
+============================================================
+  Total de tests ejecutados : 2
+  Tests aprobados           : 2
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 17 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/libs/punteros'
+Ejecutando pruebas de ejercicios...
+--- Probando ejercicio ejercicios/ejercicio1 ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio1'
+Ejecutando pruebas
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: Ejercicio 1 (Ordenamiento y Suma) ===
+
+  [CORRIENDO] prueba_ordenar_par                  ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_ordenar_tria                 ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_sumar_acumulado              ... PASÓ (0.01 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: Ejercicio 1 (Ordenamiento y Suma)
+============================================================
+  Total de tests ejecutados : 3
+  Tests aprobados           : 3
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 25 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio1'
+--- Probando ejercicio ejercicios/ejercicio2 ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio2'
+Ejecutando pruebas
+./test_bin
+
+=== INICIANDO SUITE: Suite de Pruebas: Ejercicio 2 (Estadísticas) ===
+
+  [CORRIENDO] prueba_calcular_estadisticas        ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_contar_en_rango              ... PASÓ (0.01 ms)
+
+============================================================
+Resultados de la Suite: Suite de Pruebas: Ejercicio 2 (Estadísticas)
+============================================================
+  Total de tests ejecutados : 2
+  Tests aprobados           : 2
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 15 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio2'
+--- Probando ejercicio ejercicios/ejercicio3 ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio3'
+Ejecutando pruebas
+./test_bin
+
+=== INICIANDO SUITE: suite de pruebas: ejercicio 3 ===
+
+  [CORRIENDO] prueba_copiar_arreglo               ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_invertir_arreglo             ... PASÓ (0.01 ms)
+
+============================================================
+Resultados de la Suite: suite de pruebas: ejercicio 3
+============================================================
+  Total de tests ejecutados : 2
+  Tests aprobados           : 2
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 17 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio3'
+--- Probando ejercicio ejercicios/ejercicio4 ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio4'
+Ejecutando pruebas
+./test_bin
+
+=== INICIANDO SUITE: suite de pruebas: ejercicio 4 ===
+
+  [CORRIENDO] prueba_buscar_primero               ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_distancia_punteros           ... PASÓ (0.01 ms)
+
+============================================================
+Resultados de la Suite: suite de pruebas: ejercicio 4
+============================================================
+  Total de tests ejecutados : 2
+  Tests aprobados           : 2
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 11 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio4'
+--- Probando ejercicio ejercicios/ejercicio5 ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio5'
+Ejecutando pruebas
+./test_bin
+
+=== INICIANDO SUITE: suite de pruebas: ejercicio 5 ===
+
+  [CORRIENDO] prueba_copiar_con_punteros          ... PASÓ (0.01 ms)
+  [CORRIENDO] prueba_concatenar_con_punteros      ... PASÓ (0.02 ms)
+
+============================================================
+Resultados de la Suite: suite de pruebas: ejercicio 5
+============================================================
+  Total de tests ejecutados : 2
+  Tests aprobados           : 2
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 22 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio5'
+--- Probando ejercicio ejercicios/ejercicio6 ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio6'
+Ejecutando pruebas
+./test_bin
+
+=== INICIANDO SUITE: suite de pruebas: ejercicio 6 ===
+
+  [CORRIENDO] prueba_buscar_puntero_minimo        ... PASÓ (0.02 ms)
+  [CORRIENDO] prueba_ordenar_seleccion_punteros   ... PASÓ (0.01 ms)
+
+============================================================
+Resultados de la Suite: suite de pruebas: ejercicio 6
+============================================================
+  Total de tests ejecutados : 2
+  Tests aprobados           : 2
+  Tests desaprobados        : 0
+  Tests salteados           : 0
+  Aserciones evaluadas      : 17 (falladas: 0)
+============================================================
+>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<
+
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo/ejercicios/ejercicio6'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP3/TP3-anon_019/repo'
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

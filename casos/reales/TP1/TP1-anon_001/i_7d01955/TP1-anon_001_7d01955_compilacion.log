@@ -1,0 +1,158 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP1
+Estudiante: TP1-anon_001
+Revisión: 7d01955
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo'
+Compilando librería en libs/consola...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/libs/consola'
+Compilando consola.c
+cc -Wall -Wextra -pedantic -g -c consola.c
+Generando librería estática libconsola.a
+ar rcs libconsola.a consola.o
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -g -c prueba.c
+Compilando test_bin
+cc -Wall -Wextra -pedantic -g -o test_bin consola.o prueba.o
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/libs/consola'
+Compilando ejercicio en ejercicios/ejercicio1...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/ejercicios/ejercicio1'
+Compilando main.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c main.c
+Compilando conversor.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c conversor.c
+cc -Wall -Wextra -pedantic -g -o programa main.o conversor.o -L../../libs/consola -lconsola
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c prueba.c
+cc -Wall -Wextra -pedantic -g -o test_bin prueba.o conversor.o -L../../libs/consola -lconsola
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/ejercicios/ejercicio1'
+Compilando ejercicio en ejercicios/ejercicio2...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/ejercicios/ejercicio2'
+Compilando main.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c main.c
+Compilando estadistica.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c estadistica.c
+cc -Wall -Wextra -pedantic -g -o programa main.o estadistica.o -L../../libs/consola -lconsola
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c prueba.c
+cc -Wall -Wextra -pedantic -g -o test_bin prueba.o estadistica.o -L../../libs/consola -lconsola
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/ejercicios/ejercicio2'
+Compilando ejercicio en ejercicios/ejercicio3...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/ejercicios/ejercicio3'
+Compilando main.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c main.c
+Compilando fecha.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c fecha.c
+cc -Wall -Wextra -pedantic -g -o programa main.o fecha.o -L../../libs/consola -lconsola
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c prueba.c
+cc -Wall -Wextra -pedantic -g -o test_bin prueba.o fecha.o -L../../libs/consola -lconsola
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/ejercicios/ejercicio3'
+Compilando ejercicio en ejercicios/ejercicio4...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/ejercicios/ejercicio4'
+Compilando main.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c main.c
+Compilando consola.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c consola.c
+Compilando triangulo.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c triangulo.c
+cc -Wall -Wextra -pedantic -g -o programa main.o consola.o triangulo.o -L../../libs/consola -lconsola
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c prueba.c
+cc -Wall -Wextra -pedantic -g -o test_bin prueba.o consola.o triangulo.o -L../../libs/consola -lconsola
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/ejercicios/ejercicio4'
+Compilando ejercicio en ejercicios/ejercicio5...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/ejercicios/ejercicio5'
+Compilando main.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c main.c
+Compilando cajero.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c cajero.c
+cc -Wall -Wextra -pedantic -g -o programa main.o cajero.o -L../../libs/consola -lconsola
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -g -I../../libs/consola -c prueba.c
+cc -Wall -Wextra -pedantic -g -o test_bin prueba.o cajero.o -L../../libs/consola -lconsola
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/ejercicios/ejercicio5'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo'
+consola.c: In function ‘esta_en_rango_entero’:
+consola.c:13:31: warning: unused parameter ‘valor’ [-Wunused-parameter]
+   13 | bool esta_en_rango_entero(int valor, int min, int max)
+      |                           ~~~~^~~~~
+consola.c:13:42: warning: unused parameter ‘min’ [-Wunused-parameter]
+   13 | bool esta_en_rango_entero(int valor, int min, int max)
+      |                                      ~~~~^~~
+consola.c:13:51: warning: unused parameter ‘max’ [-Wunused-parameter]
+   13 | bool esta_en_rango_entero(int valor, int min, int max)
+      |                                               ~~~~^~~
+consola.c: In function ‘esta_en_rango_flotante’:
+consola.c:18:35: warning: unused parameter ‘valor’ [-Wunused-parameter]
+   18 | bool esta_en_rango_flotante(float valor, float min, float max)
+      |                             ~~~~~~^~~~~
+consola.c:18:48: warning: unused parameter ‘min’ [-Wunused-parameter]
+   18 | bool esta_en_rango_flotante(float valor, float min, float max)
+      |                                          ~~~~~~^~~
+consola.c:18:59: warning: unused parameter ‘max’ [-Wunused-parameter]
+   18 | bool esta_en_rango_flotante(float valor, float min, float max)
+      |                                                     ~~~~~~^~~
+consola.c: In function ‘leer_entero’:
+consola.c:23:29: warning: unused parameter ‘mensaje’ [-Wunused-parameter]
+   23 | int leer_entero(const char *mensaje)
+      |                 ~~~~~~~~~~~~^~~~~~~
+consola.c: In function ‘leer_entero_entre’:
+consola.c:37:35: warning: unused parameter ‘mensaje’ [-Wunused-parameter]
+   37 | int leer_entero_entre(const char *mensaje, int min, int max)
+      |                       ~~~~~~~~~~~~^~~~~~~
+consola.c:37:48: warning: unused parameter ‘min’ [-Wunused-parameter]
+   37 | int leer_entero_entre(const char *mensaje, int min, int max)
+      |                                            ~~~~^~~
+consola.c:37:57: warning: unused parameter ‘max’ [-Wunused-parameter]
+   37 | int leer_entero_entre(const char *mensaje, int min, int max)
+      |                                                     ~~~~^~~
+consola.c: In function ‘leer_flotante’:
+consola.c:49:33: warning: unused parameter ‘mensaje’ [-Wunused-parameter]
+   49 | float leer_flotante(const char *mensaje)
+      |                     ~~~~~~~~~~~~^~~~~~~
+consola.c: In function ‘leer_flotante_entre’:
+consola.c:63:39: warning: unused parameter ‘mensaje’ [-Wunused-parameter]
+   63 | float leer_flotante_entre(const char *mensaje, float min, float max)
+      |                           ~~~~~~~~~~~~^~~~~~~
+consola.c:63:54: warning: unused parameter ‘min’ [-Wunused-parameter]
+   63 | float leer_flotante_entre(const char *mensaje, float min, float max)
+      |                                                ~~~~~~^~~
+consola.c:63:65: warning: unused parameter ‘max’ [-Wunused-parameter]
+   63 | float leer_flotante_entre(const char *mensaje, float min, float max)
+      |                                                           ~~~~~~^~~
+consola.c: In function ‘leer_caracter’:
+consola.c:75:32: warning: unused parameter ‘mensaje’ [-Wunused-parameter]
+   75 | char leer_caracter(const char *mensaje)
+      |                    ~~~~~~~~~~~~^~~~~~~
+consola.c: In function ‘leer_logico’:
+consola.c:87:30: warning: unused parameter ‘mensaje’ [-Wunused-parameter]
+   87 | bool leer_logico(const char *mensaje)
+      |                  ~~~~~~~~~~~~^~~~~~~
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo'
+Compilando librería en libs/consola...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/libs/consola'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/libs/consola'
+Ejecutando pruebas de librerías...
+--- Probando librería libs/consola ---
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/libs/consola'
+Probando librería...
+./test_bin
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo/libs/consola'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP1/TP1-anon_001/repo'
+
+test_bin: prueba.c:8: probar_esta_en_rango_entero: Assertion `esta_en_rango_entero(10, 10, 20)' failed.
+make[1]: *** [Makefile:43: test] Aborted (core dumped)
+make: *** [Makefile:40: test] Error 1
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

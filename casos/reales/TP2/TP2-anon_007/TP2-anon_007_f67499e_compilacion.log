@@ -1,0 +1,73 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP2
+Estudiante: TP2-anon_007
+Revisión: f67499e
+Compilador / Modo: MAKE_PROYECTO
+Estado general: EXITOSA
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo'
+Compilando librería en libs/arreglos...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/arreglos'
+Compilando arreglos.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c arreglos.c
+Generando librería estática libarreglos.a
+ar rcs libarreglos.a arreglos.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando dependencia p1_test...
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin arreglos.o prueba.o -L../../libs/p1_test -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/arreglos'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/cadenas'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+Generando librería estática libcadenas.a
+ar rcs libcadenas.a cadenas.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin cadenas.o prueba.o -L../../libs/p1_test/build -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/cadenas'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/p1_test'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/libs/p1_test'
+Compilando ejercicio en ejercicios/ejercicio1...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/ejercicios/ejercicio1'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/p1_test/include -c main.c
+Compilando operaciones.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/p1_test/include -c operaciones.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o operaciones.o -L../../libs/arreglos -L../../libs/p1_test/build -larreglos -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/arreglos -I../../libs/p1_test/include -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o operaciones.o -L../../libs/arreglos -L../../libs/p1_test/build -larreglos -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/ejercicios/ejercicio1'
+Compilando ejercicio en ejercicios/ejercicio2...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/ejercicios/ejercicio2'
+Compilando main.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/cadenas -I../../libs/p1_test/include -c main.c
+Compilando texto.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/cadenas -I../../libs/p1_test/include -c texto.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o programa main.o texto.o -L../../libs/cadenas -L../../libs/p1_test/build -lcadenas -lp1_test
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I../../libs/cadenas -I../../libs/p1_test/include -c prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -o test_bin prueba.o texto.o -L../../libs/cadenas -L../../libs/p1_test/build -lcadenas -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo/ejercicios/ejercicio2'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_007/repo'
+arreglos.c: In function ‘arreglo_ok’:
+arreglos.c:17:37: warning: comparison of unsigned expression in ‘>= 0’ is always true [-Wtype-limits]
+   17 |     if (arreglo != NULL && cantidad >= 0)
+      |                                     ^~
+cadenas.c: In function ‘cadena_segura’:
+cadenas.c:18:12: warning: unused variable ‘contador’ [-Wunused-variable]
+   18 |     size_t contador = 0;
+      |            ^~~~~~~~
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

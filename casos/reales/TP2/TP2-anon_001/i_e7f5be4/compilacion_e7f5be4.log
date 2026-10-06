@@ -1,0 +1,67 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP2
+Estudiante: TP2-anon_001
+Revisión: e7f5be4
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_001/repo'
+Compilando librería en libs/arreglos...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_001/repo/libs/arreglos'
+Compilando arreglos.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c arreglos.c
+Generando librería estática libarreglos.a
+ar rcs libarreglos.a arreglos.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando dependencia p1_test...
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin arreglos.o prueba.o -L../../libs/p1_test -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_001/repo/libs/arreglos'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_001/repo/libs/cadenas'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_001/repo/libs/cadenas'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_001/repo'
+cadenas.c: In function ‘cadena_longitud’:
+cadenas.c:19:45: error: expected expression before ‘)’ token
+   19 |         for (size_t i = 0; (i < capacidad &&) (cadena[i] != '\0'); i++)
+      |                                             ^
+cadenas.c: In function ‘cadena_copiar’:
+cadenas.c:33:58: error: stray ‘\’ in program
+   33 |         for (i = 0; (i < capacidad - 1) && (origen[i] != \0); i++)
+      |                                                          ^
+make[1]: *** [Makefile:61: cadenas.o] Error 1
+make: *** [Makefile:17: libs/cadenas] Error 1
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_001/repo'
+Compilando librería en libs/arreglos...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_001/repo/libs/arreglos'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_001/repo/libs/arreglos'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_001/repo/libs/cadenas'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_001/repo/libs/cadenas'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_001/repo'
+
+cadenas.c: In function ‘cadena_longitud’:
+cadenas.c:19:45: error: expected expression before ‘)’ token
+   19 |         for (size_t i = 0; (i < capacidad &&) (cadena[i] != '\0'); i++)
+      |                                             ^
+cadenas.c: In function ‘cadena_copiar’:
+cadenas.c:33:58: error: stray ‘\’ in program
+   33 |         for (i = 0; (i < capacidad - 1) && (origen[i] != \0); i++)
+      |                                                          ^
+make[1]: *** [Makefile:61: cadenas.o] Error 1
+make: *** [Makefile:17: libs/cadenas] Error 1
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

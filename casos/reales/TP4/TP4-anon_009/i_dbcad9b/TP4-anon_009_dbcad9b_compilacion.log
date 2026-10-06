@@ -1,0 +1,79 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP4
+Estudiante: TP4-anon_009
+Revisión: dbcad9b
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo/libs/p1_test'
+mkdir -p build
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -c src/p1_test.c -o build/p1_test.o
+ar rcs build/libp1_test.a build/p1_test.o
+cp build/libp1_test.a libp1_test.a
+Compilando prueba.c
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -c prueba.c -o prueba.o
+Compilando pruebas de p1_test...
+cc -Wall -Wextra -pedantic -std=c11 -g -I. -Iinclude -o test_bin prueba.o -Lbuild -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo/libs/p1_test'
+Compilando librería en libs/string...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo/libs/string'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+Generando librería estática libstring.a
+ar rcs libstring.a cadenas.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin cadenas.o prueba.o -L../../libs/p1_test/build -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo/libs/string'
+Compilando librería en libs/vector...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo/libs/vector'
+Compilando vector.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c vector.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo/libs/vector'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo'
+vector.c: In function ‘crear_bloque_enteros’:
+vector.c:15:20: error: initialization of ‘char *’ from incompatible pointer type ‘int *’ [-Wincompatible-pointer-types]
+   15 |     char *bloque = (int *)calloc(cantidad, sizeof(int));
+      |                    ^
+vector.c:20:12: error: returning ‘char *’ from a function with incompatible return type ‘int *’ [-Wincompatible-pointer-types]
+   20 |     return bloque;
+      |            ^~~~~~
+make[1]: *** [Makefile:61: vector.o] Error 1
+make: *** [Makefile:17: libs/vector] Error 1
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo'
+Compilando librería en libs/p1_test...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo/libs/p1_test'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo/libs/p1_test'
+Compilando librería en libs/string...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo/libs/string'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo/libs/string'
+Compilando librería en libs/vector...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo/libs/vector'
+Compilando vector.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c vector.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo/libs/vector'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP4/TP4-anon_009/repo'
+
+vector.c: In function ‘crear_bloque_enteros’:
+vector.c:15:20: error: initialization of ‘char *’ from incompatible pointer type ‘int *’ [-Wincompatible-pointer-types]
+   15 |     char *bloque = (int *)calloc(cantidad, sizeof(int));
+      |                    ^
+vector.c:20:12: error: returning ‘char *’ from a function with incompatible return type ‘int *’ [-Wincompatible-pointer-types]
+   20 |     return bloque;
+      |            ^~~~~~
+make[1]: *** [Makefile:61: vector.o] Error 1
+make: *** [Makefile:17: libs/vector] Error 1
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

@@ -1,0 +1,135 @@
+================================================================================
+DREDD - SALIDA COMPLETA DE COMPILACIÓN
+Actividad: TP2
+Estudiante: TP2-anon_010
+Revisión: e4b6215
+Compilador / Modo: MAKE_PROYECTO
+Estado general: FALLÓ
+================================================================================
+
+### SALIDA COMPLETA DE COMPILACIÓN / BUILD ###
+
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_010/repo'
+Compilando librería en libs/arreglos...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_010/repo/libs/arreglos'
+Compilando arreglos.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c arreglos.c
+Generando librería estática libarreglos.a
+ar rcs libarreglos.a arreglos.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+Compilando dependencia p1_test...
+Compilando test_bin
+cc -Wall -Wextra -std=c11 -pedantic -g -o test_bin arreglos.o prueba.o -L../../libs/p1_test -lp1_test
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_010/repo/libs/arreglos'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_010/repo/libs/cadenas'
+Compilando cadenas.c
+cc -Wall -Wextra -std=c11 -pedantic -g -c cadenas.c
+Generando librería estática libcadenas.a
+ar rcs libcadenas.a cadenas.o
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_010/repo/libs/cadenas'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_010/repo'
+In file included from prueba.c:10:
+prueba.c: In function ‘_p1_test_func_prueba_cadena_entero’:
+prueba.c:120:57: error: ‘INT_MIN’ undeclared (first use in this function)
+  120 |     ASSERT_TRUE(cadena_entero(destino, sizeof(destino), INT_MIN));
+      |                                                         ^~~~~~~
+../../libs/p1_test/include/p1_test.h:811:11: note: in definition of macro ‘ASSERT_TRUE_MSG’
+  811 |     if (!(cond)) { \
+      |           ^~~~
+prueba.c:120:5: note: in expansion of macro ‘ASSERT_TRUE’
+  120 |     ASSERT_TRUE(cadena_entero(destino, sizeof(destino), INT_MIN));
+      |     ^~~~~~~~~~~
+prueba.c:12:1: note: ‘INT_MIN’ is defined in header ‘<limits.h>’; this is probably fixable by adding ‘#include <limits.h>’
+   11 | #include "cadenas.h"
+  +++ |+#include <limits.h>
+   12 | 
+prueba.c:120:57: note: each undeclared identifier is reported only once for each function it appears in
+  120 |     ASSERT_TRUE(cadena_entero(destino, sizeof(destino), INT_MIN));
+      |                                                         ^~~~~~~
+../../libs/p1_test/include/p1_test.h:811:11: note: in definition of macro ‘ASSERT_TRUE_MSG’
+  811 |     if (!(cond)) { \
+      |           ^~~~
+prueba.c:120:5: note: in expansion of macro ‘ASSERT_TRUE’
+  120 |     ASSERT_TRUE(cadena_entero(destino, sizeof(destino), INT_MIN));
+      |     ^~~~~~~~~~~
+prueba.c:124:57: error: ‘INT_MAX’ undeclared (first use in this function)
+  124 |     ASSERT_TRUE(cadena_entero(destino, sizeof(destino), INT_MAX));
+      |                                                         ^~~~~~~
+../../libs/p1_test/include/p1_test.h:811:11: note: in definition of macro ‘ASSERT_TRUE_MSG’
+  811 |     if (!(cond)) { \
+      |           ^~~~
+prueba.c:124:5: note: in expansion of macro ‘ASSERT_TRUE’
+  124 |     ASSERT_TRUE(cadena_entero(destino, sizeof(destino), INT_MAX));
+      |     ^~~~~~~~~~~
+prueba.c:124:57: note: ‘INT_MAX’ is defined in header ‘<limits.h>’; this is probably fixable by adding ‘#include <limits.h>’
+../../libs/p1_test/include/p1_test.h:811:11: note: in definition of macro ‘ASSERT_TRUE_MSG’
+  811 |     if (!(cond)) { \
+      |           ^~~~
+prueba.c:124:5: note: in expansion of macro ‘ASSERT_TRUE’
+  124 |     ASSERT_TRUE(cadena_entero(destino, sizeof(destino), INT_MAX));
+      |     ^~~~~~~~~~~
+make[1]: *** [Makefile:56: prueba.o] Error 1
+make: *** [Makefile:17: libs/cadenas] Error 1
+
+=== make test ===
+make: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_010/repo'
+Compilando librería en libs/arreglos...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_010/repo/libs/arreglos'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_010/repo/libs/arreglos'
+Compilando librería en libs/cadenas...
+make[1]: Entering directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_010/repo/libs/cadenas'
+Compilando prueba.c
+cc -Wall -Wextra -std=c11 -pedantic -g -I../../libs/p1_test/include -I../../libs/p1_test -c prueba.c
+make[1]: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_010/repo/libs/cadenas'
+make: Leaving directory '/home/mrtin/dev/p1/ripley/entregas/TP2/TP2-anon_010/repo'
+
+In file included from prueba.c:10:
+prueba.c: In function ‘_p1_test_func_prueba_cadena_entero’:
+prueba.c:120:57: error: ‘INT_MIN’ undeclared (first use in this function)
+  120 |     ASSERT_TRUE(cadena_entero(destino, sizeof(destino), INT_MIN));
+      |                                                         ^~~~~~~
+../../libs/p1_test/include/p1_test.h:811:11: note: in definition of macro ‘ASSERT_TRUE_MSG’
+  811 |     if (!(cond)) { \
+      |           ^~~~
+prueba.c:120:5: note: in expansion of macro ‘ASSERT_TRUE’
+  120 |     ASSERT_TRUE(cadena_entero(destino, sizeof(destino), INT_MIN));
+      |     ^~~~~~~~~~~
+prueba.c:12:1: note: ‘INT_MIN’ is defined in header ‘<limits.h>’; this is probably fixable by adding ‘#include <limits.h>’
+   11 | #include "cadenas.h"
+  +++ |+#include <limits.h>
+   12 | 
+prueba.c:120:57: note: each undeclared identifier is reported only once for each function it appears in
+  120 |     ASSERT_TRUE(cadena_entero(destino, sizeof(destino), INT_MIN));
+      |                                                         ^~~~~~~
+../../libs/p1_test/include/p1_test.h:811:11: note: in definition of macro ‘ASSERT_TRUE_MSG’
+  811 |     if (!(cond)) { \
+      |           ^~~~
+prueba.c:120:5: note: in expansion of macro ‘ASSERT_TRUE’
+  120 |     ASSERT_TRUE(cadena_entero(destino, sizeof(destino), INT_MIN));
+      |     ^~~~~~~~~~~
+prueba.c:124:57: error: ‘INT_MAX’ undeclared (first use in this function)
+  124 |     ASSERT_TRUE(cadena_entero(destino, sizeof(destino), INT_MAX));
+      |                                                         ^~~~~~~
+../../libs/p1_test/include/p1_test.h:811:11: note: in definition of macro ‘ASSERT_TRUE_MSG’
+  811 |     if (!(cond)) { \
+      |           ^~~~
+prueba.c:124:5: note: in expansion of macro ‘ASSERT_TRUE’
+  124 |     ASSERT_TRUE(cadena_entero(destino, sizeof(destino), INT_MAX));
+      |     ^~~~~~~~~~~
+prueba.c:124:57: note: ‘INT_MAX’ is defined in header ‘<limits.h>’; this is probably fixable by adding ‘#include <limits.h>’
+../../libs/p1_test/include/p1_test.h:811:11: note: in definition of macro ‘ASSERT_TRUE_MSG’
+  811 |     if (!(cond)) { \
+      |           ^~~~
+prueba.c:124:5: note: in expansion of macro ‘ASSERT_TRUE’
+  124 |     ASSERT_TRUE(cadena_entero(destino, sizeof(destino), INT_MAX));
+      |     ^~~~~~~~~~~
+make[1]: *** [Makefile:56: prueba.o] Error 1
+make: *** [Makefile:17: libs/cadenas] Error 1
+
+================================================================================
+FIN DE LA SALIDA DE COMPILACIÓN

@@ -1,0 +1,79 @@
+## Linter de Estilo y Formato — Gaff
+
+⚠️ Se detectaron **73** observación(es) de estilo arquitectónico:
+
+| Regla | Ubicación | Observación | Sugerencia | Autofix |
+| :--- | :--- | :--- | :--- | :---: |
+| `GAFF009` | `operaciones.h:17` | La línea tiene 83 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `operaciones.h:19` | La línea tiene 82 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `operaciones.h:25` | La línea tiene 89 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `operaciones.h:28` | La línea tiene 98 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `operaciones.h:40` | La línea tiene 90 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `operaciones.h:42` | La línea tiene 83 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `operaciones.h:48` | La línea tiene 93 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `operaciones.h:49` | La línea tiene 97 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `operaciones.h:50` | La línea tiene 107 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `operaciones.h:51` | La línea tiene 106 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `operaciones.h:53` | La línea tiene 89 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `operaciones.h:54` | La línea tiene 97 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `prueba.c:22` | La línea tiene 81 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `prueba.c:29` | La línea tiene 84 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `main.c:11` | La línea tiene 100 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `main.c:23` | La línea tiene 100 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `prueba.c:15` | La línea tiene 85 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `prueba.c:17` | La línea tiene 84 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `prueba.c:22` | La línea tiene 81 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `prueba.c:28` | La línea tiene 84 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.c:70` | La línea tiene 87 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.c:143` | La línea tiene 140 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:3` | La línea tiene 82 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:11` | La línea tiene 90 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:12` | La línea tiene 90 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:13` | La línea tiene 87 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:34` | La línea tiene 86 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:43` | La línea tiene 84 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:60` | La línea tiene 92 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:62` | La línea tiene 100 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:66` | La línea tiene 144 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:68` | La línea tiene 89 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:87` | La línea tiene 104 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:88` | La línea tiene 96 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:93` | La línea tiene 109 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:95` | La línea tiene 84 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:112` | La línea tiene 182 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:117` | La línea tiene 89 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:121` | La línea tiene 94 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:137` | La línea tiene 92 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:163` | La línea tiene 86 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:171` | La línea tiene 165 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:178` | La línea tiene 88 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:180` | La línea tiene 95 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:203` | La línea tiene 144 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:206` | La línea tiene 89 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:208` | La línea tiene 82 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `arreglos.h:229` | La línea tiene 141 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `prueba.c:101` | La línea tiene 84 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `0x0001h` | `prueba.c:51` | Identificador corto y poco expresivo 'par' (3 caracteres). | Se recomienda utilizar identificadores más descriptivos del dominio del problema. | No |
+| `GAFF009` | `cadenas.c:65` | La línea tiene 98 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.c:74` | La línea tiene 81 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:39` | La línea tiene 90 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:44` | La línea tiene 89 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:48` | La línea tiene 90 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:67` | La línea tiene 84 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:73` | La línea tiene 97 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:76` | La línea tiene 95 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:79` | La línea tiene 89 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:97` | La línea tiene 186 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:100` | La línea tiene 88 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:104` | La línea tiene 99 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:105` | La línea tiene 81 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:107` | La línea tiene 101 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:110` | La línea tiene 89 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:120` | La línea tiene 81 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:127` | La línea tiene 194 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:132` | La línea tiene 95 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:133` | La línea tiene 88 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:135` | La línea tiene 84 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:152` | La línea tiene 81 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `cadenas.h:157` | La línea tiene 112 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
+| `GAFF009` | `prueba.c:78` | La línea tiene 83 caracteres (máximo 80). | Dividí la sentencia o expresión en múltiples líneas. | No |
