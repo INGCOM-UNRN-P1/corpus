@@ -1,0 +1,99 @@
+Compilando librerÃ­a en libs/arreglos...
+mingw32-make[1]: Entering directory 'E:/UNRN/programacion/entorno/home/p1-2026-tp2-l-ezql/libs/arreglos'
+Compilando test_bin
+gcc -O2 -Wall -o test_bin arreglos.o prueba.o -L../../libs/p1_test/build -lp1_test
+mingw32-make[1]: Leaving directory 'E:/UNRN/programacion/entorno/home/p1-2026-tp2-l-ezql/libs/arreglos'
+Compilando librerÃ­a en libs/cadenas...
+mingw32-make[1]: Entering directory 'E:/UNRN/programacion/entorno/home/p1-2026-tp2-l-ezql/libs/cadenas'
+Compilando test_bin
+gcc -O2 -Wall -o test_bin cadenas.o prueba.o -L../../libs/p1_test/build -lp1_test
+mingw32-make[1]: Leaving directory 'E:/UNRN/programacion/entorno/home/p1-2026-tp2-l-ezql/libs/cadenas'
+Compilando librerÃ­a en libs/p1_test...
+mingw32-make[1]: Entering directory 'E:/UNRN/programacion/entorno/home/p1-2026-tp2-l-ezql/libs/p1_test'
+Compilando pruebas de p1_test...
+gcc -O2 -Wall -I. -Iinclude -o test_bin prueba.o -Lbuild -lp1_test
+mingw32-make[1]: Leaving directory 'E:/UNRN/programacion/entorno/home/p1-2026-tp2-l-ezql/libs/p1_test'
+Ejecutando pruebas de librerÃ­as...
+--- Probando librerÃ­a libs/arreglos ---
+mingw32-make[1]: Entering directory 'E:/UNRN/programacion/entorno/home/p1-2026-tp2-l-ezql/libs/arreglos'
+Compilando test_bin
+gcc -O2 -Wall -o test_bin arreglos.o prueba.o -L../../libs/p1_test/build -lp1_test
+Probando librerÃ­a...
+./test_bin
+
+[1m=== INICIANDO SUITE: Suite de Pruebas: libarreglos ===[0m
+
+  [CORRIENDO] prueba_arreglo_sumar                ... [1;32mPASÓ[0m (0.00 ms)
+  [CORRIENDO] prueba_arreglo_buscar               ... [1;32mPASÓ[0m (0.00 ms)
+  [CORRIENDO] prueba_arreglo_invertir             ... [1;32mPASÓ[0m (0.00 ms)
+  [CORRIENDO] prueba_arreglo_ordenado             ... [1;32mPASÓ[0m (0.00 ms)
+  [CORRIENDO] prueba_arreglo_contar               ... [1;32mPASÓ[0m (0.00 ms)
+  [CORRIENDO] prueba_arreglo_compactar            ... [1;32mPASÓ[0m (0.00 ms)
+  [CORRIENDO] prueba_arreglo_fusionar             ... [1;32mPASÓ[0m (0.00 ms)
+
+[1m============================================================[0m
+[1mResultados de la Suite: Suite de Pruebas: libarreglos[0m
+============================================================
+  Total de tests ejecutados : 7
+  Tests aprobados           : [1;32m7[0m
+  Tests desaprobados        : 0[0m
+  Tests salteados           : 0[0m
+  Aserciones evaluadas      : 70 (falladas: 0)
+============================================================
+[1;32m>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<[0m
+
+mingw32-make[1]: Leaving directory 'E:/UNRN/programacion/entorno/home/p1-2026-tp2-l-ezql/libs/arreglos'
+--- Probando librerÃ­a libs/cadenas ---
+mingw32-make[1]: Entering directory 'E:/UNRN/programacion/entorno/home/p1-2026-tp2-l-ezql/libs/cadenas'
+Compilando test_bin
+gcc -O2 -Wall -o test_bin cadenas.o prueba.o -L../../libs/p1_test/build -lp1_test
+Probando librerÃ­a...
+./test_bin
+
+[1m=== INICIANDO SUITE: Suite de Pruebas: libcadenas ===[0m
+
+  [CORRIENDO] prueba_cadena_longitud              ... [1;32mPASÓ[0m (0.00 ms)
+  [CORRIENDO] prueba_cadena_copiar                ... [1;32mPASÓ[0m (0.00 ms)
+  [CORRIENDO] prueba_cadena_concatenar            ... [1;32mPASÓ[0m (0.00 ms)
+  [CORRIENDO] prueba_cadena_a_mayusculas          ... [1;32mPASÓ[0m (0.00 ms)
+  [CORRIENDO] prueba_cadena_subcadena             ... [1;32mPASÓ[0m (0.00 ms)
+  [CORRIENDO] prueba_cadena_de_entero             ... [1;32mPASÓ[0m (0.00 ms)
+
+[1m============================================================[0m
+[1mResultados de la Suite: Suite de Pruebas: libcadenas[0m
+============================================================
+  Total de tests ejecutados : 6
+  Tests aprobados           : [1;32m6[0m
+  Tests desaprobados        : 0[0m
+  Tests salteados           : 0[0m
+  Aserciones evaluadas      : 38 (falladas: 0)
+============================================================
+[1;32m>>> ESTADO: TODOS LOS TESTS PASARON EXITOSAMENTE <<<[0m
+
+mingw32-make[1]: Leaving directory 'E:/UNRN/programacion/entorno/home/p1-2026-tp2-l-ezql/libs/cadenas'
+--- Probando librerÃ­a libs/p1_test ---
+mingw32-make[1]: Entering directory 'E:/UNRN/programacion/entorno/home/p1-2026-tp2-l-ezql/libs/p1_test'
+Compilando pruebas de p1_test...
+gcc -O2 -Wall -I. -Iinclude -o test_bin prueba.o -Lbuild -lp1_test
+Probando librerÃ­a p1_test...
+./test_bin
+
+[1m=== INICIANDO SUITE: Suite de Pruebas: Librería p1_test ===[0m
+
+  [CORRIENDO] prueba_aserciones_basicas           ... [1;32mPASÓ[0m (0.00 ms)
+  [CORRIENDO] prueba_aserciones_arreglos          ... [1;32mPASÓ[0m (0.00 ms)
+  [CORRIENDO] prueba_aserciones_archivos          ...   [RESULTADO] [1;31mFALLÓ[0m (9.00 ms)
+  [CORRIENDO] prueba_captura_y_mock_stdio         ... [1;32mPASÓ[0m (3.00 ms)
+
+[1m============================================================[0m
+[1mResultados de la Suite: Suite de Pruebas: Librería p1_test[0m
+============================================================
+  Total de tests ejecutados : 4
+  Tests aprobados           : [1;32m3[0m
+  Tests desaprobados        : [1;31m1[0m
+  Tests salteados           : 0[0m
+  Aserciones evaluadas      : 31 (falladas: 1)
+============================================================
+[1;31m>>> ESTADO: SE DETECTARON FALLOS EN LAS PRUEBAS <<<[0m
+
+mingw32-make[1]: Leaving directory 'E:/UNRN/programacion/entorno/home/p1-2026-tp2-l-ezql/libs/p1_test'

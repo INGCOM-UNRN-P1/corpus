@@ -1,0 +1,50 @@
+nombre: 'Trabajo Práctico 3: Punteros y Aritmética de Punteros'
+minutos_totales: 240
+temas:
+  - punteros
+  - paso_por_referencia
+  - parametros_de_salida
+  - aritmetica_de_punteros
+  - resta_de_punteros
+  - cadenas_con_punteros
+  - const_correctness
+distribucion_bloom:
+  COMPRENDER: 2
+  APLICAR: 6
+  ANALIZAR: 4
+ejercicios:
+  - id: libpunteros
+    titulo: 'Biblioteca de Punteros (libpunteros)'
+    bloom: 3
+    minutos: 35
+    subpuntos:
+      - id: intercambiar
+        titulo: 'Intercambio de Valores por Referencia'
+        bloom: 2
+      - id: obtener_min_max
+        titulo: 'Obtención de Mínimo y Máximo por Puntero'
+        bloom: 3
+  - id: ejercicio1
+    titulo: 'Ordenamiento de Pares, Tríos y Acumulación'
+    bloom: 3
+    minutos: 35
+  - id: ejercicio2
+    titulo: 'Estadísticas, Promedio y Rango con Punteros'
+    bloom: 3
+    minutos: 30
+  - id: ejercicio3
+    titulo: 'Copia e Inversión In-Place con Punteros'
+    bloom: 3
+    minutos: 35
+  - id: ejercicio4
+    titulo: 'Búsqueda con Retorno de Puntero y Distancia'
+    bloom: 4
+    minutos: 35
+  - id: ejercicio5
+    titulo: 'Copia y Concatenación de Cadenas con Punteros'
+    bloom: 4
+    minutos: 35
+  - id: ejercicio6
+    titulo: 'Ordenamiento por Selección con Aritmética de Punteros'
+    bloom: 4
+    minutos: 35

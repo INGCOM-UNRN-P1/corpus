@@ -1,0 +1,20 @@
+[0;34mGestor del Trabajo Práctico (tp.sh)[0m
+Uso: ./tp.sh <comando> [argumentos]
+
+Comandos disponibles:
+  [0;32msync[0m                            Sincroniza y regenera todos los Makefiles del proyecto.
+  [0;32madd-lib <nombre> [url-git][0m      Agrega una librería. Si pasás una URL de Git, la clona.
+                                    Si no, crea una plantilla local.
+  [0;32mremove-lib <nombre>[0m             Remueve una librería del proyecto.
+  [0;32madd-ex <nombre> [libs][0m          Agrega un ejercicio localmente. 'libs' es una lista de librerías
+                                    separadas por comas (ej: arreglos,cadenas).
+  [0;32mremove-ex <nombre>[0m              Remueve un ejercicio del proyecto.
+  [0;32mlist[0m                            Lista todas las librerías y ejercicios instalados.
+  [0;32mbuild[0m                           Compila todo el proyecto.
+  [0;32mrun [ejercicio][0m                 Ejecuta un ejercicio en particular o todos si no indicás nada.
+  [0;32mtest [nombre][0m                   Ejecuta los tests de un ejercicio o librería específica,
+                                    o de todo el proyecto si no indicás nada.
+  [0;32mripley [modulo][0m                 Audita con el motor Ripley (análisis AST, reglas P1 y
+                                    AddressSanitizer) un ejercicio, librería o archivo .c,
+                                    o todo el proyecto si no indicás nada.
+  [0;32mhelp[0m                            Muestra este mensaje de ayuda.

@@ -1,0 +1,87 @@
+#include "triangulo.h"
+
+bool es_triangulo_valido(float lado_a, float lado_b, float lado_c)
+{
+    if ((lado_a > 0) && (lado_b > 0) && (lado_c > 0))
+    {        
+        if((lado_a == (lado_b + lado_c)) || (lado_b == (lado_a + lado_c))
+        || (lado_c == (lado_a + lado_b) ))
+        {
+            return false;
+        }
+        
+        if((lado_a > (lado_b + lado_c)) || (lado_b > (lado_a + lado_c)) 
+        || (lado_c > (lado_a + lado_b)))
+        {
+            return false;      
+        }
+
+        if((lado_a < (lado_b + lado_c)) || (lado_b < (lado_a + lado_c)) 
+        || (lado_c < (lado_a + lado_b)))
+        {
+            return true;      
+        }
+    }
+    
+    if ((lado_a <= 0) && (lado_b <= 0) && (lado_c <= 0))
+    {
+        return false; 
+    }
+    
+    else
+    {
+        return false;
+    }
+}
+
+
+int clasificar_triangulo(float lado_a, float lado_b, float lado_c)
+{
+    if (es_triangulo_valido(lado_a, lado_b, lado_c) == false)
+    {
+        return TIPO_INVALIDO;
+    }
+    
+    else
+    {
+        if((lado_a == lado_c) && (lado_a == lado_b))
+        {
+            return TIPO_EQUILATERO;
+        }
+     
+        if((lado_a == lado_b) || (lado_a == lado_c) || (lado_b == lado_c))
+        {
+            return TIPO_ISOSCELES;
+        }
+    
+        if ((lado_a != lado_b) && (lado_a != lado_c) && (lado_b != lado_c))
+        {
+            return TIPO_ESCALENO;
+        }
+    }
+}
+
+
+
+
+bool es_triangulo_rectangulo(float lado_a, float lado_b, float lado_c)
+{
+    if(es_triangulo_valido(lado_a, lado_b, lado_c) == true)
+    {
+        if((lado_a * lado_a) == ((lado_b * lado_b) + (lado_c * lado_c)) 
+        || (lado_b * lado_b) == ((lado_a * lado_a) + (lado_c * lado_c))
+        || (lado_c * lado_c) == ((lado_a * lado_a) + (lado_b * lado_b)))
+        {
+            return true;
+        }   
+        
+        else
+        {
+            return false;
+        }
+    }
+    else
+    {
+        return false;
+    }
+}

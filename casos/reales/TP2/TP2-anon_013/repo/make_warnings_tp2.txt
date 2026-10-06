@@ -1,0 +1,215 @@
+In file included from prueba.c:10:
+prueba.c: In function 'main':
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:150:5: note: in expansion of macro 'RUN_TEST'
+  150 |     RUN_TEST(prueba_arreglo_sumar);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:151:5: note: in expansion of macro 'RUN_TEST'
+  151 |     RUN_TEST(prueba_arreglo_buscar);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:152:5: note: in expansion of macro 'RUN_TEST'
+  152 |     RUN_TEST(prueba_arreglo_invertir);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:153:5: note: in expansion of macro 'RUN_TEST'
+  153 |     RUN_TEST(prueba_arreglo_ordenado);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:154:5: note: in expansion of macro 'RUN_TEST'
+  154 |     RUN_TEST(prueba_arreglo_contar);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:155:5: note: in expansion of macro 'RUN_TEST'
+  155 |     RUN_TEST(prueba_arreglo_compactar);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:156:5: note: in expansion of macro 'RUN_TEST'
+  156 |     RUN_TEST(prueba_arreglo_fusionar);
+      |     ^~~~~~~~
+prueba.c: In function '_p1_test_func_prueba_arreglo_fusionar':
+prueba.c:135:27: warning: 'destinonull' is used uninitialized [-Wuninitialized]
+  135 |     ASSERT_INT_EQ(0, (int)arreglo_fusionar(arreglo1_2, 5, arreglo2_2, 5, destinonull, 6));
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:832:34: note: in definition of macro 'ASSERT_INT_EQ_MSG'
+  832 |     long long _act = (long long)(actual); \
+      |                                  ^~~~~~
+prueba.c:135:5: note: in expansion of macro 'ASSERT_INT_EQ'
+  135 |     ASSERT_INT_EQ(0, (int)arreglo_fusionar(arreglo1_2, 5, arreglo2_2, 5, destinonull, 6));
+      |     ^~~~~~~~~~~~~
+prueba.c:134:10: note: 'destinonull' was declared here
+  134 |     int *destinonull;
+      |          ^~~~~~~~~~~
+prueba.c:137:27: warning: 'arreglonull' is used uninitialized [-Wuninitialized]
+  137 |     ASSERT_INT_EQ(0, (int)arreglo_fusionar(arreglonull, 5, arreglo2_2, 5, destino_2, 6));
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:832:34: note: in definition of macro 'ASSERT_INT_EQ_MSG'
+  832 |     long long _act = (long long)(actual); \
+      |                                  ^~~~~~
+prueba.c:137:5: note: in expansion of macro 'ASSERT_INT_EQ'
+  137 |     ASSERT_INT_EQ(0, (int)arreglo_fusionar(arreglonull, 5, arreglo2_2, 5, destino_2, 6));
+      |     ^~~~~~~~~~~~~
+prueba.c:136:10: note: 'arreglonull' was declared here
+  136 |     int *arreglonull;
+      |          ^~~~~~~~~~~
+In file included from prueba.c:12:
+prueba.c: In function 'main':
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:134:5: note: in expansion of macro 'RUN_TEST'
+  134 |     RUN_TEST(prueba_cadena_longitud);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:135:5: note: in expansion of macro 'RUN_TEST'
+  135 |     RUN_TEST(prueba_cadena_copiar);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:136:5: note: in expansion of macro 'RUN_TEST'
+  136 |     RUN_TEST(prueba_cadena_concatenar);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:137:5: note: in expansion of macro 'RUN_TEST'
+  137 |     RUN_TEST(prueba_cadena_a_mayusculas);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:138:5: note: in expansion of macro 'RUN_TEST'
+  138 |     RUN_TEST(prueba_cadena_subcadena);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:139:5: note: in expansion of macro 'RUN_TEST'
+  139 |     RUN_TEST(prueba_cadena_de_entero);
+      |     ^~~~~~~~
+prueba.c: In function '_p1_test_func_prueba_cadena_subcadena':
+prueba.c:99:18: warning: 'destinonull' is used uninitialized [-Wuninitialized]
+   99 |     ASSERT_FALSE(cadena_subcadena(destinonull, sizeof(destino), origen, 0, 4));
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:820:9: note: in definition of macro 'ASSERT_FALSE_MSG'
+  820 |     if (cond) { \
+      |         ^~~~
+prueba.c:99:5: note: in expansion of macro 'ASSERT_FALSE'
+   99 |     ASSERT_FALSE(cadena_subcadena(destinonull, sizeof(destino), origen, 0, 4));
+      |     ^~~~~~~~~~~~
+prueba.c:97:11: note: 'destinonull' was declared here
+   97 |     char *destinonull;
+      |           ^~~~~~~~~~~
+prueba.c:100:18: warning: 'origennull' is used uninitialized [-Wuninitialized]
+  100 |     ASSERT_FALSE(cadena_subcadena(destino, sizeof(destino), origennull, 0, 4));
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:820:9: note: in definition of macro 'ASSERT_FALSE_MSG'
+  820 |     if (cond) { \
+      |         ^~~~
+prueba.c:100:5: note: in expansion of macro 'ASSERT_FALSE'
+  100 |     ASSERT_FALSE(cadena_subcadena(destino, sizeof(destino), origennull, 0, 4));
+      |     ^~~~~~~~~~~~
+prueba.c:98:11: note: 'origennull' was declared here
+   98 |     char *origennull;
+      |           ^~~~~~~~~~
+prueba.c: In function '_p1_test_func_prueba_cadena_de_entero':
+prueba.c:124:18: warning: 'destino2' is used uninitialized [-Wuninitialized]
+  124 |     ASSERT_FALSE(cadena_de_entero(destino2, sizeof(destino), numero));
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:820:9: note: in definition of macro 'ASSERT_FALSE_MSG'
+  820 |     if (cond) { \
+      |         ^~~~
+prueba.c:124:5: note: in expansion of macro 'ASSERT_FALSE'
+  124 |     ASSERT_FALSE(cadena_de_entero(destino2, sizeof(destino), numero));
+      |     ^~~~~~~~~~~~
+prueba.c:122:11: note: 'destino2' was declared here
+  122 |     char *destino2;
+      |           ^~~~~~~~
+In file included from prueba.c:7:
+prueba.c: In function 'main':
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:30:5: note: in expansion of macro 'RUN_TEST'
+   30 |     RUN_TEST(prueba_calcular_promedio);
+      |     ^~~~~~~~
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:31:5: note: in expansion of macro 'RUN_TEST'
+   31 |     RUN_TEST(prueba_contiene_valor);
+      |     ^~~~~~~~
+In file included from prueba.c:8:
+prueba.c: In function 'main':
+../../libs/p1_test/include/p1_test.h:472:26: warning: unused variable '_p1_sig_unused' [-Wunused-variable]
+  472 | #define _P1_SIG_VARS int _p1_sig_unused = 0
+      |                          ^~~~~~~~~~~~~~
+../../libs/p1_test/include/p1_test.h:688:5: note: in expansion of macro '_P1_SIG_VARS'
+  688 |     _P1_SIG_VARS; \
+      |     ^~~~~~~~~~~~
+prueba.c:29:5: note: in expansion of macro 'RUN_TEST'
+   29 |     RUN_TEST(prueba_unir_con_separador);
+      |     ^~~~~~~~

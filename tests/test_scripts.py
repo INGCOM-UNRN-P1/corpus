@@ -9,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 import anonimizar  # noqa: E402
 import correr  # noqa: E402
+import empaquetar_git  # noqa: E402
 import limpiar_repos  # noqa: E402
 
 
@@ -78,3 +79,41 @@ def test_limpiar_repos_desconecta_remotes(tmp_path):
 
     # Segunda corrida es idempotente si ya no hay remote
     assert limpiar_repos.limpiar_repos(tmp_path) == 0
+
+
+def test_empaquetar_y_restaurar_bundle(tmp_path):
+    import subprocess
+
+    caso_dir = tmp_path / "TP1-anon_001"
+    repo_dir = caso_dir / "repo"
+    repo_dir.mkdir(parents=True)
+    subprocess.run(["git", "init", "-b", "main", str(repo_dir)], check=True, capture_output=True)
+    subprocess.run(["git", "config", "user.name", "Tester"], cwd=repo_dir, check=True)
+    subprocess.run(["git", "config", "user.email", "tester@example.com"], cwd=repo_dir, check=True)
+    (repo_dir / "codigo.c").write_text("int main() { return 0; }")
+    subprocess.run(["git", "-C", str(repo_dir), "add", "."], check=True, capture_output=True)
+    subprocess.run(["git", "-C", str(repo_dir), "commit", "-m", "commit 1"], check=True, capture_output=True)
+
+    # Agregar cambios pendientes sin commitear en el worktree
+    (repo_dir / "codigo.c").write_text("int main() { return 1; }")
+
+    # 1. Empaquetar
+    assert empaquetar_git.ejecutar("empaquetar", tmp_path) == 0
+    assert (caso_dir / "repo.bundle").exists()
+    assert not (repo_dir / ".git").exists()
+    assert (repo_dir / "codigo.c").read_text() == "int main() { return 1; }"
+
+    # 2. Restaurar
+    assert empaquetar_git.ejecutar("restaurar", tmp_path) == 0
+    assert (repo_dir / ".git").exists()
+    # Verifica que el historial se recuperó y no tiene remotes
+    res_log = subprocess.run(["git", "-C", str(repo_dir), "log", "--oneline"], capture_output=True, text=True, check=True)
+    assert "anonimizar entrega" in res_log.stdout
+    assert "commit 1" in res_log.stdout
+    res_remotes = subprocess.run(["git", "-C", str(repo_dir), "remote"], capture_output=True, text=True, check=True)
+    assert res_remotes.stdout.strip() == ""
+
+    # 3. Limpiar .git
+    assert empaquetar_git.ejecutar("limpiar", tmp_path) == 0
+    assert not (repo_dir / ".git").exists()
+    assert (caso_dir / "repo.bundle").exists()

@@ -28,7 +28,7 @@ PATRONES = [
     ("legajo", re.compile(r"(?i)\b(legajo|leg\.)\s*[:#]?\s*(?!00000\b)\d{3,}"), r"\1 00000"),
     ("autoría", re.compile(r"(?im)^(\s*(?:/?\*+|//)?\s*(?:@?autor(?:a|es)?|@author|alumn[oa]|estudiante)\s*:?\s+)(?!\[anonimizado\]).+$"),
      r"\1[anonimizado]"),
-    ("usuario de GitHub", re.compile(r"github\.com/(?!INGCOM-UNRN|estudiante\b)[A-Za-z0-9-]+"), "github.com/estudiante"),
+    ("usuario de GitHub", re.compile(r"github\.com/(?!INGCOM-UNRN\b|orgs/|estudiante\b)[A-Za-z0-9-]+"), "github.com/estudiante"),
 ]
 PERMITIDOS = {"estudiante@example.com"}
 

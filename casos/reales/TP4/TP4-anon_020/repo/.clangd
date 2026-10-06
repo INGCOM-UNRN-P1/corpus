@@ -1,0 +1,9 @@
+CompileFlags:
+  Add:
+    - -std=c11
+    - -Wall
+    - -Wextra
+    - -pedantic
+    - -I../../libs/punteros
+    - -I../../libs/p1_test
+    - -I../../libs/p1_test/include

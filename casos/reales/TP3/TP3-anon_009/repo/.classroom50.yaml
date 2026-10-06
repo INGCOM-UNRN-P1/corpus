@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "p1-2026"
+assignment: "tp3"
+owner:
+  username: "anon_009"
+  id: 208879670
+  accepted_at: "2026-09-17T02:51:13Z"
+source:
+  owner: "INGCOM-UNRN-P1"
+  owner_id: 86799701
+  repo: "TP3-2026"
+  branch: "main"

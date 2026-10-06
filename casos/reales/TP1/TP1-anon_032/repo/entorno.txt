@@ -1,0 +1,76 @@
+======================================================================
+INFORME DE DIAGNÓSTICO DEL ENTORNO PORTABLE v1.1.0
+======================================================================
+Fecha/Hora           : 2026-09-09 01:03:50
+Sistema Operativo    :  / MSYSTEM: 
+HOME de sesión       : /home/joaquin/facu/entorno/home
+PATH configurado     : /home/joaquin/facu/entorno/home/.local/bin:/home/joaquin/facu/entorno/linux/bin:/home/joaquin/facu/entorno/local/bin:/home/joaquin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+======================================================================
+
+=== Versiones de Herramientas Clave ===
+clang: [31mNO DETECTADO[0m
+--------------------------------------------------
+clang++: [31mNO DETECTADO[0m
+--------------------------------------------------
+mingw32-make: [31mNO DETECTADO[0m
+--------------------------------------------------
+cmake: [31mNO DETECTADO[0m
+--------------------------------------------------
+ninja: [31mNO DETECTADO[0m
+--------------------------------------------------
+gdb: [32m/usr/bin/gdb[0m
+GNU gdb (Ubuntu 15.1-1ubuntu1~24.04.1) 15.1
+--------------------------------------------------
+python: [31mNO DETECTADO[0m
+--------------------------------------------------
+python3: [32m/usr/bin/python3[0m
+Python 3.12.3
+--------------------------------------------------
+pip: [32m/usr/bin/pip[0m
+pip 24.0 from
+--------------------------------------------------
+pip3: [32m/usr/bin/pip3[0m
+pip 24.0 from
+--------------------------------------------------
+uv: [32m/home/joaquin/.local/bin/uv[0m
+uv 0.12.9 (x86_64-unknown-linux-gnu)
+--------------------------------------------------
+cppcheck: [31mNO DETECTADO[0m
+--------------------------------------------------
+doxygen: [31mNO DETECTADO[0m
+--------------------------------------------------
+git: [32m/usr/bin/git[0m
+git version 2.43.0
+--------------------------------------------------
+gh: [32m/usr/bin/gh[0m
+gh version 2.45.0 (2025-07-18 Ubuntu 2.45.0-1ubuntu0.3)
+--------------------------------------------------
+
+=== Contenido de la carpeta bin/ ===
+Carpeta bin encontrada en: /home/joaquin/facu/entorno/linux/bin
+total 128
+drwxrwxr-x 2 joaquin joaquin  4096 sep  2 17:45 .
+drwxrwxr-x 3 joaquin joaquin  4096 sep  8 22:26 ..
+-rwxrwxr-x 1 joaquin joaquin  4571 sep  2 17:45 ayuda
+-rwxrwxr-x 1 joaquin joaquin  3226 sep  2 17:45 backup
+-rwxrwxr-x 1 joaquin joaquin  2832 sep  2 17:45 clonar
+-rwxrwxr-x 1 joaquin joaquin  7397 sep  2 17:45 configure-git.sh
+-rwxrwxr-x 1 joaquin joaquin  7694 sep  2 17:45 customize-terminal.sh
+-rwxrwxr-x 1 joaquin joaquin  3357 sep  2 17:45 diagnose-env.sh
+-rwxrwxr-x 1 joaquin joaquin 10332 sep  2 17:45 doctor
+-rwxrwxr-x 1 joaquin joaquin  5794 sep  2 17:45 entregar
+-rwxrwxr-x 1 joaquin joaquin  8421 sep  2 17:45 install-lib.sh
+-rwxrwxr-x 1 joaquin joaquin 11167 sep  2 17:45 nuevo-proyecto
+-rwxrwxr-x 1 joaquin joaquin  3969 sep  2 17:45 restaurar
+-rwxrwxr-x 1 joaquin joaquin  1890 sep  2 17:45 ripley
+-rwxrwxr-x 1 joaquin joaquin  5223 sep  2 17:45 smoke.sh
+-rwxrwxr-x 1 joaquin joaquin  4337 sep  2 17:45 soporte
+-rwxrwxr-x 1 joaquin joaquin  3052 sep  2 17:45 uninstall-lib.sh
+-rwxrwxr-x 1 joaquin joaquin  3022 sep  2 17:45 update-env.sh
+-rwxrwxr-x 1 joaquin joaquin  5955 sep  2 17:45 verificar
+
+=== Listado de Paquetes Instalados de Pacman (pacman -Q) ===
+(pacman no disponible en esta plataforma)
+
+
+[32m[DIAGNÓSTICO COMPLETADO] El informe detallado se guardó en '/home/joaquin/facu/entorno/diagnose.log'.[0m

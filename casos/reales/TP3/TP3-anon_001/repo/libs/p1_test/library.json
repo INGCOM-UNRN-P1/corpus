@@ -1,0 +1,39 @@
+{
+  "name": "p1_test",
+  "version": "2.0.0",
+  "repository": "https://github.com/INGCOM-UNRN-P1/plantilla-libreria.git",
+  "build": {
+    "command": "make",
+    "clean_command": "make clean"
+  },
+  "exports": {
+    "headers": [
+      {
+        "source": "include/p1_test.h",
+        "destination": "include/p1_test.h"
+      },
+      {
+        "source": "include/p1_arrays.h",
+        "destination": "include/p1_arrays.h"
+      },
+      {
+        "source": "include/p1_files.h",
+        "destination": "include/p1_files.h"
+      },
+      {
+        "source": "include/p1_stdio.h",
+        "destination": "include/p1_stdio.h"
+      },
+      {
+        "source": "include/tda/contracts.h",
+        "destination": "include/tda/contracts.h"
+      }
+    ],
+    "binaries": [
+      {
+        "source": "build/libp1_test.a",
+        "destination": "lib/libp1_test.a"
+      }
+    ]
+  }
+}

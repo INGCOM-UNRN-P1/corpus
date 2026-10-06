@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "p1-2026"
+assignment: "tp4"
+owner:
+  username: "anon_005"
+  id: 163625466
+  accepted_at: "2026-09-22T22:48:12Z"
+source:
+  owner: "INGCOM-UNRN-P1"
+  owner_id: 86799701
+  repo: "TP4-2026"
+  branch: "main"
