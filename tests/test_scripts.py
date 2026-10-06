@@ -9,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 import anonimizar  # noqa: E402
 import correr  # noqa: E402
+import limpiar_repos  # noqa: E402
 
 
 def test_firma_de_salidas_anidadas():
@@ -51,3 +52,29 @@ def test_corrige_y_queda_limpio():
 
 def test_los_casos_del_corpus_no_tienen_datos_personales():
     assert anonimizar.main([]) == 0
+
+
+def test_limpiar_repos_desconecta_remotes(tmp_path):
+    import subprocess
+
+    repo_dir = tmp_path / "caso_test" / "repo"
+    repo_dir.mkdir(parents=True)
+    subprocess.run(["git", "init", str(repo_dir)], check=True, capture_output=True)
+    subprocess.run(
+        ["git", "-C", str(repo_dir), "remote", "add", "origin", "https://example.com/repo.git"],
+        check=True,
+        capture_output=True,
+    )
+
+    # Verificar existencia inicial del remote
+    res = subprocess.run(["git", "-C", str(repo_dir), "remote"], check=True, capture_output=True, text=True)
+    assert "origin" in res.stdout
+
+    # Limpiar repos desconecta el remote
+    assert limpiar_repos.limpiar_repos(tmp_path) == 0
+
+    res_post = subprocess.run(["git", "-C", str(repo_dir), "remote"], check=True, capture_output=True, text=True)
+    assert res_post.stdout.strip() == ""
+
+    # Segunda corrida es idempotente si ya no hay remote
+    assert limpiar_repos.limpiar_repos(tmp_path) == 0
