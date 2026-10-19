@@ -1,0 +1,26 @@
+# Archivos temporales y de compilación
+build/
+bin/
+*.o
+*.a
+*.so
+*.out
+*.exe
+*.dSYM/
+*.log
+
+# Caches y herramientas
+.cache/
+.pytest_cache/
+__pycache__/
+*.gcda
+*.gcno
+*.gcov
+coverage/
+reporte_*.md
+reporte_*.json
+core
+core.*
+vgcore.*
+
+*.py[cod]

@@ -1,0 +1,17 @@
+descripcion = "Actividad práctica de ejemplo completa (TDA Lista de Envíos y Procesador) que ejercita analizadores del ecosistema"
+origen = "sintético"
+
+[herramientas.daedalus]
+comando = ["daedalus", "compile", "src/main.c", "src/envio.c", "src/lista_envios.c", "src/procesador.c", "--flags", "-I include", "--json"]
+
+[herramientas.gaff]
+comando = ["gaff", "check", "src/", "include/", "--json"]
+
+[herramientas.spunkmeyer]
+comando = ["spunkmeyer", "detect", "src/", "include/", "--json"]
+
+[herramientas.kaneda]
+comando = ["kaneda", "audit", "src/", "include/", "--json"]
+
+[herramientas.vasquez]
+comando = ["vasquez", "check", "src/main.c", "src/envio.c", "src/lista_envios.c", "src/procesador.c", "-I", "include", "--faults", "malloc:1", "--json"]

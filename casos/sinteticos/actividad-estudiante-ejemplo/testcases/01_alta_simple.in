@@ -1,0 +1,5 @@
+# Testcase 01: Inserción y listado simple
+1 1001 AR-A100 Capital_Federal 1425 2.50 3 0
+1 1002 AR-B200 Cordoba 5000 1.20 8 0
+4
+7

@@ -29,6 +29,7 @@ un falso positivo o un falso negativo, sí.
 | `strcpy-inseguro` | coincidencia kaneda/spunkmeyer en la misma línea | kaneda, spunkmeyer |
 | `varios-archivos` | N-VASQUEZ-02 (src/ + include/, `-I`) | vasquez |
 | `advertencias-de-compilacion` | traducción de `-Wunused-variable` y `-Wsign-compare` | daedalus |
+| `actividad-estudiante-ejemplo` | integración multiplataforma de herramientas de cátedra | daedalus, gaff, kaneda, spunkmeyer, vasquez |
 
 ## Uso
 
