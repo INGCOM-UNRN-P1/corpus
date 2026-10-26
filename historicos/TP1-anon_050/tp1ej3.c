@@ -1,0 +1,29 @@
+/*************************
+Ingenieria en Computación - UNRN Andina
+Programación 1
+anon_050
+*************************/
+
+#include <stdio.h>
+
+int compara(int numero, int otronumero)
+{
+    if (numero < otronumero)
+        return -1;
+    else if (otronumero < numero)
+        return 1;
+    else
+        return 0;
+}
+
+int main()
+{
+    int valor_a, valor_b;
+    printf("Ingrese el primer número: ");
+    scanf("%d", &valor_a);
+    printf("Ingrese el segundo número: ");
+    scanf("%d", &valor_b);
+
+    printf("El resultado es: %d\n", compara(valor_a, valor_b));
+    return 0;
+}

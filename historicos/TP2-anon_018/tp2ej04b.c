@@ -1,0 +1,46 @@
+/*************************
+Ingenieria en Computación - UNRN Andina
+Programación 1
+@anon_018
+*************************/
+
+#include <stdio.h>
+#define MAX 999999999
+
+void agregar(unsigned int dimension, char tablero[][MAX]);
+void imprimir(unsigned int dimension, char tablero[][MAX]);
+
+int main(int argc, char *argv[])
+{
+	unsigned int numero;
+	printf("Este programa imprimira un cuadrado con n asteriscos.\n");
+	printf("Ingrese un valor natural para n: ");
+	scanf("%d", &numero);
+	char tablero[numero][numero];
+	agregar(numero, tablero);
+	imprimir(numero, tablero);
+	return 0;
+}
+void agregar(unsigned int dimension, char tablero[][MAX])
+{
+	int i, j;
+	for (j=0;j<dimension;j++)
+	{
+		for (i=0;i<dimension;i++)
+		{
+			tablero[j][i] = '*';
+		}
+	}
+}
+void imprimir(unsigned int dimension, char tablero[][MAX])
+{
+	int i, j;
+	for(i=0;i<dimension;i++)
+    {
+        for(j=0;j<dimension;j++)
+        {
+            printf("%c ", tablero[i][j]);
+        }
+        printf("\n");
+    }
+}

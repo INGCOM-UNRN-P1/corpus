@@ -1,0 +1,97 @@
+nombre: 'Trabajo Práctico 5: Estructuras de Datos Heterogéneas y Memoria Dinámica'
+minutos_totales: 180
+temas:
+  - structs_c11
+  - tipos_compuestos
+  - arreglos_dinamicos_encapsulados
+  - cadenas_dinamicas_con_structs
+  - gestion_memoria_heap
+  - normalizacion_datos
+distribucion_bloom:
+  COMPRENDER: 2
+  APLICAR: 17
+  ANALIZAR: 2
+ejercicios:
+  - id: libdinamicos
+    titulo: 'Biblioteca de Arreglo Dinámico Encapsulado (libdinamicos)'
+    bloom: 3
+    minutos: 50
+    subpuntos:
+      - id: arreglo_dinamico_crear
+        titulo: 'Creación y dimensionamiento de arreglo_dinamico_t'
+        bloom: 3
+      - id: arreglo_dinamico_destruir
+        titulo: 'Liberación de recursos en heap'
+        bloom: 2
+      - id: arreglo_dinamico_agregar
+        titulo: 'Inserción con duplicación geométrica de capacidad'
+        bloom: 3
+      - id: arreglo_dinamico_obtener
+        titulo: 'Acceso seguro indexado por puntero'
+        bloom: 3
+      - id: arreglo_dinamico_filtrar_pares
+        titulo: 'Filtrado y generación de nuevo arreglo dinámico'
+        bloom: 3
+      - id: arreglo_dinamico_buscar
+        titulo: 'Búsqueda lineal en bloque dinámico'
+        bloom: 3
+      - id: arreglo_dinamico_invertir
+        titulo: 'Inversión in-place de elementos'
+        bloom: 3
+      - id: arreglo_dinamico_compactar
+        titulo: 'Compactación in-place sin huecos'
+        bloom: 3
+  - id: libcadena_segura
+    titulo: 'Biblioteca de Cadena Dinámica Segura (libcadena_segura)'
+    bloom: 3
+    minutos: 50
+    subpuntos:
+      - id: cadena_segura_crear
+        titulo: 'Creación y reserva dinámica con longitud y capacidad'
+        bloom: 3
+      - id: cadena_segura_destruir
+        titulo: 'Destrucción y liberación de heap'
+        bloom: 2
+      - id: cadena_segura_concatenar
+        titulo: 'Concatenación con realocación automática'
+        bloom: 3
+      - id: cadena_segura_subcadena
+        titulo: 'Extracción de subcadenas con buffers acotados'
+        bloom: 3
+      - id: cadena_segura_clonar
+        titulo: 'Clonación profunda independiente en heap'
+        bloom: 3
+      - id: cadena_segura_buscar
+        titulo: 'Localización de subcadenas'
+        bloom: 3
+  - id: ejercicio1
+    titulo: 'Flujo de Telemetría y Filtrado con libdinamicos'
+    bloom: 4
+    minutos: 40
+    subpuntos:
+      - id: cargar_muestras
+        titulo: 'Ingesta de flujo de mediciones'
+        bloom: 3
+      - id: calcular_promedio
+        titulo: 'Cálculo de estadísticas sobre muestras válidas'
+        bloom: 3
+      - id: depurar_lecturas_erroneas
+        titulo: 'Filtrado y compactación de anomalías'
+        bloom: 4
+      - id: extraer_eventos_pares
+        titulo: 'Extracción selectiva a nuevo contenedor dinámico'
+        bloom: 3
+  - id: ejercicio2
+    titulo: 'Generador de Slugs Web y Sanitización con libcadena_segura'
+    bloom: 4
+    minutos: 40
+    subpuntos:
+      - id: generar_slug
+        titulo: 'Sanitización, transformación a minúsculas y normalización'
+        bloom: 4
+      - id: contiene_palabra_prohibida
+        titulo: 'Filtrado de vocabulario y búsqueda de patrones'
+        bloom: 3
+      - id: acotar_longitud_slug
+        titulo: 'Recorte acotado de longitud'
+        bloom: 3

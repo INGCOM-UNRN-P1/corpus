@@ -1,0 +1,84 @@
+nombre: 'Trabajo Práctico 6: Tipos de Datos Abstractos (TDA)'
+minutos_totales: 190
+temas:
+  - tipos_datos_abstractos
+  - encapsulamiento_opaco
+  - invariantes_representacion
+  - gestion_memoria_heap
+  - contratos_doxygen
+  - implementaciones_intercambiables
+  - listas_simplemente_enlazadas
+  - nodos_dinamicos
+distribucion_bloom:
+  COMPRENDER: 2
+  APLICAR: 5
+  ANALIZAR: 9
+ejercicios:
+  - id: ejercicio1
+    titulo: 'TDA Fracción (fraccion_t) — Invariantes y Normalización'
+    bloom: 3
+    minutos: 40
+    subpuntos:
+      - id: fraccion_crear
+        titulo: 'Construcción con normalización de signo y simplificación MCD'
+        bloom: 3
+      - id: fraccion_invariante
+        titulo: 'Verificación de invariante de representación irreducible'
+        bloom: 4
+      - id: fraccion_operaciones
+        titulo: 'Operaciones aritméticas y consultores'
+        bloom: 3
+      - id: fraccion_destruir
+        titulo: 'Gestión defensiva de memoria dinámica'
+        bloom: 2
+  - id: ejercicio2
+    titulo: 'TDA Duración (tiempo_t) — Cambio de Implementación'
+    bloom: 4
+    minutos: 45
+    subpuntos:
+      - id: tiempo_interfaz
+        titulo: 'Diseño de interfaz única e invariantes desglosada vs compacta'
+        bloom: 4
+      - id: tiempo_hms
+        titulo: 'Implementación desglosada en horas, minutos y segundos'
+        bloom: 3
+      - id: tiempo_seg
+        titulo: 'Implementación compacta en segundos totales calculados al vuelo'
+        bloom: 4
+      - id: tiempo_caja_negra
+        titulo: 'Verificación desacoplada mediante pruebas de caja negra'
+        bloom: 4
+  - id: ejercicio3
+    titulo: 'TDA Conjunto de Enteros (conjunto_t) — Invariante de Unicidad'
+    bloom: 4
+    minutos: 45
+    subpuntos:
+      - id: conjunto_invariante
+        titulo: 'Invariante de unicidad y consistencia de cardinal'
+        bloom: 4
+      - id: conjunto_pertenencia_mutacion
+        titulo: 'Inserción idempotente y eliminación contigua'
+        bloom: 3
+      - id: conjunto_algebra
+        titulo: 'Operaciones algebraicas de unión, intersección y subconjuntos'
+        bloom: 4
+  - id: ejercicio4
+    titulo: 'TDA Secuencia (secuencia_t) — Arreglo Dinámico vs Lista Enlazada'
+    bloom: 4
+    minutos: 60
+    subpuntos:
+      - id: secuencia_lista_conceptos
+        titulo: 'Fundamentos de listas enlazadas, manipulación de nodos y operaciones básicas'
+        bloom: 2
+      - id: secuencia_interfaz
+        titulo: 'Contrato de secuencia lineal indexada intercambiable'
+        bloom: 4
+      - id: secuencia_arreglo
+        titulo: 'Implementación sobre memoria contigua con corrimiento'
+        bloom: 3
+      - id: secuencia_lista
+        titulo: 'Implementación sobre cadena de nodos enlazados en heap'
+        bloom: 4
+      - id: secuencia_pruebas_caja_negra
+        titulo: 'Evaluación de caja negra sobre ambas variantes'
+        bloom: 4

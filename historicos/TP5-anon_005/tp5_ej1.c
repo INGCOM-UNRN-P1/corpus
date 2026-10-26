@@ -1,0 +1,49 @@
+/*************************
+Ingenieria en Computación - UNRN Andina
+Programación 1
+Agostina Biagini - anon_005 en Github
+Practico 5 - Ejercicio 1   
+*************************/
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+    int var_i = 18;
+    double var_d = 25.55;
+    char var_c = 'A';
+    
+    int *p_i;
+    double *p_d;
+    char *p_c;
+    
+    p_i = &var_i;
+    p_d = &var_d;
+    p_c = &var_c;
+    
+    printf("\n");
+    printf("La direccion del char var_c es: 0x%x \t\n", &var_c);
+    printf("La direccion del int var_i es: 0x%x \t\n", &var_i);
+    printf("La direccion del double var_d es: 0x%x \t\n", &var_d);
+    printf("\n");
+    printf("La direccion del char *p_c es: 0x%x \t\n", &p_c);
+    printf("La direccion del int *p_i es: 0x%x \t\n", &p_i);
+    printf("La direccion del double *p_d es: 0x%x \t\n", &p_d);
+    printf("\n");    
+    printf("El valor del char var_c es: %c\t\n", var_c);
+    printf("El valor del int var_i es: %d\t\n", var_i);
+    printf("El valor del double var_d es: %.2f\t\n", var_d);
+    printf("\n");
+    printf("El valor del char *p_c es: %p\t\n", p_c);
+    printf("El valor del int *p_i es: %p\t\n", p_i);
+    printf("El valor del double *p_d es: %p\t\n", p_d);    
+    printf("\n");
+    printf("El tamano del char var_c es: %d bytes\t\n", sizeof(var_c));
+    printf("El tamano del int var_i es: %d bytes\t\n", sizeof(var_i));
+    printf("El tamano del double var_d es: %d bytes\t\n", sizeof(var_d));
+    printf("\n");
+    printf("El tamano del char *p_c es: %d bytes\t\n", sizeof(p_c));
+    printf("El tamano del int *p_i es: %d bytes\t\n", sizeof(p_i));    
+    printf("El tamano del double *p_d es: %d bytes\t\n", sizeof(p_d));
+    printf("\n");    
+    return 0;
+} 

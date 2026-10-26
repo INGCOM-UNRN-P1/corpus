@@ -1,0 +1,69 @@
+nombre: 'Trabajo Práctico 7: Matrices Dinámicas y Archivos CSV'
+minutos_totales: 270
+temas:
+  - matrices_dinamicas_contiguas
+  - archivos_csv
+  - parsing_csv
+  - algebra_matricial
+  - convolucion_2d
+  - memory_leaks_valgrind
+distribucion_bloom:
+  COMPRENDER: 2
+  APLICAR: 6
+  ANALIZAR: 5
+ejercicios:
+  - id: libmatrices
+    titulo: 'Biblioteca de Matrices Dinámicas Contiguas (libmatrices)'
+    bloom: 3
+    minutos: 35
+    subpuntos:
+      - id: matriz_crear
+        titulo: 'Creación de Matriz con Bloque Contiguo'
+        bloom: 3
+      - id: matriz_destruir
+        titulo: 'Liberación de Memoria de Matriz'
+        bloom: 2
+      - id: matriz_obtener
+        titulo: 'Acceso Seguro con Control de Límites'
+        bloom: 2
+      - id: matriz_asignar
+        titulo: 'Asignación Segura con Control de Límites'
+        bloom: 2
+  - id: libcsv
+    titulo: 'Biblioteca de Procesamiento CSV (libcsv)'
+    bloom: 3
+    minutos: 35
+    subpuntos:
+      - id: csv_contar_filas
+        titulo: 'Conteo de Filas en Archivo CSV'
+        bloom: 2
+      - id: csv_contar_columnas
+        titulo: 'Conteo de Columnas en Archivo CSV'
+        bloom: 2
+      - id: csv_leer_matriz
+        titulo: 'Carga de Matriz desde Archivo CSV'
+        bloom: 3
+  - id: ejercicio1
+    titulo: 'Carga y Persistencia de Matriz en CSV'
+    bloom: 3
+    minutos: 30
+  - id: ejercicio2
+    titulo: 'Suma y Multiplicación de Matrices Dinámicas'
+    bloom: 3
+    minutos: 35
+  - id: ejercicio3
+    titulo: 'Transposición y Rotación de Matrices en Heap'
+    bloom: 4
+    minutos: 35
+  - id: ejercicio4
+    titulo: 'Filtros y Convolución 2D'
+    bloom: 4
+    minutos: 40
+  - id: ejercicio5
+    titulo: 'Reporte Estadístico Tabular desde CSV'
+    bloom: 4
+    minutos: 40
+  - id: ejercicio6
+    titulo: 'Pipeline Matricial de Ingesta y Limpieza CSV'
+    bloom: 5
+    minutos: 45

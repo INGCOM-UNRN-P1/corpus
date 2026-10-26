@@ -1,0 +1,3 @@
+
+ Resultado de la operacion n1 = 57
+ Resultado de la operacion n2 = -3

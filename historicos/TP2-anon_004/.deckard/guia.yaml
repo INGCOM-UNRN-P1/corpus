@@ -1,0 +1,71 @@
+nombre: 'Trabajo Práctico 2: Arreglos de Enteros y Cadenas Seguras'
+minutos_totales: 240
+temas:
+  - arreglos_unidimensionales
+  - memoria_y_limites
+  - cadenas_seguras
+  - terminacion_nula
+  - buffer_bounds
+  - const_correctness
+distribucion_bloom:
+  COMPRENDER: 3
+  APLICAR: 6
+  ANALIZAR: 4
+ejercicios:
+  - id: libarreglos
+    titulo: 'Biblioteca de Arreglos de Enteros (libarreglos)'
+    bloom: 3
+    minutos: 90
+    subpuntos:
+      - id: arreglo_sumar
+        titulo: 'Sumatoria de Elementos'
+        bloom: 2
+      - id: arreglo_buscar
+        titulo: 'Búsqueda Lineal'
+        bloom: 3
+      - id: arreglo_invertir
+        titulo: 'Inversión In-Place'
+        bloom: 3
+      - id: arreglo_ordenado
+        titulo: 'Verificación de Orden Ascendente'
+        bloom: 3
+      - id: arreglo_contar
+        titulo: 'Conteo de Ocurrencias'
+        bloom: 2
+      - id: arreglo_compactar
+        titulo: 'Compactación In-Place (Sin prototipo previo)'
+        bloom: 4
+      - id: arreglo_fusionar
+        titulo: 'Fusión Ordenada Acotada (Sin prototipo previo)'
+        bloom: 4
+  - id: libcadenas
+    titulo: 'Biblioteca de Cadenas Seguras (libcadenas)'
+    bloom: 4
+    minutos: 110
+    subpuntos:
+      - id: cadena_longitud
+        titulo: 'Medición Segura de Longitud'
+        bloom: 2
+      - id: cadena_copiar
+        titulo: 'Copia Segura con Control de Búfer'
+        bloom: 3
+      - id: cadena_concatenar
+        titulo: 'Concatenación Segura'
+        bloom: 3
+      - id: cadena_a_mayusculas
+        titulo: 'Normalización a Mayúsculas Segura'
+        bloom: 3
+      - id: cadena_subcadena
+        titulo: 'Extracción de Subcadena Segura (Sin prototipo previo)'
+        bloom: 4
+      - id: cadena_de_entero
+        titulo: 'Conversión de Entero a Cadena Decimal Segura (Sin prototipo previo)'
+        bloom: 4
+  - id: ejercicio1
+    titulo: 'Aplicación de Estadísticas de Arreglos'
+    bloom: 3
+    minutos: 20
+  - id: ejercicio2
+    titulo: 'Procesador de Texto con Cadenas Seguras'
+    bloom: 3
+    minutos: 20
