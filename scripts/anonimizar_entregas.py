@@ -21,14 +21,18 @@ import sys
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[1]
-PATRON_ENTREGA = re.compile(r"^TP\d+-(.+)$")
+PATRON_ENTREGA = re.compile(r"(?i)^tp[-_]?(?:c\d+|\d+)-(.+)$")
 
 # Regex para proteger strings literales y caracteres mientras se remueven comentarios /* ... */
 REGEX_COMENTARIOS_C = re.compile(
     r'("(?:\\.|[^"\\])*")|'          # String literal
     r"('(?:\\.|[^'\\])*')|"          # Carácter literal
-    r"(/\*\*[\s\S]*?\*/)|"           # Comentario de documentación /** ... */
-    r"(/\*[\s\S]*?\*/)"              # Comentario de bloque común /* ... */
+    r"(/\*\*(?!\*)[\s\S]*?\*/)|"     # Comentario de documentación Doxygen /** ... */ (no banner /***...)
+    r"(/\*[\s\S]*?\*/)"              # Comentario de bloque común /* ... */ o banner /**** ... ****/
+)
+
+REGEX_TAG_DOXYGEN = re.compile(
+    r"@(?:brief|param|return|returns|retval|file|pre|post|note|warning|see|details)\b"
 )
 
 # Regex para detectar comentarios de línea // ... respetando strings y comentarios de bloque
@@ -41,20 +45,23 @@ REGEX_COMENTARIOS_LINEA = re.compile(
 
 # Regex para detectar líneas con autoría (e.g., Autor: Juan, **Autor:** `Pedro`, * @autor Maria)
 REGEX_LINEA_AUTOR = re.compile(
-    r"(?im)^(\s*(?:/?\*+|//)?\s*(?:\*{1,2}@?autor(?:a|es)?:?\*{1,2}:?|@?autor(?:a|es)?:?|@author:?)\s+)(?:`[^`\n]+`|\[anonimizado\]|[^\n]+)$"
+    r"(?im)^(\s*(?:/?\*+|//|-)?\s*(?:\*{1,2}@?autor(?:a|es)?:?\*{1,2}:?|@?autor(?:a|es)?:?|@author:?|nombre\s+y\s+apellido:?)\s+)(?:`[^`\n]+`|\[anonimizado\]|[^\n]+)$"
 )
 
 
 def remover_comentarios_no_doc(contenido: str) -> str:
-    """Elimina comentarios de bloque /* ... */ conservando /** ... */ y strings literales."""
+    """Elimina comentarios de bloque /* ... */ y banners /*** ... ***/ conservando Doxygen /** ... */ y strings."""
     def reemplazar(m: re.Match) -> str:
         if m.group(1):  # string literal
             return m.group(1)
         if m.group(2):  # char literal
             return m.group(2)
         if m.group(3):  # /** ... */
-            return m.group(3)
-        return ""  # /* ... */ no documental
+            bloque = m.group(3)
+            if REGEX_TAG_DOXYGEN.search(bloque):
+                return reemplazar_lineas_autor(bloque, "[anonimizado]")
+            return ""
+        return ""  # /* ... */ no documental o banner /**** ... ****/
 
     return REGEX_COMENTARIOS_C.sub(reemplazar, contenido)
 
@@ -175,6 +182,11 @@ def procesar_archivos_y_directorios(
                 lambda m: mapeo_usuarios[m.group(0)], nuevo_contenido
             )
 
+        if str(RAIZ) not in sys.path:
+            sys.path.insert(0, str(RAIZ))
+        from scripts import anonimizar as mod_anon
+        nuevo_contenido = mod_anon.corregir(nuevo_contenido)
+
         if nuevo_contenido != contenido:
             modificados_contenido += 1
             if not dry_run:
@@ -236,9 +248,19 @@ def main(argv: list[str]) -> int:
     usuarios = recolectar_usuarios(base_dir)
     print(f"Usuarios detectados ({len(usuarios)}):")
     mapeo_usuarios = {}
-    for idx, u in enumerate(sorted(usuarios), 1):
-        anon = f"anon_{idx:03d}"
-        mapeo_usuarios[u] = anon
+    re_ya_anon = re.compile(r"^anon_\d+(?:-anon_\d+)*$")
+    usados = {u for u in usuarios if re_ya_anon.match(u)}
+    siguiente_idx = 1
+    for u in sorted(usuarios):
+        if re_ya_anon.match(u):
+            mapeo_usuarios[u] = u
+        else:
+            while f"anon_{siguiente_idx:03d}" in usados:
+                siguiente_idx += 1
+            anon = f"anon_{siguiente_idx:03d}"
+            usados.add(anon)
+            mapeo_usuarios[u] = anon
+            siguiente_idx += 1
 
     # Reordenar diccionario por longitud de clave descendente para el regex
     mapeo_ordenado = {u: mapeo_usuarios[u] for u in sorted(usuarios, key=lambda s: (-len(s), s))}

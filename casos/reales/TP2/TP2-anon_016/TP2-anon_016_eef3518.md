@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `eef3518`
 **Commit SHA:** `eef3518dcd143e52825f2ab9215ac76b4a45bc7f`
-**Autor:** `anon_016`
+**Autor:** `anon_016_eef3518.md`
 **Fecha del commit:** `2026-09-16 17:30:29 -0300`
 **Mensaje:** `tp 2 terminado`
 **Fecha de evaluación:** 2026-09-18 11:03:43

@@ -1,9 +1,4 @@
-/*********************************************
-Ingeniería en Computación - UNRN - Sede Andina
-Programación 1
-Ejercicio 1 de TP 7 - Cálculo de cintas
-Nombre de usuaria en GitHub: anon_013
-*********************************************/
+
 
 #include <stdio.h>
 #include <stdlib.h>

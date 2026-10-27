@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `dbcad9b`
 **Commit SHA:** `dbcad9bea20d302680edb57ec539c2ee05c082c1`
-**Autor:** `anon_009`
+**Autor:** `anon_009_dbcad9b.md`
 **Fecha del commit:** `2026-09-30 16:16:04 -0300`
 **Mensaje:** `todos los ejercicios del tp4`
 **Fecha de evaluación:** 2026-10-02 14:02:32

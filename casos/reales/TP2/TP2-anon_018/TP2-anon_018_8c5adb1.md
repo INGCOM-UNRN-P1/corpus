@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `8c5adb1`
 **Commit SHA:** `8c5adb190bc0545d1124cdb29b9b277f008b450a`
-**Autor:** `anon_018`
+**Autor:** `anon_018_8c5adb1.md`
 **Fecha del commit:** `2026-09-28 14:42:16 -0300`
 **Mensaje:** `Agrego las funciones de cadenas y arreglos con sus respectivas pruebas`
 **Fecha de evaluación:** 2026-09-29 16:21:57

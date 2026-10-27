@@ -1,8 +1,4 @@
-/************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-minombredeusuario de GitHub: anon_009
-*************************/
+
 #include <stdio.h>
 
 int todos_los_combinatorios(unsigned int n);

@@ -1,9 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Agostina Biagini - anon_005 en Github
-Ejercicio 2 - El ajedrez y los granos de trigo
-*************************/
+
 #include <stdio.h>
  
 int main(int argc, char *argv[])

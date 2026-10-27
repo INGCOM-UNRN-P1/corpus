@@ -1,12 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-@anon_028
-Conversion de Temperaturas
-Pre-condicion: Ingresar 2 valores para realizar la conversion.
 
-Post-codicion: Se realizara la conversion de grados 
-*************************/
 
 #include <stdio.h>
 

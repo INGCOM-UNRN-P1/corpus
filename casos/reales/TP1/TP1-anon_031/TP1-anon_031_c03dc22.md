@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `c03dc22`
 **Commit SHA:** `c03dc224833b9b396712740c1d5579f36031e5ab`
-**Autor:** `anon_031`
+**Autor:** `anon_031_c03dc22.md`
 **Fecha del commit:** `2026-09-11 10:39:01 -0300`
 **Mensaje:** `TP1 Completado`
 **Fecha de evaluación:** 2026-09-17 14:44:59

@@ -1,9 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Agostina Biagini - anon_005 en Github
-Ejercicio 1B - Raíz cuadrada  
-*************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 

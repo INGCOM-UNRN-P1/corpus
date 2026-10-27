@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `e6831bc`
 **Commit SHA:** `e6831bcd3a452ff5d46633c1fe77a21c7659469b`
-**Autor:** `anon_018`
+**Autor:** `anon_018_e6831bc.md`
 **Fecha del commit:** `2026-09-13 16:42:30 -0300`
 **Mensaje:** `Subidos los ejercicios 4 y 5, y la libreria`
 **Fecha de evaluación:** 2026-09-18 09:57:12

@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_051 de GitHub
-*************************/
+
 #include <stdio.h>
 int asteriscos_fila(int asteriscos);
 int asteriscos_cuadra(int asteriscos_2);

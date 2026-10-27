@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `e7f5be4`
 **Commit SHA:** `e7f5be48f74a13e74ebdf2e11e2683646adfe541`
-**Autor:** `anon_001`
+**Autor:** `anon_001_e7f5be4.md`
 **Fecha del commit:** `2026-09-16 18:39:11 -0300`
 **Mensaje:** `Implementacion y documentacion de libarreglos y libcadenas`
 **Fecha de evaluación:** 2026-09-18 11:04:11

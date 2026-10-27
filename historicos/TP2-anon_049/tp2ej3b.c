@@ -1,10 +1,4 @@
-/*************
-UNRN-Programacion I
-Ing. en Computacion
-Prof: Martin Rene Vilugron
-Ejercicio 3- b 
-anon_049
-*************/
+
 
 #include<stdio.h>
 //int combinatorio(int n, int k);

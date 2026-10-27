@@ -1,8 +1,4 @@
-/*************************
- * Ingenieria en Computación - UNRN Andina
- * Programación 1
- * @anon_035
- *************************/
+
 #include <assert.h>  
 #include <ctype.h>   
 #include <stdio.h>   

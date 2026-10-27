@@ -1,10 +1,4 @@
-/************
-UNRN-Programacion I
-Ing. en Computacion
-Prof: Martin Rene Vilugron
-Ejercicio 5
-anon_049
-*************/
+
 
 #include<stdio.h>
 #define MAX 5

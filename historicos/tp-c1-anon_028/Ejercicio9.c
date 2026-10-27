@@ -1,12 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Multiples
-Pre-condicion: Se solicitan 2 numeros enteros.
 
-Post-codicion: Se mostrara si el segundo numero ingresado es multiplo o no
-@anon_028
-*************************/
 
 #include <stdio.h>
 

@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-@anon_067
-*************************/
+
 #include <stdio.h>
 
 double granosDeArroz(); //Defino la funcion

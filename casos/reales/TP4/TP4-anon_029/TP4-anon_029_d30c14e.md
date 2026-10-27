@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `d30c14e`
 **Commit SHA:** `d30c14e95ea51f1151cb30abcd36f1facb4b56a5`
-**Autor:** `anon_029`
+**Autor:** `anon_029_d30c14e.md`
 **Fecha del commit:** `2026-09-30 16:48:37 -0300`
 **Mensaje:** `Todos los ejercicios menos el 6, no lo llegue a hacer por falta de tiempo y porque no termine de entenderlo`
 **Fecha de evaluación:** 2026-10-02 14:02:50

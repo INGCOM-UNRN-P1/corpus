@@ -114,6 +114,11 @@ def reconstruir_repo_git(repo_path: Path, usuario: str, dry_run: bool = False) -
                 check=True,
             ).stdout
             ad, cd, msg = meta.split("\x00", 2)
+            # Sanitizar cualquier dato personal en el mensaje de commit
+            if str(RAIZ) not in sys.path:
+                sys.path.insert(0, str(RAIZ))
+            from scripts import anonimizar as mod_anon
+            msg = mod_anon.corregir(msg)
 
             if idx == 0:
                 autor_nombre = SISTEMA_NOMBRE
@@ -179,7 +184,7 @@ def procesar_todos_los_repos(base_dir: Path, dry_run: bool = False) -> int:
     exitos = 0
     errores = 0
 
-    for idx, repo in enumerate(repos, 1):
+    for _idx, repo in enumerate(repos, 1):
         usuario = detectar_usuario(repo)
         ok = reconstruir_repo_git(repo, usuario, dry_run=dry_run)
         if ok:

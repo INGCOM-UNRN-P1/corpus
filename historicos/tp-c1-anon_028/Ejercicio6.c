@@ -1,9 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Divisiones
-@anon_028
-*************************/
+
 
 #include <stdio.h>
 

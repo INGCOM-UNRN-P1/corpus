@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `079be2d`
 **Commit SHA:** `079be2d4aa9dd67ff9df47873561702aecbdc479`
-**Autor:** `anon_024`
+**Autor:** `anon_024_079be2d.md`
 **Fecha del commit:** `2026-09-09 01:13:51 -0300`
 **Mensaje:** `Entrega de carpeta libs y ejercicios`
 **Fecha de evaluación:** 2026-09-17 14:43:09

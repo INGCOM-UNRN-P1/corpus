@@ -1,8 +1,4 @@
-/*********************************************************************
-TP1 - Ejercicio 2: Conversion de temperaturas
-Andrés Bocchigliere - Git: anon_006 - elmaildeandresbochi@gmail.com
-Programacion 1 - Ingenieria en computacion - anon_001 - UNRN 
-*********************************************************************/
+
 
 
 

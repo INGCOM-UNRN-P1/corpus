@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_017
-*************************/
+
 #include <stdio.h>
 #define POSITIVO 1
 #define NEGATIVO 0

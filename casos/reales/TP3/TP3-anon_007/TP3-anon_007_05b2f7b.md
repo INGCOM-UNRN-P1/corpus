@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `05b2f7b`
 **Commit SHA:** `05b2f7ba8b366dfdd8de122de3f7bc802c66fec8`
-**Autor:** `anon_007`
+**Autor:** `anon_007_05b2f7b.md`
 **Fecha del commit:** `2026-09-27 20:27:07 -0300`
 **Mensaje:** `Realizacion del main.c (nota: No me esta funcionando el makefile, o las librerias. No se si toque algo sin querer)`
 **Fecha de evaluación:** 2026-09-28 10:36:04

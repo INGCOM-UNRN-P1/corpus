@@ -80,8 +80,5 @@ void matriz_destruir(int ***matriz);
 int** matriz_cargar_desde_csv(const char *ruta_archivo, size_t *out_filas, size_t *out_columnas);
 
 
- /**
- *implementar en matriz_dinamica.c,
- * programa en main.c y pruebas con p1_test en prueba.c.
- */
+ 
 #endif 

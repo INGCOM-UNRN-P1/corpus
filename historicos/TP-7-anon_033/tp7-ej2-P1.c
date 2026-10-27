@@ -1,8 +1,4 @@
-/*************************
- * Ingenieria en Computaci�n - UNRN Andina
- * Programaci�n 1
- * anon_033 de GitHub
- *************************/
+
  #include <stdio.h>
  #include <stdlib.h>
  #include <ctype.h>

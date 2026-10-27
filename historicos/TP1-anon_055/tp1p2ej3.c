@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computacion - UNRN Andina
-Programacion 1
-@anon_055
-*************************/
+
 
 // TP1 - parte 2 - ej. 3 comparacion de numeros
 

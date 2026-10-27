@@ -1,11 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Factoriales
-Pre-condicion: Se solicita un numero entero 
-Post-codicion: Se mostrara su factorial
-@anon_028
-*************************/
+
 
 #include <stdio.h>
 

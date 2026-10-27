@@ -1,22 +1,4 @@
-/****************************** INSTRUCCIONES PARA EL USO DE ARGC,ARGV *******************************
-|                                                                                                    |   
-|----------------------------------------------------------------------------------------------------|                      
-|                       |                            Datos a Ingresar                                |
-|-----------------------|----------------------------------------------------------------------------|                      
-|    Funcion            |   Opciones seleccionada       Cadena1             Cadena2         Posicion-|
-|----------------------------------------------------------------------------------------------------|
-|   largo_seguro        |            1                  "Cadena 1.."           -               -     |
-|   insercion_de_cadenas|            2                  "Cadena 1.."       "Cadena 2.."      numero  | 
-|   copia_de_cadenas    |            3                  "Cadena 1.."       "Cadena 2.."        -     |
-|   limpieza            |            4                  "Cadena 1.."           -               -     |
-|   inversor            |            5                  "Cadena 1.."           -               -     |
-|   comparacion         |            6                  "Cadena 1.."       "Cadena 2.."        -     |
-|   contador_caracteres |            7                  "Cadena 1.."           -               -     |
-|   contador_simbolos   |            8                  "Cadena 1.."           -               -     |
-|   a_minusculas        |            9                  "Cadena 1.."           -               -     |
-|   palindromo_seguro   |           10                  "Cadena 1.."           -               -     |
-------------------------------------------------------------------------------------------------------
- */
+
 
 #include <stdio.h>
 

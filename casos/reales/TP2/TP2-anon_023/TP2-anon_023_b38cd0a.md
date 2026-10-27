@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `b38cd0a`
 **Commit SHA:** `b38cd0aaa310f655a1eb447ce0afdbd5bc8134ca`
-**Autor:** `anon_023`
+**Autor:** `anon_023_b38cd0a.md`
 **Fecha del commit:** `2026-09-16 19:06:48 -0300`
 **Mensaje:** `libcadenas terminada con pruebas de subcadena`
 **Fecha de evaluación:** 2026-09-18 11:03:52

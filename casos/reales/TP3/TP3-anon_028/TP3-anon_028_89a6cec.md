@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `89a6cec`
 **Commit SHA:** `89a6cecba4cee369ceb76a73acb0e3857ac1e369`
-**Autor:** `anon_028`
+**Autor:** `anon_028_89a6cec.md`
 **Fecha del commit:** `2026-09-22 16:45:49 -0300`
 **Mensaje:** `TP3 completado`
 **Fecha de evaluación:** 2026-09-28 10:29:22

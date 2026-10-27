@@ -1,9 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Agostina Biagini - anon_005 en Github
-Ejercicio 3 - Operadores Aritméticos 
-*************************/
+
 #include <stdio.h>
  
  int operaciones(int A, int B);

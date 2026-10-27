@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `ef5efe1`
 **Commit SHA:** `ef5efe1882be32e0c67c044287c4063ff296fd7c`
-**Autor:** `anon_017`
+**Autor:** `anon_017_ef5efe1.md`
 **Fecha del commit:** `2026-09-16 23:22:27 -0300`
 **Mensaje:** `Se sube el trabajo practico numero 2`
 **Fecha de evaluación:** 2026-09-18 11:05:36

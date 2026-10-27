@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computacion - UNRN Andina
-Programacion 1
-anon_046 de GitHub
-*************************/
+
 #ifndef _MIS_FUNCIONES_H_
 #define _MIS_FUNCIONES_H_
 

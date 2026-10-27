@@ -1,9 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Agostina Biagini - anon_005 en Github
-Ejercicio 11 - Suma lenta 
-*************************/
+
 #include <stdio.h>
  
 int suma_lenta(int num1, int num2);

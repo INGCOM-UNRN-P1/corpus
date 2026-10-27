@@ -1,14 +1,6 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_014 de GitHub
-*************************/
+
 #include <stdio.h>
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_014 de GitHub
-*************************/
+
 
 double raiz(int numero);
 

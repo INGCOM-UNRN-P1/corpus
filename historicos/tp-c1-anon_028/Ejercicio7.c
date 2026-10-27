@@ -1,12 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Numeros primos
-Pre-condicion: Se solicita un numero entero 
 
-Post-codicion: Se mostrara si el numero ingresado es primo o no
-@anon_028
-*************************/
 
 
 #include <stdio.h>

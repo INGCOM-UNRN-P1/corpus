@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `a20aadc`
 **Commit SHA:** `a20aadc2f778ef83fcf1f9a82bf9372129dfdd67`
-**Autor:** `anon_027`
+**Autor:** `anon_027_a20aadc.md`
 **Fecha del commit:** `2026-10-03 09:20:36 -0300`
 **Mensaje:** `TP4  Completo`
 **Fecha de evaluación:** 2026-10-05 07:54:44

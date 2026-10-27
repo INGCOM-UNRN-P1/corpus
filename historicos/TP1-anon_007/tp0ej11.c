@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_007 de GitHub
-*************************/
+
 //Leí que decía numeros naturales cuando ya lo había hecho.
 #include <stdio.h>
 int suma_lenta(int numero, int otro_numero);

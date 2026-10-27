@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_021@ 
-*************************/
+
 #include <stdio.h>
 #include <math.h>
 int divide_lento(int dividendo, int divisor);

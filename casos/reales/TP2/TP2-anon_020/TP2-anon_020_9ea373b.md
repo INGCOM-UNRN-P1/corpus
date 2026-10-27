@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `9ea373b`
 **Commit SHA:** `9ea373bfbcfe7fa3ca2de6c23007f23991eb013f`
-**Autor:** `anon_020`
+**Autor:** `anon_020_9ea373b.md`
 **Fecha del commit:** `2026-09-16 22:46:38 -0300`
 **Mensaje:** `documentacion completa`
 **Fecha de evaluación:** 2026-09-18 11:05:09

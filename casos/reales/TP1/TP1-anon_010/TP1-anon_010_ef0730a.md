@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `ef0730a`
 **Commit SHA:** `ef0730a9dacbb6c21a85814cb78c277bf1bbace2`
-**Autor:** `anon_010`
+**Autor:** `anon_010_ef0730a.md`
 **Fecha del commit:** `2026-09-10 21:47:27 -0300`
 **Mensaje:** `Implementacion de funciones de libs/consola`
 **Fecha de evaluación:** 2026-09-18 10:02:16

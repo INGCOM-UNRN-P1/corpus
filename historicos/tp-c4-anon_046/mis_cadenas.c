@@ -1,7 +1,4 @@
-/*************************
-Diego Mingorance (anon_046 de GitHub_ - anon_001
-Programacion 1 - Ingenieria en computacion
-*************************/
+
 #include "mis_cadenas.h"
 #include <stdio.h>
 #include <stdlib.h>

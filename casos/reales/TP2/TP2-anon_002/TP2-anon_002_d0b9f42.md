@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `d0b9f42`
 **Commit SHA:** `d0b9f4247cce3b9deb4441823e724d87fb666926`
-**Autor:** `anon_002`
+**Autor:** `anon_002_d0b9f42.md`
 **Fecha del commit:** `2026-09-16 23:26:44 -0300`
 **Mensaje:** `Completar librerías de arreglos y cadenas`
 **Fecha de evaluación:** 2026-09-18 11:06:44

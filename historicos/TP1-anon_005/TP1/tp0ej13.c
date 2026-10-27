@@ -1,9 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Agostina Biagini - anon_005 en Github
-Ejercicio 13 - ¿Es un número primo?  
-*************************/
+
 #include <stdio.h>
  
 int es_primo(int numero);

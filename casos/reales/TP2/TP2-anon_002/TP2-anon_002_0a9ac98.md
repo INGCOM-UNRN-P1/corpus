@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `0a9ac98`
 **Commit SHA:** `0a9ac98dadced672fbd4ca9e5d3ca4733395fc38`
-**Autor:** `anon_002`
+**Autor:** `anon_002_0a9ac98.md`
 **Fecha del commit:** `2026-09-19 16:30:24 -0300`
 **Mensaje:** `docs: agrego documentacion completa en headers de ejercicios`
 **Fecha de evaluación:** 2026-09-28 10:34:45

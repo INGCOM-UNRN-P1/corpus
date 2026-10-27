@@ -1,16 +1,11 @@
-/*************************
- * Ingenieria en Computación - UNRN Andina
- * Programación 1
- * TP5
- * @anon_030
- *************************/
+
 
 #include <stdio.h>
 
 int main(int argc, char *argv[])
 {
 
-/**************************************************************/
+
 
     float flotante = 21.2;
     int entero = 23;
@@ -22,20 +17,20 @@ int main(int argc, char *argv[])
 
     int tamanio;
 
-/**************************************************************/
+
 
     printf("el valor del float \t\t es: %f \n", flotante);
     printf("el valor del int \t\t es: %i \n", entero);
     printf("el valor del char \t\t es: %c \n", cadena);
     printf("\n\n");
 
-/**************************************************************/
+
     printf("el valor del *float \t\t es: 0x% x \n", flotante_p);
     printf("el valor del *int \t\t es: 0x% x \n", entero_p);
     printf("el valor del *char \t\t es: 0x% x \n", cadena_p);
     printf("\n\n");
 
-/**************************************************************/
+
 
     tamanio = sizeof(flotante);
     printf("el tamaño del float \t\t es: %i \n", tamanio);
@@ -47,7 +42,7 @@ int main(int argc, char *argv[])
     printf("el tamaño del char \t\t es: %i \n", tamanio);
     printf("\n\n");
 
-/**************************************************************/
+
 
     tamanio = sizeof(flotante_p);
     printf("el tamaño del float* \t\t es: %i \n", tamanio);
@@ -60,13 +55,13 @@ int main(int argc, char *argv[])
 
     printf("\n\n");
 
-/**************************************************************/
+
     printf("la dirrecion del float  \t es: 0x% x \n", flotante);
     printf("la dirrecion del int    \t es: 0x% x \n", entero);
     printf("la dirrecion del char   \t es: 0x% x \n", cadena);
 
     printf("\n\n");
-/**************************************************************/
+
     printf("la dirrecion del *float \t es: 0x% x \n", flotante_p);
     printf("la dirrecion del *int   \t es: 0x% x \n", entero_p);
     printf("la dirrecion del *char  \t es: 0x% x \n", cadena_p);

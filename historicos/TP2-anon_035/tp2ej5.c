@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Ramrio Salcedo - @anon_035
-*************************/
+
 
 #include <stdio.h>
 #define MAX 5

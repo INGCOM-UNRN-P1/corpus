@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `3e96a8e`
 **Commit SHA:** `3e96a8e26b805b39a9125d682998fc0cada22cc2`
-**Autor:** `anon_002`
+**Autor:** `anon_002_3e96a8e.md`
 **Fecha del commit:** `2026-09-23 18:30:27 -0300`
 **Mensaje:** `Completar TP3 de Programacion 1`
 **Fecha de evaluación:** 2026-09-28 10:32:40

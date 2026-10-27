@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `f2daade`
 **Commit SHA:** `f2daadeda30b807448e60149d3c739a431571292`
-**Autor:** `anon_014`
+**Autor:** `anon_014_f2daade.md`
 **Fecha del commit:** `2026-09-22 21:28:50 -0300`
 **Mensaje:** `Entrega TP3`
 **Fecha de evaluación:** 2026-09-28 10:29:41

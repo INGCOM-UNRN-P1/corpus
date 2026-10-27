@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_022 de GitHub
-*************************/
+
 #include <stdio.h>
  
 int es_primo(num);

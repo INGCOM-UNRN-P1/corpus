@@ -17,9 +17,9 @@
  * @brief Estructura que representa un arreglo dinamico de enteros en heap.
  */
 typedef struct arreglo_dinamico {
-    int *datos;         /**< Puntero al bloque contiguo de datos en heap */
-    size_t cantidad;    /**< Cantidad actual de elementos validos */
-    size_t capacidad;   /**< Capacidad fisica total reservada en memoria */
+    int *datos;         
+    size_t cantidad;    
+    size_t capacidad;   
 } arreglo_dinamico_t;
 
 /**

@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `b46edc2`
 **Commit SHA:** `b46edc2380c62b59a0b95471290c9eb683813a2c`
-**Autor:** `anon_023`
+**Autor:** `anon_023_b46edc2.md`
 **Fecha del commit:** `2026-09-11 16:15:16 -0300`
 **Mensaje:** `Ejercicio 5 completado y suite de pruebas validada`
 **Fecha de evaluación:** 2026-09-18 09:56:34

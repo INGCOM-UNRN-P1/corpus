@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `fa39f1b`
 **Commit SHA:** `fa39f1b5c6b3b476f39b318d3ff7bcc3848ff72b`
-**Autor:** `anon_031`
+**Autor:** `anon_031_fa39f1b.md`
 **Fecha del commit:** `2026-09-16 11:45:26 -0300`
 **Mensaje:** `TP2 Completado`
 **Fecha de evaluación:** 2026-09-18 11:03:16

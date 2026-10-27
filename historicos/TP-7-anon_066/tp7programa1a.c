@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_066
-*************************/
+
 #include <stdio.h>
 #include <string.h>
 #define CANTIDAD_TAMANIO 11

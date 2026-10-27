@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+"""Punto de entrada CLI del repositorio `corpus` (`corpus ingest --anon`, `corpus check`, etc.)."""
+
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+RAIZ = Path(__file__).resolve().parent
+if str(RAIZ) not in sys.path:
+    sys.path.insert(0, str(RAIZ))
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = list(sys.argv[1:] if argv is None else argv)
+    if not args or args[0] in ("-h", "--help"):
+        print("Uso: corpus <subcomando> [opciones]\n\nSubcomandos:\n  ingest --anon   Importa y sanitiza entregas purgando Git y datos personales\n  correr          Ejecuta el banco de regresión (scripts/correr.py)\n  anonimizar      Audita datos personales (scripts/anonimizar.py)")
+        return 0
+    sub = args[0]
+    rest = args[1:]
+    if sub == "ingest":
+        from scripts.ingest import main as ingest_main
+        return ingest_main(rest)
+    if sub == "correr":
+        from scripts.correr import main as correr_main
+        return correr_main(rest)
+    if sub == "anonimizar":
+        from scripts.anonimizar import main as anon_main
+        return anon_main(rest)
+    print(f"Error: subcomando desconocido '{sub}'", file=sys.stderr)
+    return 2
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `51cf26c`
 **Commit SHA:** `51cf26cd90eab283caf84479b3a42ec0a0f247e3`
-**Autor:** `anon_014`
+**Autor:** `anon_014_51cf26c.md`
 **Fecha del commit:** `2026-09-12 13:35:36 -0300`
 **Mensaje:** `Restaura enunciado correcto de TP1-2026 e implementa consola, triangulo y cajero`
 **Fecha de evaluación:** 2026-09-28 10:36:33

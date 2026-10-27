@@ -1,8 +1,4 @@
-/*************************
- * Ingenieria en Computación - UNRN Andina
- * Programación 1
- * anon_039 de GitHub
- *************************/
+
 #include <stdio.h>
 #define MAX_CONTACTOS 100
 #define MAX_CADENA 150

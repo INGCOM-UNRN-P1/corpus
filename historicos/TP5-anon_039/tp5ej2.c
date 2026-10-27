@@ -1,8 +1,4 @@
-/*************************
- * Ingenieria en Computación - UNRN Andina
- * Programación 1
- * anon_039 de GitHub
- *************************/
+
 #include <stdio.h>
 #define CADENA_CORTA -1
 #define MAX_CADENA 150
@@ -139,10 +135,7 @@ int insercion(char *destino, int capacidad_destino, char *insertar, int posicion
 //---desplazamiento a realizar de caracteres de texto destino---    
     int largo_desplazamiento = largo_destino + posicion;
     
-/**************
- Si el total de la cadena (calculado previamente) es mayor a la capacidad de cadena ó
- la posicion es mayor al largo de la cadena destino dará resultado de error
- ***************/
+
     if ((( 0 <= total_largo_cadena)||(total_largo_cadena <= capacidad_destino)) && (posicion < largo_destino))
     {
     //---desplazamiento de caracteres de texto destino---    

@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `bebc47e`
 **Commit SHA:** `bebc47e36ab7212e93b3c5c4763aec7972a3871c`
-**Autor:** `anon_019`
+**Autor:** `anon_019_bebc47e.md`
 **Fecha del commit:** `2026-09-26 21:29:17 -0300`
 **Mensaje:** `Entrega p1-2026-tp3-segundius 2026-09-26 21:29`
 **Fecha de evaluación:** 2026-09-28 10:36:40

@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include <stddef.h>
 
-/** Valor que retorna distancia_punteros() ante argumentos inválidos. */
+
 #define DISTANCIA_INVALIDA (-1)
 
 /**

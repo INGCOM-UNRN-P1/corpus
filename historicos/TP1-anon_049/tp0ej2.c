@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_049
-*************************/
+
 #include <stdio.h>
 #define KG_HARINA 20000;
 

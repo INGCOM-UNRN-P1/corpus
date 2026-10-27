@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `ede4078`
 **Commit SHA:** `ede4078abae30f65798d9fcd7fd6ec941614cfdf`
-**Autor:** `anon_001`
+**Autor:** `anon_001_ede4078.md`
 **Fecha del commit:** `2026-09-23 20:46:55 -0300`
 **Mensaje:** `Solucion de ejercicios y pruebas`
 **Fecha de evaluación:** 2026-09-28 10:34:45

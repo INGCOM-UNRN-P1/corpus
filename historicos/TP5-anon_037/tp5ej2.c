@@ -1,8 +1,4 @@
-/*************************
-Ingeniería en Computación - UNRN Andina
-Programación 1
-@anon_037
-*************************/
+
 
 #include <stdio.h>
 #define MAX_CADENA 21
@@ -22,7 +18,7 @@ int main()
 	printf("------------------------------------------------------------------------------------------------\n");
 	printf("**Largo de cadena**\n\n");
 	
-	/*** Largo de cadenas ***/
+	
 	int largo_total_cadena;
 	char cadena[CADENA_LIMITE];
 	int capacidad_cadena = MAX_CADENA;
@@ -45,7 +41,7 @@ int main()
 	printf("------------------------------------------------------------------------------------------------\n");
 	printf("**Insercion de cadena**\n\n");
 	
-    /*** Inserción de cadenas ***/
+    
 	char destino[MAX_CADENA_INSERCION];
 	char insertar[MAX_CADENA_INSERCION];
 	int capacidad_destino = MAX_CADENA;
@@ -111,7 +107,7 @@ int main()
 	printf("------------------------------------------------------------------------------------------------\n");
 	printf("**Copiadora de cadena**\n\n");
 	
-	/*** Copiadora de cadenas ***/
+	
 	char destin[19] = "-Destino de copia-";
 	char origen[CADENA_A_COPIAR];
 	
@@ -134,7 +130,7 @@ int main()
 }
 
 
-/*** Largo de cadenas ***/
+
 
 int largo_cadena(char *cadena, int capacidad_cadena)
 {
@@ -158,7 +154,7 @@ int largo_cadena(char *cadena, int capacidad_cadena)
 }
 
 
-/*** Inserción de cadenas ***/
+
 
 int insercion(char destino[], int capacidad_destino, char insertar[], int posicion)
 {
@@ -208,7 +204,7 @@ int insercion(char destino[], int capacidad_destino, char insertar[], int posici
 }
 
 
-/*** Copiadora de cadenas ***/
+
 
 int copiadora(char origen[], char destino[], int capacidad_destino)
 {

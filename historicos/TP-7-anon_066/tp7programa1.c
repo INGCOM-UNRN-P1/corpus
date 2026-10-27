@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_066
-*************************/
+
 #include <stdio.h>
 #define CANTIDAD_TAMANIO 11
 int cantidad_de_minas_a_cargar(int fila,int columna)

@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-@anon_018
-*************************/
+
 
 #include "funciones_seguras.h"
 #include <stdio.h>

@@ -1,8 +1,4 @@
-/*********************************************************************
-TP1 - Ejercicio 4: Comparacion de numeros
-Andrés Bocchigliere - Git: anon_006 - elmaildeandresbochi@gmail.com
-Programacion 1 - Ingenieria en computacion - anon_001 - UNRN 
-*********************************************************************/
+
 
 
 

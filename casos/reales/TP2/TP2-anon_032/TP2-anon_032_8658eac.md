@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `8658eac`
 **Commit SHA:** `8658eaca3e4f2c9b0638014049522a34ab20dce1`
-**Autor:** `anon_032`
+**Autor:** `anon_032_8658eac.md`
 **Fecha del commit:** `2026-09-16 22:25:33 -0300`
 **Mensaje:** `documentacion, tests`
 **Fecha de evaluación:** 2026-09-18 11:04:48

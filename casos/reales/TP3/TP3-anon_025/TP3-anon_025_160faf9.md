@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `160faf9`
 **Commit SHA:** `160faf9190b07e4627d7bf3d0e1ef5f49e32a6cf`
-**Autor:** `anon_025`
+**Autor:** `anon_025_160faf9.md`
 **Fecha del commit:** `2026-09-22 23:06:10 -0300`
 **Mensaje:** `TP3 realizado, ejercicio 4, 5 y 6 hechos con punteros`
 **Fecha de evaluación:** 2026-09-28 10:30:00

@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computacion - UNRN Andina
-Programacion 1
-@anon_055
-*************************/
+
 
 // TP1 - ej4 - multiplos
 

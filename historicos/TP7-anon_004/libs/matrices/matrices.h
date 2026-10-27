@@ -14,10 +14,10 @@
 
 
 typedef struct matriz {
-    int **filas;          /**< Arreglo de punteros a filas */
-    int *datos;           /**< Bloque contiguo de datos (filas * columnas) */
-    size_t cant_filas;    /**< Cantidad de filas */
-    size_t cant_columnas; /**< Cantidad de columnas */
+    int **filas;          
+    int *datos;           
+    size_t cant_filas;    
+    size_t cant_columnas; 
 } matriz_t;
 
 

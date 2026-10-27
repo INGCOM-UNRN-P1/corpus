@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_042 de GitHub
-*************************/
+
 #include <stdio.h>
 int factorial(int numero);
 int factorial_reload(int numero);

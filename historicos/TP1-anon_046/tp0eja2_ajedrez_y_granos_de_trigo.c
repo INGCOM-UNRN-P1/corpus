@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computacion - UNRN Andina
-Programacion 1
-anon_046 de GitHub
-*************************/
+
 #include <stdio.h>
 
 #define GRANOS_POR_KILO 20000.0

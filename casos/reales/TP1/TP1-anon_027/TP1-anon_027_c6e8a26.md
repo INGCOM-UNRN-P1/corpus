@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `c6e8a26`
 **Commit SHA:** `c6e8a2602626dc8cac2e08dd97e2e3af9596dd9a`
-**Autor:** `anon_027`
+**Autor:** `anon_027_c6e8a26.md`
 **Fecha del commit:** `2026-09-12 12:25:15 -0300`
 **Mensaje:** `Carga del tp1`
 **Fecha de evaluación:** 2026-09-17 14:43:59

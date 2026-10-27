@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_051 de GitHub
-*************************/
+
 #include <stdio.h>
 int factorial(int numero_entero, int i);
 int main(int argc, char *argv[])

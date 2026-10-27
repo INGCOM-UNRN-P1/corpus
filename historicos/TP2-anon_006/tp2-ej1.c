@@ -1,15 +1,10 @@
-/****************************************************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Trabajo Práctico 2: Problemas Formalizados
-anon_006 - Andrés Bocchigliere - elmaildeandresbochi@gmail.com
-*****************************************************************/
 
-/**********************************************************************************/
+
+
         
 
 
-/**********************************************************************************/
+
 
 # include <stdio.h>
 
@@ -23,9 +18,9 @@ int main()
     int m = 0;
     int resultado;
     
-    /**********/
     
-    /**********/
+    
+    
     
     printf("\nInciso A");
     printf("\nIngrese un numero mayor a 0 para calcular su raiz cuadrada: ");
@@ -38,9 +33,9 @@ int main()
     
     printf("\n");
     
-    /**********/
     
-    /**********/
+    
+    
     
     n = 0;
     
@@ -61,9 +56,9 @@ int main()
     printf("\n");
 }
 
-/********************************************/
 
-/********************************************/
+
+
 
 int IngresoNumeroEntero()
 {
@@ -79,9 +74,9 @@ int IngresoNumeroEntero()
     }
 }
 
-/******************************************/
 
-/******************************************/
+
+
     
 int Raiz(int radicando)
 {
@@ -104,9 +99,9 @@ int Raiz(int radicando)
     }    
 }
 
-/***************************/
 
-/***************************/
+
+
 
 void ImprimeResultado(int resultado, int radicando)
 {

@@ -1,8 +1,4 @@
-/*************************
- * Ingenieria en Computación - UNRN Andina
- * Programación 1
- * anon_039 de GitHub
- *************************/
+
 #include <stdio.h>
 #define BUSCAQUEDA_NO_ENCONTRADA NULL
 #define CADENA_CORTA -1

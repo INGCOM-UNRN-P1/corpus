@@ -1,9 +1,4 @@
-/*************************
- * Ingenieria en Computación - UNRN Andina
- * Programación 1
- * TP5
- * @anon_030
- *************************/
+
 #include <stdio.h>
 
 #define CADENA_CORTA   -1

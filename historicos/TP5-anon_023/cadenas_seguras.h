@@ -1,8 +1,4 @@
-/*************************
- * Ingenieria en Computación - UNRN Andina
- * Programación 1
- * @anon_023
- *************************/
+
 
 int largo_cadena(char *cadena, int capacidad_cadena);
 

@@ -1,8 +1,4 @@
-/**
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_042 de GitHub
-**/
+
 #include <stdio.h>
 #define ALMACENADOR 300
 int factorial(int numero_n, int numero_k);

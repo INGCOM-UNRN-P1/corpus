@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `ecb05ea`
 **Commit SHA:** `ecb05eaf615e264b3a24c6cb1f4774d6c449c38d`
-**Autor:** `anon_019`
+**Autor:** `anon_019_ecb05ea.md`
 **Fecha del commit:** `2026-09-10 20:04:52 -0300`
 **Mensaje:** `Entrega p1-2026-tp1-segundius 2026-09-10 20:04`
 **Fecha de evaluación:** 2026-09-17 14:41:53

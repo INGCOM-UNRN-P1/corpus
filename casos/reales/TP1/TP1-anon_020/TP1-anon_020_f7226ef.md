@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `f7226ef`
 **Commit SHA:** `f7226efea91f2324f78ebc871a75df1f479f1aad`
-**Autor:** `anon_020`
+**Autor:** `anon_020_f7226ef.md`
 **Fecha del commit:** `2026-09-11 22:57:33 -0300`
 **Mensaje:** `Todos los ejercicios completos`
 **Fecha de evaluación:** 2026-09-17 14:42:19

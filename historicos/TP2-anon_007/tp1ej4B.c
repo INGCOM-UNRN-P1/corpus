@@ -1,9 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-TP - 2
-GitHub: anon_007
-*************************/
+
 #define MAX_CADENA 100
 #include <stdio.h>
 #include <string.h>

@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `f2cf3ac`
 **Commit SHA:** `f2cf3ac7682d7c476249ee8372ac7a37ee0776e4`
-**Autor:** `anon_011`
+**Autor:** `anon_011_f2cf3ac.md`
 **Fecha del commit:** `2026-09-16 23:32:32 -0300`
 **Mensaje:** `ejercicios de arreglos y cadenas`
 **Fecha de evaluación:** 2026-09-18 11:05:45

@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `ace4393`
 **Commit SHA:** `ace4393a216d3e067a88a8452aa3288d6fa096cc`
-**Autor:** `anon_024`
+**Autor:** `anon_024_ace4393.md`
 **Fecha del commit:** `2026-09-16 19:44:34 -0300`
 **Mensaje:** `Agrego la carpeta libs y documentacion de ejercicios`
 **Fecha de evaluación:** 2026-09-18 11:04:01

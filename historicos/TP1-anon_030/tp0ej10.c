@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-@marsiocons
-*************************/
+
 #include <stdio.h>
 
 void dia_semana(int entrada);

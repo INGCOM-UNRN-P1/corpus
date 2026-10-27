@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `bd27a36`
 **Commit SHA:** `bd27a3657c56c86a8252a4cdea2f53533f3209c0`
-**Autor:** `anon_007`
+**Autor:** `anon_007_bd27a36.md`
 **Fecha del commit:** `2026-09-11 19:53:12 -0300`
 **Mensaje:** `Correaciones en la librearia consola.c`
 **Fecha de evaluación:** 2026-09-17 14:38:27

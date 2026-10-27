@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `a4ddec5`
 **Commit SHA:** `a4ddec51b4fb3d99f46359b2980355b120f0fb10`
-**Autor:** `anon_004`
+**Autor:** `anon_004_a4ddec5.md`
 **Fecha del commit:** `2026-09-19 14:02:11 -0300`
 **Mensaje:** `Correciones Ejercicio 1 y 2`
 **Fecha de evaluación:** 2026-09-28 10:36:04

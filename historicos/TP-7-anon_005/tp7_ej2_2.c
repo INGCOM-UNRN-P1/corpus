@@ -1,10 +1,4 @@
-/******************************************
- * Ingenieria en Computación - UNRN Andina
- * Programación 1
- * Agostina Biagini
- * anon_005 en GitHub
- * Ejercicio 2: Buscaminas Programa 2
- *****************************************/
+
 
 #include <stdio.h>
 #include <stdlib.h>

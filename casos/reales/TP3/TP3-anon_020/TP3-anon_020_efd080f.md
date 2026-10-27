@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `efd080f`
 **Commit SHA:** `efd080f24edec142e56dc76040eaa73939d09c60`
-**Autor:** `anon_020`
+**Autor:** `anon_020_efd080f.md`
 **Fecha del commit:** `2026-09-23 20:22:52 -0300`
 **Mensaje:** `Todos los ejercicios completos`
 **Fecha de evaluación:** 2026-09-28 10:33:39

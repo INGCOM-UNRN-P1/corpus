@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-@anon_020
-*************************/
+
 
 #include <stdio.h>
 int suma_lenta(int numero1, int numero2)

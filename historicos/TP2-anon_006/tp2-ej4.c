@@ -1,13 +1,8 @@
-/****************************************************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Trabajo Práctico 2: Problemas Formalizados
-anon_006 - Andrés Bocchigliere - elmaildeandresbochi@gmail.com
-*****************************************************************/
 
-/******************************************************/
 
-/******************************************************/
+
+
+
     
 # include <stdio.h>
 
@@ -40,9 +35,9 @@ int main()
     printf("\n");
 }
 
-/********************************************/
 
-/********************************************/
+
+
 
 int IngresoNumeroEntero()
 {
@@ -59,9 +54,9 @@ int IngresoNumeroEntero()
     return numero;
 }
 
-/****************************************/
 
-/****************************************/
+
+
 
 void ImprimeLinea(int largo)
 {
@@ -73,9 +68,9 @@ void ImprimeLinea(int largo)
     }
 }
 
-/*******************************************/
 
-/*******************************************/
+
+
 
 void ImprimeCuadrado(int largolados)
 {
@@ -92,9 +87,9 @@ void ImprimeCuadrado(int largolados)
     }
 }
 
-/*****************************************************************/
 
-/*****************************************************************/
+
+
 
 void ImprimeTriangulo(int altura)
 {

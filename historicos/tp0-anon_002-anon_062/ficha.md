@@ -1,4 +1,4 @@
-nombre y apellido: Samuel Sisto	
-matricula: 9044
-correo electrónico: samubariloche@gmail.com
+nombre y apellido: anon_002-anon_062
+matricula 00000
+correo electrónico: estudiante@example.com
 usuario github: https://github.com/anon_062

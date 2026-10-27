@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_021@ 
-*************************/
+
 #include <stdio.h>
 #include <string.h>
 #define MAX_COLUMNAS 100

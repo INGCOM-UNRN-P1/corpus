@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `3eaa653`
 **Commit SHA:** `3eaa653b74e50211f41070662eef547be028aafd`
-**Autor:** `anon_013`
+**Autor:** `anon_013_3eaa653.md`
 **Fecha del commit:** `2026-10-03 18:19:28 -0300`
 **Mensaje:** `Completado ejercicio6 y retoques al ejercicio4`
 **Fecha de evaluación:** 2026-10-05 07:55:43

@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 	cadena= (char *) malloc(sizeof(char) * capacidad);
 	largo(cadena, capacidad);
 	free(cadena);
-	/******************************************************/
+	
 	int eleccion;
 	cadena = argv[1];
 	cadenaDos= argv[2];

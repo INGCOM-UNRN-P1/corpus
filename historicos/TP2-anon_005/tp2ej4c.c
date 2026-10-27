@@ -1,9 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Agostina Biagini - anon_005 en Github
-Ejercicio 4 - Parte C - Triángulo de asteriscos
-*************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 

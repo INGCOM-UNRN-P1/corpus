@@ -1,9 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-TP - 2
-GitHub: anon_007
-*************************/
+
 #include <stdio.h>
 #define MAX 5
 int get_min(int valores[MAX]);

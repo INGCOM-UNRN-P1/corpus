@@ -1,10 +1,4 @@
-/************
-UNRN-Programacion I
-Ing. en Computacion
-Prof: Martin Rene Vilugron
-Ejercicio 4 d
-anon_049
-*************/
+
 
 #include<stdio.h>
 

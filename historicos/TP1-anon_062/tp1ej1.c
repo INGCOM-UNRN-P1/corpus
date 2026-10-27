@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-GitHub: @anon_062
-*************************/
+
 
 
 

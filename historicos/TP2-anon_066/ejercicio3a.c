@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_066
-*************************/
+
 #include <stdio.h>
 double factorial(int a)
 {

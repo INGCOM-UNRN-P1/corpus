@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_051 de GitHub
-*************************/
+
 #include <stdio.h>
 #define FIBONACCI 50000
 int fibonacci(int numero_entero, int numero_menor);

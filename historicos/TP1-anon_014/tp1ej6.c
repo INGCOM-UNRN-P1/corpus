@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_014 de GitHub
-*************************/
+
 #include <stdio.h>
 int inicial, factorial, cuenta;
 

@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_066
-*************************/
+
 #include <stdio.h>
 #define CARACTERES_MAXIMOS_CADENA 50
 #define CANTIDAD_CARACTERES_MAXIMOS_CADENA_A_SOLICITAR 20

@@ -1,9 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Agostina Biagini - anon_005 en Github
-Ejercicio 14 - Restas sucesivas  
-*************************/
+
 #include <stdio.h>
  
 int divide_lento(int dividendo, int divisor);

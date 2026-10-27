@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `a86dff6`
 **Commit SHA:** `a86dff65c29d9da9c76816e016b974346c726823`
-**Autor:** `anon_022`
+**Autor:** `anon_022_a86dff6.md`
 **Fecha del commit:** `2026-10-02 02:54:37 -0300`
 **Mensaje:** `Ejercicio 6`
 **Fecha de evaluación:** 2026-10-02 14:08:20

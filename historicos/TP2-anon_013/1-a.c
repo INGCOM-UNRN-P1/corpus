@@ -1,8 +1,4 @@
-/*********************************************
-Ingeniería en Computación - UNRN - Sede Andina
-Programación 1
-Nombre de usuaria en GitHub: anon_013
-*********************************************/
+
 
 //Trabajo práctico 2:
 //Ejercicio 1-a: Parte entera de raíz cuadrada de n

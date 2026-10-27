@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-@anon_020
-*************************/
+
 #include <stdio.h>
 #define LARGO 11
 int compara_fechas(char *primera, char *segunda)

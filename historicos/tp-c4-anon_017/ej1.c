@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_017
-*************************/
+
 #include <stdio.h>
 #define CADENA_SIN_TERMINADOR -1
 #define MAXIMO 50

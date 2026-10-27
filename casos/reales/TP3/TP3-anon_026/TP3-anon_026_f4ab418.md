@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `f4ab418`
 **Commit SHA:** `f4ab4186d0098282e5272cd46d812b750a635a4f`
-**Autor:** `anon_026`
+**Autor:** `anon_026_f4ab418.md`
 **Fecha del commit:** `2026-09-23 20:07:58 -0300`
 **Mensaje:** `agragar libs y ejercicios`
 **Fecha de evaluación:** 2026-10-02 16:23:31

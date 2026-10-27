@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-minombredeusuario de GitHub: anon_009
-*************************/
+
 #include <stdio.h>
 #define CADENA_LARGA -1
 #define MAX_LENGTH 20
@@ -25,9 +21,7 @@ int main()
 
 
 
-/******************************************************
-*****************  LARGO DE CADENAS  ******************
-*******************************************************/
+
 
 int largo_cadena(char *cadena, int capacidad_cadena)
 {
@@ -50,9 +44,7 @@ int largo_cadena(char *cadena, int capacidad_cadena)
 
 
 
-/******************************************************
-**************  INSERCION DE CADENAS  *****************
-*******************************************************/
+
 int insercion(char *destino, int capacidad_destino, char* insertar, int posicion)
 {
 
@@ -95,9 +87,7 @@ int insercion(char *destino, int capacidad_destino, char* insertar, int posicion
 }
 
 
-/******************************************************
-**************    COPIA DE CADENAS    *****************
-*******************************************************/
+
 int copiadora(char *origen, char *destino, int capacidad_destino) 
 {
     int j;

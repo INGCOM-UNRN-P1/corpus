@@ -5,9 +5,7 @@
 
 
 
-/**
- * @struct tiempo_t Estructura que representa el tiempo.
-*/
+
 typedef struct
 {
     int horas;      // Representa las horas.

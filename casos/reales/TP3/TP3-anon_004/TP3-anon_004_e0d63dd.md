@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `e0d63dd`
 **Commit SHA:** `e0d63ddf712ca36b44562b132e149efe6a56f5ed`
-**Autor:** `anon_004`
+**Autor:** `anon_004_e0d63dd.md`
 **Fecha del commit:** `2026-09-23 21:50:42 -0300`
 **Mensaje:** `Ejercicios COMPLETADOS`
 **Fecha de evaluación:** 2026-09-28 10:35:32

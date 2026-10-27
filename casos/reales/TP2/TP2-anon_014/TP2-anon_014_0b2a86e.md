@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `0b2a86e`
 **Commit SHA:** `0b2a86e83c30e8b24eb14305045ae374ea7d5752`
-**Autor:** `anon_014`
+**Autor:** `anon_014_0b2a86e.md`
 **Fecha del commit:** `2026-09-17 13:31:53 -0300`
 **Mensaje:** `Entrega TP2 - Marco Pugliese`
 **Fecha de evaluación:** 2026-09-18 11:06:25

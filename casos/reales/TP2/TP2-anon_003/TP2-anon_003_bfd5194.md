@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `bfd5194`
 **Commit SHA:** `bfd5194adc5995ce0c9d7e5b215cde2569aae003`
-**Autor:** `anon_003`
+**Autor:** `anon_003_bfd5194.md`
 **Fecha del commit:** `2026-09-16 21:18:35 -0300`
 **Mensaje:** `Entrega de TP 2. con cambis en arreglos.c, arreglos.h, cadenas.c y cadenas.h`
 **Fecha de evaluación:** 2026-09-28 10:36:20

@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `d7e9eab`
 **Commit SHA:** `d7e9eabeb9cd68d0c8fb4291281a6cf4e52aa75a`
-**Autor:** `anon_029`
+**Autor:** `anon_029_d7e9eab.md`
 **Fecha del commit:** `2026-09-16 10:06:23 -0300`
 **Mensaje:** `Entrega tp2 completo`
 **Fecha de evaluación:** 2026-09-18 11:03:05

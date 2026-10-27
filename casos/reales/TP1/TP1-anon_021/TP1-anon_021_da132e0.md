@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `da132e0`
 **Commit SHA:** `da132e0406718c75c9611a35a00080a732b924cd`
-**Autor:** `anon_021`
+**Autor:** `anon_021_da132e0.md`
 **Fecha del commit:** `2026-09-11 18:25:46 -0300`
 **Mensaje:** `Tp 1:Implementacion de libreria consola y ejercicio 4`
 **Fecha de evaluación:** 2026-09-17 14:42:45

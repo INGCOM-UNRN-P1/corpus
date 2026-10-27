@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `2dca3f5`
 **Commit SHA:** `2dca3f5fa5ece22058825fac079df7a71ba06d15`
-**Autor:** `anon_028`
+**Autor:** `anon_028_2dca3f5.md`
 **Fecha del commit:** `2026-09-16 15:14:48 -0300`
 **Mensaje:** `TP2 completado: libarreglos y libcadenas con prototipos y pruebas`
 **Fecha de evaluación:** 2026-09-18 11:03:25

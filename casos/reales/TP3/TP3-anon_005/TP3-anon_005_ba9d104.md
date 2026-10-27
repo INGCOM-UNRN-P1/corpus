@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `ba9d104`
 **Commit SHA:** `ba9d1046a78d4a96003cf729d770e766bd1f7967`
-**Autor:** `anon_005`
+**Autor:** `anon_005_ba9d104.md`
 **Fecha del commit:** `2026-09-26 22:13:01 -0300`
 **Mensaje:** `Finalizacion de funcion calcular_estadistica con su documentacion`
 **Fecha de evaluación:** 2026-10-02 16:23:51

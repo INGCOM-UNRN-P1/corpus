@@ -1,7 +1,4 @@
-/*************************
-Diego Mingorance (anon_046 de GitHub) - anon_001
-Programacion 1 - Ingenieria en computacion
-*************************/
+
 
 #define CADENA_SIN_TERMINADOR       -1
 #define CADENA_NO_ENTRA             -2

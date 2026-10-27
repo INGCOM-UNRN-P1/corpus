@@ -4,20 +4,9 @@
 #include <stdbool.h>
 #include <stddef.h>
 
-/**
- * copiar_con_punteros: recibe char *destino, size_t capacidad, const char *origen.
- *    Copia origen en destino utilizando exclusivamente aritmética de punteros
- *    (desplazando punteros destino y origen con *dst++ = *src++).
- *    Garantiza terminación nula '\0' dentro del rango seguro [0, capacidad - 1].
- *    Retorna true si cupo completa, o false si hubo truncamiento o parámetros inválidos.
- */
 
-/**
- * concatenar_con_punteros: recibe char *destino, size_t capacidad, const char *origen.
- *    Avanza un puntero auxiliar hasta el terminador '\0' de destino y a continuación
- *    copia los caracteres de origen con punteros, respetando la capacidad máxima.
- *    Garantiza terminador nulo si capacidad > 0. Retorna true si no truncó, false si truncó.
- */
+
+
 
 /**
  * @brief Copia una cadena en otra de forma segura.

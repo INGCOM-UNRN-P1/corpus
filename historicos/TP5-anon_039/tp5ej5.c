@@ -1,8 +1,4 @@
-/*************************
- * Ingenieria en Computación - UNRN Andina
- * Programación 1
- * anon_039 de GitHub
- *************************/
+
 #include <stdio.h>
 #define MAXIMO_STRINGS 50
 #define MAXIMO_CARACTERES 1000

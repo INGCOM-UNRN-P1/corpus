@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `b7ea096`
 **Commit SHA:** `b7ea0968921e7fd2f2844478b590bff6b79ff6ab`
-**Autor:** `anon_009`
+**Autor:** `anon_009_b7ea096.md`
 **Fecha del commit:** `2026-09-23 16:49:17 -0300`
 **Mensaje:** `ejercicios del 3 al 6`
 **Fecha de evaluación:** 2026-09-28 10:32:04

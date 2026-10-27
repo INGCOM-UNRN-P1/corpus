@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `fb11e7f`
 **Commit SHA:** `fb11e7fa554c5e460b6a193421e4f6204c682109`
-**Autor:** `anon_002`
+**Autor:** `anon_002_fb11e7f.md`
 **Fecha del commit:** `2026-09-10 17:33:34 -0300`
 **Mensaje:** `TP1: Implementación de librería consola y ejercicio 5`
 **Fecha de evaluación:** 2026-09-17 14:37:09

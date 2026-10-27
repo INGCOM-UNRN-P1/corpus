@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `de9e666`
 **Commit SHA:** `de9e6665863ef8f9cbafcf3d93705b766e1de7e3`
-**Autor:** `anon_019`
+**Autor:** `anon_019_de9e666.md`
 **Fecha del commit:** `2026-10-01 22:44:06 -0300`
 **Mensaje:** `Entrega p1-2026-tp4-segundius 2026-10-01 22:44`
 **Fecha de evaluación:** 2026-10-02 14:07:15

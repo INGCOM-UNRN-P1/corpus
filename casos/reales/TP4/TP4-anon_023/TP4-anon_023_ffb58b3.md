@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `ffb58b3`
 **Commit SHA:** `ffb58b3686f59319881d2f60d47aa31800686d85`
-**Autor:** `anon_023`
+**Autor:** `anon_023_ffb58b3.md`
 **Fecha del commit:** `2026-09-30 17:57:44 -0300`
 **Mensaje:** `feat: completar TP4 (libvector, libstring y ejercicios 1 al 6)`
 **Fecha de evaluación:** 2026-10-02 14:03:29

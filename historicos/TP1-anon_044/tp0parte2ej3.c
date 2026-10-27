@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-@anon_044
-*************************/
+
 #include <stdio.h>
 
 int compara(int numero_a, int numero_b)

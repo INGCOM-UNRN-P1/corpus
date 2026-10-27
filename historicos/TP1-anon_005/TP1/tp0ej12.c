@@ -1,9 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Agostina Biagini - anon_005 en Github
-Ejercicio 12 - Comparación de números  
-*************************/
+
 #include <stdio.h>
  
 int compara(int numero, int otronumero);

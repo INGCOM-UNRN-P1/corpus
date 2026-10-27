@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Eduardo Alfredo Aguilar - @anon_012
-*************************/
+
 #include <stdio.h>
 #define GRAMOS_X_KILO 20000
 

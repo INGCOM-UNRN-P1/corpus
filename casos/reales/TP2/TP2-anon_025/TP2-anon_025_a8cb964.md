@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `a8cb964`
 **Commit SHA:** `a8cb96490d4ad7ee60a6a22fa44d3aa2f7916c82`
-**Autor:** `anon_025`
+**Autor:** `anon_025_a8cb964.md`
 **Fecha del commit:** `2026-09-15 23:22:17 -0300`
 **Mensaje:** `TP2 completado: lib arreglos y lib cadenas pasaron los tests`
 **Fecha de evaluación:** 2026-09-18 11:02:46

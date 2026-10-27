@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `b9fe134`
 **Commit SHA:** `b9fe1347bc3efc1ea19caca02575b1f15a25cf13`
-**Autor:** `anon_012`
+**Autor:** `anon_012_b9fe134.md`
 **Fecha del commit:** `2026-09-11 22:38:31 -0300`
 **Mensaje:** `Entrega Trabajo Practico 1!`
 **Fecha de evaluación:** 2026-09-17 14:39:45

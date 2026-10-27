@@ -1,9 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-TP - 2
-GitHub: anon_007
-*************************/
+
 #include <stdio.h>
 int producto(int  numero, int otro_numero);
 long potencia(long numero, long otro_numero);

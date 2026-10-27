@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `3af0a15`
 **Commit SHA:** `3af0a1584112c22437028901825766d6d9f60313`
-**Autor:** `anon_007`
+**Autor:** `anon_007_3af0a15.md`
 **Fecha del commit:** `2026-09-24 00:28:16 -0300`
 **Mensaje:** `Ejercicio 2 empezado, estadisticas.c`
 **Fecha de evaluación:** 2026-09-24 09:44:15

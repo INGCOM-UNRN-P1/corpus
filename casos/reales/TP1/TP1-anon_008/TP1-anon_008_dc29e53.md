@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `dc29e53`
 **Commit SHA:** `dc29e5308b84e369791d5bcab52d0bb913c9aa7a`
-**Autor:** `anon_008`
+**Autor:** `anon_008_dc29e53.md`
 **Fecha del commit:** `2026-09-11 16:39:13 -0300`
 **Mensaje:** `2do commit de consola implementando 2 funciones`
 **Fecha de evaluación:** 2026-09-17 14:38:53

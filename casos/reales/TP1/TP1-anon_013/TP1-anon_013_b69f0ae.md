@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `b69f0ae`
 **Commit SHA:** `b69f0ae9fccdd0d8f8c4026a3bdea69eccde7e82`
-**Autor:** `anon_013`
+**Autor:** `anon_013_b69f0ae.md`
 **Fecha del commit:** `2026-09-09 15:52:14 -0300`
 **Mensaje:** `Resueltos los ejercicios 4 y 5 del TP1`
 **Fecha de evaluación:** 2026-09-17 14:40:10

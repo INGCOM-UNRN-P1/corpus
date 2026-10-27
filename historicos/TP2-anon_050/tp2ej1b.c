@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_050
-*************************/
+
 #include <stdio.h>
 
 unsigned isqrt(unsigned n)

@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_021@ 
-*************************/
+
 #ifndef MIS_FUNCIONES_H
 #define MIS_FUNCIONES_H
 

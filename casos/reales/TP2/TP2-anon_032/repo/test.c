@@ -217,13 +217,7 @@ size_t cadena_longitud(const char cadena[], size_t capacidad)
     return contador;
 }
 
-/**
- * Extraer una porción de una cadena origen a partir de una posición inicial
- * ('inicio'), copiando a lo sumo 'cantidad' caracteres en un búfer destino
- * seguro acotado por 'capacidad'. Si capacidad > 0, el destino debe quedar
- * siempre terminado en '\0'. Si inicio supera la longitud de origen, destino
- * debe quedar como cadena vacía ("").
- */
+
 bool cadena_subcadena(char destino[], size_t capacidad_destino, 
                     const char origen[], size_t capacidad_origen, 
                     size_t inicio, size_t cantidad)
@@ -277,13 +271,7 @@ void cadena_invertir(char cadena[], size_t capacidad)
         largo--;
     }
 }
-/**
- * Convertir un entero con signo ('valor') a su representación textual en
- * base 10 dentro de un búfer destino seguro de tamaño 'capacidad'. 
- * Debe contemplar números negativos (con prefijo '-'), el cero ("0") y el valor
- * extremo INT_MIN. Si la capacidad es insuficiente, colocar '\0' y alertar
- * el error sin generar desbordamiento de búfer.
- */
+
 bool cadena_de_entero(char destino[], size_t capacidad, int valor)
 {
     if (destino == NULL || capacidad == 0)

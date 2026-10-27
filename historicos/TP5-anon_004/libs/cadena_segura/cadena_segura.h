@@ -18,9 +18,9 @@
  *        con longitud explicita y capacidad fisica en heap.
  */
 typedef struct cadena_segura {
-    char *texto;       /**< Puntero al bloque de memoria dinamica con los caracteres */
-    size_t longitud;   /**< Longitud de la cadena sin incluir el byte nulo terminador */
-    size_t capacidad;  /**< Tamano total del bloque reservado en heap */
+    char *texto;       
+    size_t longitud;   
+    size_t capacidad;  
 } cadena_segura_t;
 
 /**

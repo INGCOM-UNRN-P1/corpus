@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `2c66fc4`
 **Commit SHA:** `2c66fc478be898ebae036dd8f42b9700d3248de1`
-**Autor:** `anon_031`
+**Autor:** `anon_031_2c66fc4.md`
 **Fecha del commit:** `2026-09-23 10:42:01 -0300`
 **Mensaje:** `Completo TP3 punteros`
 **Fecha de evaluación:** 2026-09-28 10:30:38

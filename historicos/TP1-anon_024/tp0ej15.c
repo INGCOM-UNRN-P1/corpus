@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-@anon_024 de GitHub
-*************************/
+
 #define longitud 12
 
 #include <stdio.h>

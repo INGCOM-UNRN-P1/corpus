@@ -5,20 +5,9 @@
 #include <stddef.h>
 
 
-/**
- * buscar_primero: busca la primera aparición de un valor en un arreglo de enteros
- *    recorriéndolo con aritmética de punteros. En lugar de retornar un índice numérico,
- *    debe retornar un puntero constante (const int *) a la posición exacta en memoria
- *    donde se encuentra el elemento, o NULL si no existe o ante parámetros inválidos.
- */
 
- /**
-  * distancia_punteros: función utilitaria que recibe el puntero al inicio del
- *    arreglo y un puntero a un elemento interno (obtenido por ejemplo mediante
- *    buscar_primero), y calcula su índice o distancia relativa mediante la resta
- *    de punteros (p - inicio). Si alguno es NULL o el elemento está antes del inicio,
- *    retorna -1.
-*/
+
+ 
 
 
 /**

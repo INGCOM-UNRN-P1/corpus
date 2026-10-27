@@ -1,13 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-@anon_028
-Comparacion de numeros
-Pre-condicion: Se solicitan 2 numeros enteros 
 
-Post-codicion: Mostrara si son iguales o si el primero es mayor que el segundo 
-o el primero es menor al segundo
-*************************/
 
 #include <stdio.h>
 

@@ -1,9 +1,6 @@
 #include <stdio.h>
 
-/**
- * Plantilla
- * Nombre / usuario
- */
+
 
 
 int main()

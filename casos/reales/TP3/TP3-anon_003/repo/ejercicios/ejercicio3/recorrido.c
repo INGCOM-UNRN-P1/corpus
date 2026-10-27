@@ -28,7 +28,7 @@ bool invertir_arreglo (int *arreglo, size_t cantidad){
 if (arreglo == NULL || cantidad == 0){
         return false;
     }
- //**hacer libreria de validar null */   
+ /   
     int *ptr_inicio = arreglo;
     int *ptr_fin = arreglo + cantidad-1;
     

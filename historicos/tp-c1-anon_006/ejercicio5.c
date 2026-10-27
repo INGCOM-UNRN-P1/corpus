@@ -1,8 +1,4 @@
-/*********************************************************************
-TP1 - Ejercicio 5: Suma Lenta
-Andrés Bocchigliere - Git: anon_006 - elmaildeandresbochi@gmail.com
-Programacion 1 - Ingenieria en computacion - anon_001 - UNRN 
-*********************************************************************/
+
 
 
 

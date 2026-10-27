@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `4d2dcb2`
 **Commit SHA:** `4d2dcb2a75178349d730cfff7c8e4a107a736777`
-**Autor:** `anon_022`
+**Autor:** `anon_022_4d2dcb2.md`
 **Fecha del commit:** `2026-09-23 21:16:16 -0300`
 **Mensaje:** `Subida del TP3`
 **Fecha de evaluación:** 2026-09-28 10:35:01

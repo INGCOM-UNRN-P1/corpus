@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `fc0a9b3`
 **Commit SHA:** `fc0a9b3f2f09b0276d0077482adb785ae81924db`
-**Autor:** `anon_020`
+**Autor:** `anon_020_fc0a9b3.md`
 **Fecha del commit:** `2026-09-30 20:19:06 -0300`
 **Mensaje:** `Librerias y Ejercicios completos`
 **Fecha de evaluación:** 2026-10-02 14:03:51

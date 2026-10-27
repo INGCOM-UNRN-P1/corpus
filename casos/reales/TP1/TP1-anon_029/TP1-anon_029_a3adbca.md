@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `a3adbca`
 **Commit SHA:** `a3adbca2b58c112cf8cfa9ed7cfd26e1286b175c`
-**Autor:** `anon_029`
+**Autor:** `anon_029_a3adbca.md`
 **Fecha del commit:** `2026-09-09 10:46:10 -0300`
 **Mensaje:** `tarea: Agregamos el reporte de configuracion del entorno`
 **Fecha de evaluación:** 2026-09-17 14:44:58

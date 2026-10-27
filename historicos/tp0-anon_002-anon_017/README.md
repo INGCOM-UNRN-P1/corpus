@@ -42,7 +42,7 @@ Si no lo estás viendo, entonces no estaría de más compartir lo que has hecho 
 Completen el archivo llamado `ficha.md` en el repositorio, el cual tiene la siguiente forma:
 ```
 nombre y apellido:
-matricula:
+anon_002-anon_017
 correo electrónico:
 usuario github:
 ```

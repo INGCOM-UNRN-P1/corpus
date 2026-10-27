@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `412cce4`
 **Commit SHA:** `412cce47ab54e606732807a6b44975bed663c0d5`
-**Autor:** `anon_017`
+**Autor:** `anon_017_412cce4.md`
 **Fecha del commit:** `2026-09-24 16:02:54 -0300`
 **Mensaje:** `Se completa la libreria cadena`
 **Fecha de evaluación:** 2026-09-28 10:38:06

@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-minombredeusuario de GitHub
-*************************/
+
 #include <stdio.h>
  
 int divide_lento(int dividendo, int divisor)

@@ -1,8 +1,4 @@
-/*************************
- * Ingenieria en Computación - UNRN Andina
- * Programación 1
- * anon_033 de GitHub
- *************************/
+
  #include <stdio.h>
  char* busqueda(char *cadena, int largo, char *busqueda);
  #define LARGO_MAXIMO_TEXTO 100

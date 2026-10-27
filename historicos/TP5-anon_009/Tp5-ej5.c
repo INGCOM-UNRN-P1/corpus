@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-minombredeusuario de GitHub: anon_009
-*************************/
+
 #include <stdio.h>
 #include <string.h>
 #define MAX_CARACTERES_LINEA 50

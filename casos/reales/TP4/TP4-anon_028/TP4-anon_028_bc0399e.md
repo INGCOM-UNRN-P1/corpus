@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `bc0399e`
 **Commit SHA:** `bc0399e977ab596248e6d3a1e01c037521246f89`
-**Autor:** `anon_028`
+**Autor:** `anon_028_bc0399e.md`
 **Fecha del commit:** `2026-09-28 14:34:10 -0300`
 **Mensaje:** `TP4 completado`
 **Fecha de evaluación:** 2026-10-02 14:01:08

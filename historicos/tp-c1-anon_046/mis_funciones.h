@@ -1,7 +1,4 @@
-/*************************
-Diego Mingorance (anon_046 de GitHub) - anon_001
-Programacion 1 - Ingenieria en computacion
-*************************/
+
 #include <stdio.h>
 
 

@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Ojeda Walter - @walter_ojeda
-*************************/
+
 #include <stdio.h>
 
 int multiplicacion(int numero1, int numero2){

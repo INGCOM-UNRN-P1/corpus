@@ -1,24 +1,5 @@
-/*************************
- * Ingenieria en Computación - UNRN Andina
- * Programación 1
- * anon_014
- *************************/
- /*****************************************************************************
-  *       El programa no cumple el enunciado ni al 10% :c                     *
-  *   Se logro que resuelva calculos de un archivo con el sigiente formato    *
-  *               1                                                           *
-  *               2                                                           *
-  *               3                                                           *
-  *               +                                                           *
-  *               5                                                           *
-  *               -                                                           *
-  *               =                                                           *
-  * El programa distingue y realiza operaciones con los siguientes operadores *
-  *                         suma (+)                                          *
-  *                         Resta(-)                                          *
-  *                         Multiplicacion(*)                                 *
-  *                         Resultado (=)                                     *
-  *****************************************************************************/
+
+ 
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

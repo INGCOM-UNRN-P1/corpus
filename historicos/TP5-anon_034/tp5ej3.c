@@ -1,8 +1,4 @@
-/*************************
- * Ingenieria en Computación - UNRN Andina
- * Programación 1
- * Hanchut -- anon_034
- *************************/
+
  
 #include <stdio.h>
 

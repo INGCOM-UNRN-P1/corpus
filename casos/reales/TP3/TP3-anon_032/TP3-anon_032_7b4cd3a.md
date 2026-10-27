@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `7b4cd3a`
 **Commit SHA:** `7b4cd3a597eef1202ce492b71e5e6acfa4478a23`
-**Autor:** `anon_032`
+**Autor:** `anon_032_7b4cd3a.md`
 **Fecha del commit:** `2026-09-23 20:39:12 -0300`
 **Mensaje:** `TP Completado`
 **Fecha de evaluación:** 2026-09-28 10:34:09

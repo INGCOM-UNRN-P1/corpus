@@ -1,9 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-Agostina Biagini - anon_005 en Github
-Ejercicio 5 - Lazos 
-*************************/
+
 #include <stdio.h>
  
 int lazo(int num1, int num2);

@@ -1,4 +1,4 @@
-nombre y apellido: Katherina Soto
-matricula: UNRN-36611
-correo electrónico: kty.fer.6@gmail.com
+nombre y apellido: anon_002-anon_053
+matricula 00000
+correo electrónico: estudiante@example.com
 usuario github: anon_053

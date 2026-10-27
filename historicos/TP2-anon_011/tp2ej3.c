@@ -1,8 +1,4 @@
-/*************************
-Ingenieria en Computación - UNRN Andina
-Programación 1
-anon_011
-*************************/
+
 #include <stdio.h>
 int combinatorio(int n, int k, int factorial_n, int factorial_k){
 	int resultado;

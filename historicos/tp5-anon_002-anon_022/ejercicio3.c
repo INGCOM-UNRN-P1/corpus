@@ -1,15 +1,11 @@
 #include <stdio.h>
 
 
-/**
- * @struct Fraccion_t
- * Estructura que representa la fraccion
- *      
-*/
+
 typedef struct
 {
-    int numerador;          /** <El numerador de la fraccion*/
-    int denominador;        /**<El denominador de la fraccion*/
+    int numerador;          
+    int denominador;        
 } fraccion_t;
 
 

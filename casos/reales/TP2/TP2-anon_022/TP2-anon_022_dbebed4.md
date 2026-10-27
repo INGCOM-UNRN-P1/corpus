@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `dbebed4`
 **Commit SHA:** `dbebed41b5a7a8ec0c388507933fd7b14d2d3d8c`
-**Autor:** `anon_022`
+**Autor:** `anon_022_dbebed4.md`
 **Fecha del commit:** `2026-09-16 23:42:22 -0300`
 **Mensaje:** `Entrega del TP2`
 **Fecha de evaluación:** 2026-09-18 11:05:55

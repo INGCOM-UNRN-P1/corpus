@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `de9e436`
 **Commit SHA:** `de9e436ba3540c50a4342b9636541541d8bb0b0b`
-**Autor:** `anon_011`
+**Autor:** `anon_011_de9e436.md`
 **Fecha del commit:** `2026-09-11 23:58:43 -0300`
 **Mensaje:** `agrego ejercicio 4 y las funciones de consola.c`
 **Fecha de evaluación:** 2026-09-18 09:56:04

@@ -95,10 +95,7 @@ char *cadena_subcadena_dinamica(const char *origen, size_t capacidad_max,
  */
 char *cadena_invertir_dinamica(const char *origen, size_t capacidad_max);
 
-/**
- * prototipo de funciones del tp2
- *
- */
+
 size_t cadena_longitud(const char cadena[], size_t capacidad);
 /**
  * @brief [completar: qué hace cadena_copiar]

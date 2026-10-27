@@ -193,11 +193,7 @@ char *cadena_invertir_dinamica(const char *origen, size_t capacidad_max)
     return cadena_invertida;
 }
 
-/**
- * implementacion de funciones reutilizadas del tp2
- * las agrego acá por fallo en compliacion, posible falla del makefile a la hora
- * de buscar librerias.
- */
+
 
 size_t cadena_longitud(const char cadena[], size_t capacidad)
 {

@@ -1,9 +1,5 @@
 
-/*************************
- * Ingenieria en Computación - UNRN Andina
- * Programación 1
- * @anon_020
- *************************/
+
 
 #include <stdio.h>
 #include <stdlib.h>

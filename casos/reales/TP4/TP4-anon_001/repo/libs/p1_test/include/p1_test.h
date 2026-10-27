@@ -118,35 +118,34 @@ extern "C"
     
     typedef struct
     {
-        const char *suite_name;        /**< Nombre descriptivo de la suite */
-        const char *current_test_name; /**< Nombre del test en ejecución */
+        const char *suite_name;        
+        const char *current_test_name; 
         const char
-            *current_subcase;      /**< Subcaso o sección descriptiva actual */
-        int tests_run;             /**< Cantidad total de tests ejecutados */
-        int tests_passed;          /**< Cantidad de tests aprobados */
-        int tests_failed;          /**< Cantidad de tests desaprobados */
-        int tests_skipped;         /**< Cantidad de tests salteados */
-        int asserts_total;         /**< Total de aserciones evaluadas */
-        int asserts_failed;        /**< Total de aserciones que fallaron */
-        int current_test_failed;   /**< 1 si el test actual falló */
-        int current_test_skipped;  /**< 1 si el test actual fue salteado */
-        int in_test_scope;         /**< 1 si se está dentro de un RUN_TEST */
-        double current_elapsed_ms; /**< Tiempo de ejecución del test actual */
+            *current_subcase;      
+        int tests_run;             
+        int tests_passed;          
+        int tests_failed;          
+        int tests_skipped;         
+        int asserts_total;         
+        int asserts_failed;        
+        int current_test_failed;   
+        int current_test_skipped;  
+        int in_test_scope;         
+        double current_elapsed_ms; 
 
         
-        const char *filter;  /**< Filtro de nombre de test */
-        int fail_fast;       /**< Detener suite en primer fallo */
-        int quiet_mode;      /**< Salida compacta (. y F) */
-        int tap_mode;        /**< Salida en formato TAP v13 */
-        int no_color;        /**< Desactivar colores ANSI */
-        int timeout_seconds; /**< Timeout en segundos por test */
-        int tap_test_index;  /**< Contador de pruebas para TAP */
+        const char *filter;  
+        int fail_fast;       
+        int quiet_mode;      
+        int tap_mode;        
+        int no_color;        
+        int timeout_seconds; 
+        int tap_test_index;  
 
         
-        p1_hook_fn_t before_each;  /**< Setup antes de cada test */
-        p1_hook_fn_t after_each;   /**< Teardown después de cada test */
-        p1_hook_fn_t cleanup_hook; /**< Hook de limpieza automática
-                                        (descriptores, mocks) */
+        p1_hook_fn_t before_each;  
+        p1_hook_fn_t after_each;   
+        p1_hook_fn_t cleanup_hook; 
 
         
         jmp_buf jump_env;

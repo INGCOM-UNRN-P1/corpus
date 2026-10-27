@@ -3,7 +3,7 @@
 ## Repositorio
 **branch/revision:** `main` `2b1ce74`
 **Commit SHA:** `2b1ce745ded2005e6d7ea8806b56b1958b2237cc`
-**Autor:** `anon_024`
+**Autor:** `anon_024_2b1ce74.md`
 **Fecha del commit:** `2026-09-23 19:49:49 -0300`
 **Mensaje:** `Agrego todos los ejercicios y libs`
 **Fecha de evaluación:** 2026-09-28 10:33:18

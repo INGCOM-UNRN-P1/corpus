@@ -757,7 +757,7 @@ ripley_project() {
     if ! resolver_ripley; then
         echo -e "${ROJO}Error: El motor Ripley no está disponible en este entorno.${NC}"
         echo "Actualizá el entorno portable (update-env.sh) para descargar ripley.pyz,"
-        echo "o instalalo manualmente con: uv tool install git+https://github.com/martinvilu/ripley"
+        echo "o instalalo manualmente con: uv tool install git+https://github.com/estudiante/ripley"
         exit 1
     fi
 
