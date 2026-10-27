@@ -1,0 +1,17 @@
+
+**************************************************************************
+                             BUSCAMINAS                                       
+**************************************************************************
+
+PASO 1.DEFINICION DEL TABLERO DE JUEGO.
+
+
+PASO 2.DEFINICION DE COORDENADAS DE LAS MINAS.
+
+
+Cantidad de filas:50 
+
+Cantidad de columnas:50 
+
+Cantidad de minas: 5 
+

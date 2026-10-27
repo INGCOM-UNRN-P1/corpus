@@ -1,0 +1,445 @@
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_FILAS 50
+#define MAX_COLUMNAS 50
+#define MAX_MINAS 25
+#define CANT_DATOS 3
+#define POS_MINA 2
+#define POS_COL 1
+#define POS_FILA 0
+
+void inicio();
+int* ingresar_datos(int* datos);
+int** reservar_memoria(int** tablero, int* datos);
+int** ingreso_minas(int** tablero, int* datos);
+void mostrar_tablero(int** tablero, int* datos);
+FILE* abrir_archivo(FILE* p_file, char* archivo);
+FILE* guardar_datos(FILE* p_file, int** tablero, int* datos);
+FILE* cerrar_archivo(FILE* p_file);
+void liberar_memoria(int** tablero, int* datos);
+int** adyascencias(int** tablero, int* datos);
+
+int main(int argc, char *argv[])
+{
+    int i,j,m;
+    int fila, columna;
+    int cant_minas;
+    int p_fila, p_columna;
+    
+    int dato[CANT_DATOS];
+    int* datos;
+    int** tablero;
+
+    char* archivo = "datos_tablero.txt";
+    FILE* p_file;
+        
+    inicio();
+        
+    datos = ingresar_datos(dato);
+        
+    tablero = reservar_memoria(tablero, datos);
+        
+    tablero = ingreso_minas(tablero, datos);
+    
+    tablero = adyascencias(tablero, datos);
+    
+    mostrar_tablero(tablero, datos);
+    
+    p_file = abrir_archivo(p_file, archivo);
+        
+    p_file = guardar_datos(p_file, tablero, datos);
+        
+    p_file = cerrar_archivo(p_file);
+    
+    liberar_memoria(tablero, datos);
+    
+    return 0;
+}
+
+void inicio()
+{
+    printf("\n\n**************************************************************************\n");
+    printf("                             BUSCAMINAS                                       ");
+    printf("\n**************************************************************************\n");
+    printf("\n");
+    printf("PASO 1.DEFINICION DEL TABLERO DE JUEGO.\n");    
+    printf("\n");    
+    printf("PASO 2.DEFINICION DE COORDENADAS DE LAS MINAS.\n");
+    printf("\n");
+}
+
+int* ingresar_datos(int dato[CANT_DATOS])
+{
+    printf("\n Ingrese un numero del 1 al 50 para la cantidad de filas del tablero de juego.\n");
+    scanf(" %d", &dato[0]);
+    
+    printf("\n Ingrese un numero del 1 al 50 para la cantidad de columnas del tablero de juego.\n");
+    scanf(" %d", &dato[1]); 
+       
+    printf("\n Ingrese un numero del 1 al 25 para definir la cantidad de minas a ubicar \n");
+    scanf(" %d", &dato[2]);
+    
+    return dato;
+}
+
+int** reservar_memoria(int** tablero, int* datos)
+{
+    int i;
+    
+    tablero = (int**)calloc(*datos ,sizeof(int*));
+    
+    for(i=0; i< *datos; i++)
+    {
+        tablero[i] = (int*) calloc(*(datos+1), sizeof(int));
+    }
+    
+    if(tablero == NULL)
+    {
+        printf("Error. No se pudo reservar la memoria. \n");
+    }
+    
+    return tablero;
+}
+
+int** ingreso_minas(int** tablero, int* datos)
+{
+    int i,j,m;
+    int fila, columna;
+    int cant_minas;
+    int p_fila, p_columna;
+    
+    fila = *datos;
+    columna =*(datos+1);
+    cant_minas = *(datos+2);
+    m = 0;
+    
+    printf("\n Ingresar posicion de las minas: \n");  
+    
+   while(m < cant_minas)
+    {
+        
+        printf("\n ingrese fila: \n");
+        scanf("%d", &p_fila);
+        printf("\n ingrese columna: \n", p_columna);
+        scanf("%d", &p_columna);
+        if((p_fila <= *datos)&&(p_columna <= *(datos+1)))
+        {
+            printf("\n Cordenadas ingresadas: %d,%d \n", p_fila, p_columna);
+            if(tablero[p_fila-1][p_columna-1] != 9)
+            {
+                tablero[p_fila-1][p_columna-1] = 9;
+                m++;
+            }
+            else
+            {
+                printf("En esta posicion ya se coloco una mina");
+            }
+        }
+        else
+        {
+            printf("\n Las cordenadas ingresadas estan fuera del tablero de juego \n");
+        }
+    }  
+    return tablero;    
+}      
+
+int** adyascencias(int** tablero, int* datos)
+{
+    int i,j,f,c, fila, columna;
+    int lim_infi, lim_supi, lim_infj, lim_supj, cant_minas, asteriscos;
+    
+    fila = *datos;
+    columna = *(datos+1);
+    cant_minas = *(datos+2);
+    f = 0;
+    c = 0;    
+    
+    for(i = 0; i< fila; i++)
+    {
+        for(j = 0; j< columna; j++)
+        {
+            if(tablero[i][j]== 9)
+            {
+                if((i==0)||(i==fila)||(j==0)||(j==columna))
+                {
+                    if(i == 0)
+                    {
+                        if(j==0)
+                        {
+                            lim_infi = 0;
+                            lim_supi = 1;
+                            lim_infj = 0;
+                            lim_supj = 1;
+                            
+                            for(f = lim_infi; f<= lim_supi; f++)
+                            {
+                                for(c = lim_infj; c <= lim_supj; c++)
+                                {
+                                    if(tablero[f][c]!= 9)
+                                    {
+                                        tablero[f][c] = tablero[f][c] + 1;
+                                        printf("%d %d\n",f,c);
+                                    }
+                                }
+                            }
+                        }
+                        else if(j == columna)
+                        {
+                            lim_infi = 0;
+                            lim_supi = 1;
+                            lim_infj = columna-1;
+                            lim_supj = columna;
+                            
+                            for(f = lim_infi; f<= lim_supi; f++)
+                            {
+                                for(c = lim_infj; c <= lim_supj; c++)
+                                {
+                                    if(tablero[f][c]!= 9)
+                                    {
+                                        tablero[f][c] = tablero[f][c] + 1;
+                                        printf("%d %d\n",f,c);
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            lim_infi = 0;
+                            lim_supi = 1;
+                            lim_infj = j-1;
+                            lim_supj = j+1;
+                            
+                            for(f = lim_infi; f <= lim_supi; f++)
+                            {
+                                for(c = lim_infj; c <= lim_supj; c++)
+                                {
+                                    if(tablero[f][c]!= 9)
+                                    {
+                                        tablero[f][c] = tablero[f][c] + 1;
+                                        printf("%d %d\n",f,c);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else if(j == 0)
+                    {
+                        if(i == fila)
+                        {
+                            lim_infi = fila-1;
+                            lim_supi = fila;
+                            lim_infj = 0;
+                            lim_supj = 1;
+                            
+                            for(f = lim_infi; f <= lim_supi; f++)
+                            {
+                                for(c = lim_infj; c <= lim_supj; c++)
+                                {
+                                    if(tablero[f][c]!= 9)
+                                    {
+                                        tablero[f][c] = tablero[f][c] + 1;
+                                        printf("%d %d\n",f,c);
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            lim_infi = i-1;
+                            lim_supi = i+1;
+                            lim_infj = 0;
+                            lim_supj = 1;
+                            
+                            for(f = lim_infi; f<= lim_supi; f++)
+                            {
+                                for(c = lim_infj; c <= lim_supj; c++)
+                                {
+                                    if(tablero[f][c]!= 9)
+                                    {
+                                        tablero[f][c] = tablero[f][c] + 1;
+                                        printf("%d %d\n",f,c);
+                                    }
+                                }
+                            }
+                        }    
+                    }
+                    else if(i == fila)
+                    {
+                        if(j == 0)
+                        {
+                            lim_infi = fila-1;
+                            lim_supi = fila;
+                            lim_infj = 0;
+                            lim_supj = 1;
+                            
+                            for(f = lim_infi; f <= lim_supi; f++)
+                            {
+                                for(c = lim_infj; c <= lim_supj; c++)
+                                {
+                                    if(tablero[f][c]!= 9)
+                                    {
+                                        tablero[f][c] = tablero[f][c] + 1;
+                                        printf("%d %d\n",f,c);
+                                    }
+                                }
+                            }
+                        }
+                        else if(j == columna)
+                        {
+                            lim_infi = fila-1;
+                            lim_supi = fila;
+                            lim_infj = columna -1;
+                            lim_supj = columna;
+                            
+                            for(f = lim_infi; f <= lim_supi; f++)
+                            {
+                                for(c = lim_infj; c <= lim_supj; c++)
+                                {
+                                    if(tablero[f][c]!= 9)
+                                    {
+                                        tablero[f][c] = tablero[f][c] + 1;
+                                        printf("%d %d\n",f,c);
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            lim_infi = fila-1;
+                            lim_supi = fila;
+                            lim_infj = j-1;
+                            lim_supj = j+1;
+                            
+                            for(f = lim_infi; f <= lim_supi; f++)
+                            {
+                                for(c = lim_infj; c <= lim_supj; c++)
+                                {
+                                    if(tablero[f][c]!= 9)
+                                    {
+                                        tablero[f][c] = tablero[f][c] + 1;
+                                        printf("%d %d\n",f,c);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        lim_infi = i-1;
+                        lim_supi = i+1;
+                        lim_infj = columna-1;
+                        lim_supj = columna;
+                        
+                        for(f = lim_infi; f<= lim_supi; f++)
+                        {
+                            for(c = lim_infj; c <= lim_supj; c++)
+                            {
+                                if(tablero[f][c]!= 9)
+                                {
+                                    tablero[f][c] = tablero[f][c] + 1;
+                                    printf("%d %d\n",f,c);
+                                }
+                            }
+                        }
+                    }    
+                }
+                else
+                {
+                    lim_infi = i-1;
+                    lim_supi = i+1;
+                    lim_infj = j-1;
+                    lim_supj = j+1;
+                    
+                    for(f = lim_infi; f <= lim_supi; f++)
+                    {
+                        for(c = lim_infj; c <= lim_supj; c++)
+                        {
+                            if(tablero[f][c]!= 9)
+                            {
+                                tablero[f][c] = tablero[f][c] + 1;
+                                printf("%d %d\n",f,c);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        printf("\n");
+    }
+    return tablero;    
+}
+
+void mostrar_tablero(int** tablero, int* datos)
+{
+    int i, j;
+    int fila, columna;
+    
+    fila = *datos;
+    columna =*(datos+1);
+    
+    for(i=0;i< fila;i++)
+    {
+        for(j=0;j< columna;j++)
+        {
+            printf("%d", tablero[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+FILE* abrir_archivo(FILE* p_file, char* archivo)
+{
+    p_file = fopen(archivo, "w");
+    
+    if(p_file == NULL)
+    {
+        printf("No se pudo abrir el archivo \n");
+    }
+    
+    return p_file;
+}
+
+FILE* guardar_datos(FILE* p_file, int** tablero, int* datos)
+{
+    int i, j;
+    
+    rewind(p_file);
+    
+    fprintf(p_file,"%d\n", *datos);
+    fprintf(p_file, "%d\n", *(datos+1));
+    fprintf(p_file,"%d\n", *(datos+2));
+    
+    for(i=0; i< *datos; i++)
+    {
+        for(j = 0; j< *(datos+1); j++)
+        {
+            fprintf(p_file, "%d", tablero[i][j]);
+        }
+        fprintf(p_file, "\n");
+    }
+    return p_file;
+}
+
+FILE* cerrar_archivo(FILE* p_file)
+{
+    fclose(p_file);       
+    
+    printf("\n El contenido fue escrito correctamente \n"); 
+    
+    return p_file;
+}
+
+void liberar_memoria(int** tablero, int* datos)
+{
+    int i;
+    
+    for(i=0; i< *datos; i++)
+    {
+        free(tablero[i]);
+    }
+    free(tablero);
+}

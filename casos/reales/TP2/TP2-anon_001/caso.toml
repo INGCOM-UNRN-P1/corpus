@@ -1,0 +1,18 @@
+descripcion = "Entrega real anonimizada de TP2 (ejercicio 1: operaciones sobre arreglos)"
+origen = "real-anonimizado"
+hallazgo = "N-ECO-24"
+
+[herramientas.daedalus]
+comando = ["daedalus", "compile", "repo/ejercicios/ejercicio1/main.c", "repo/ejercicios/ejercicio1/operaciones.c", "repo/libs/arreglos/arreglos.c", "--flags", "-I repo/ejercicios/ejercicio1 -I repo/libs/arreglos", "--output", "/tmp/corpus_tp2_bin", "--json"]
+
+[herramientas.gaff]
+comando = ["gaff", "check", "repo/ejercicios/ejercicio1/", "--json"]
+
+[herramientas.spunkmeyer]
+comando = ["spunkmeyer", "detect", "repo/ejercicios/ejercicio1/", "--json"]
+
+[herramientas.kaneda]
+comando = ["kaneda", "audit", "repo/ejercicios/ejercicio1/", "--json"]
+
+[herramientas.zhora]
+comando = ["zhora", "check", "repo/ejercicios/ejercicio1/", "--json"]

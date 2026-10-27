@@ -1,0 +1,21 @@
+{
+  "veredicto": true,
+  "hallazgos": [
+    [
+      "-Wunused-parameter",
+      7
+    ],
+    [
+      "-Wunused-parameter",
+      7
+    ],
+    [
+      "-Wunused-variable",
+      11
+    ],
+    [
+      "-Wunused-variable",
+      33
+    ]
+  ]
+}

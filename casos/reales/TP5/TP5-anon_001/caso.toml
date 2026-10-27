@@ -1,0 +1,18 @@
+descripcion = "Entrega histórica real anonimizada de TP5 importada con corpus ingest --anon"
+origen = "real-anonimizado"
+hallazgo = "N-ECO-24"
+
+[herramientas.daedalus]
+comando = ["daedalus", "compile", "repo/anon_060.c", "--output", "/tmp/corpus_tp5_bin", "--json"]
+
+[herramientas.gaff]
+comando = ["gaff", "check", "repo/", "--json"]
+
+[herramientas.spunkmeyer]
+comando = ["spunkmeyer", "detect", "repo/", "--json"]
+
+[herramientas.kaneda]
+comando = ["kaneda", "audit", "repo/", "--json"]
+
+[herramientas.zhora]
+comando = ["zhora", "check", "repo/", "--json"]

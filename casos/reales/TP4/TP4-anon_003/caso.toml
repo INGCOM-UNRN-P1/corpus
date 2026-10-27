@@ -1,0 +1,18 @@
+descripcion = "Entrega real anonimizada de TP4 (ejercicio 5: punteros y estructuras)"
+origen = "real-anonimizado"
+hallazgo = "N-ECO-24"
+
+[herramientas.daedalus]
+comando = ["daedalus", "compile", "repo/ejercicios/ejercicio5/main.c", "--flags", "-I repo/ejercicios/ejercicio5", "--output", "/tmp/corpus_tp4_bin", "--json"]
+
+[herramientas.gaff]
+comando = ["gaff", "check", "repo/ejercicios/ejercicio5/", "--json"]
+
+[herramientas.spunkmeyer]
+comando = ["spunkmeyer", "detect", "repo/ejercicios/ejercicio5/", "--json"]
+
+[herramientas.kaneda]
+comando = ["kaneda", "audit", "repo/ejercicios/ejercicio5/", "--json"]
+
+[herramientas.zhora]
+comando = ["zhora", "check", "repo/ejercicios/ejercicio5/", "--json"]

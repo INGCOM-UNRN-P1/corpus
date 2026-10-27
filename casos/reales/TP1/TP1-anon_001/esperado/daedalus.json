@@ -1,0 +1,9 @@
+{
+  "veredicto": true,
+  "hallazgos": [
+    [
+      "-Wconversion",
+      106
+    ]
+  ]
+}

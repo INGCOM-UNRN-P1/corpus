@@ -1,0 +1,9 @@
+{
+  "veredicto": true,
+  "hallazgos": [
+    [
+      "-Wpedantic",
+      5
+    ]
+  ]
+}

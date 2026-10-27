@@ -1,0 +1,18 @@
+descripcion = "Entrega real anonimizada de TP3 (ejercicio 6: procesamiento y compilación limpia)"
+origen = "real-anonimizado"
+hallazgo = "N-ECO-24"
+
+[herramientas.daedalus]
+comando = ["daedalus", "compile", "repo/ejercicios/ejercicio6/main.c", "--output", "/tmp/corpus_tp3_bin", "--json"]
+
+[herramientas.gaff]
+comando = ["gaff", "check", "repo/ejercicios/ejercicio6/", "--json"]
+
+[herramientas.spunkmeyer]
+comando = ["spunkmeyer", "detect", "repo/ejercicios/ejercicio6/", "--json"]
+
+[herramientas.kaneda]
+comando = ["kaneda", "audit", "repo/ejercicios/ejercicio6/", "--json"]
+
+[herramientas.zhora]
+comando = ["zhora", "check", "repo/ejercicios/ejercicio6/", "--json"]

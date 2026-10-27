@@ -37,8 +37,19 @@ RAIZ = Path(__file__).resolve().parents[1]
 CASOS = RAIZ / "casos"
 VEREDICTOS = ("ok", "exito", "passed")
 # Clave que identifica el hallazgo en cada herramienta (gaff/kaneda/spunkmeyer usan
-# `codigo`; daedalus, el `flag` de gcc).
-CLAVES_CODIGO = ("codigo", "regla", "flag", "code")
+# `codigo`; zhora usa `rule_id`; daedalus, el `flag` de gcc).
+CLAVES_CODIGO = ("codigo", "regla", "flag", "code", "rule_id")
+CLAVES_LINEA = ("linea", "line_number", "line")
+
+# Matriz de concordancia entre analizadores (05 §2.4, QoL #943, QoL #413):
+# único dueño canónico para las reglas compartidas entre spunkmeyer, gaff, kaneda y zhora.
+DUENO_UNICO_POR_REGLA = {
+    "0x5004h": "kaneda",
+    "0x5006h": "kaneda",
+    "0x5008h": "kaneda",
+    "0x500Ah": "zhora",
+    "0x1008h": "gaff",
+}
 
 
 def firma(datos) -> dict:
@@ -48,8 +59,9 @@ def firma(datos) -> dict:
     def recorrer(nodo) -> None:
         if isinstance(nodo, dict):
             clave = next((c for c in CLAVES_CODIGO if c in nodo), None)
-            if clave and "linea" in nodo:
-                hallazgos.append([str(nodo[clave]), nodo["linea"]])
+            clave_lin = next((l for l in CLAVES_LINEA if l in nodo), None)
+            if clave and clave_lin is not None:
+                hallazgos.append([str(nodo[clave]), nodo[clave_lin]])
             for clave_hija, valor in nodo.items():
                 # `hallazgos` es la misma información en la forma común del ecosistema
                 # (yutani.hallazgos): contarla duplicaría cada hallazgo.
@@ -62,6 +74,51 @@ def firma(datos) -> dict:
     recorrer(datos)
     veredicto = next((datos[k] for k in VEREDICTOS if isinstance(datos, dict) and k in datos), None)
     return {"veredicto": veredicto, "hallazgos": sorted(hallazgos, key=lambda h: (h[1] or 0, h[0]))}
+
+
+def verificar_concordancia_catalogos() -> list[str]:
+    """Verifica que spunkmeyer, gaff, kaneda y zhora declaren un único dueño concordante por regla."""
+    conflictos: list[str] = []
+    comandos = {
+        "gaff": ["gaff", "rules", "--json"],
+        "spunkmeyer": ["spunkmeyer", "catalog", "--json"],
+        "kaneda": ["kaneda", "rules", "--json"],
+        "zhora": ["zhora", "rules", "--json"],
+    }
+    catalogos: dict[str, dict] = {}
+    for nombre, cmd in comandos.items():
+        if shutil.which(cmd[0]) is None:
+            conflictos.append(f"concordancia: {cmd[0]} no está instalado")
+            continue
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+        try:
+            catalogos[nombre] = json.loads(proc.stdout)
+        except json.JSONDecodeError:
+            conflictos.append(f"concordancia: {nombre} no emitió JSON válido")
+
+    if len(catalogos) < 4:
+        return conflictos
+
+    gaff_duenos = {r["codigo"]: r.get("dueno") for r in catalogos["gaff"].get("reglas", [])}
+    sp_duenos = {p["codigo"]: p.get("dueno") for p in catalogos["spunkmeyer"].get("patrones", [])}
+    for cod, dueno_esperado in DUENO_UNICO_POR_REGLA.items():
+        if gaff_duenos.get(cod) != dueno_esperado:
+            conflictos.append(f"concordancia gaff[{cod}]: dueño {gaff_duenos.get(cod)} != {dueno_esperado}")
+        if cod in sp_duenos and sp_duenos.get(cod) != dueno_esperado:
+            conflictos.append(f"concordancia spunkmeyer[{cod}]: dueño {sp_duenos.get(cod)} != {dueno_esperado}")
+
+    for cod, d_sp in sp_duenos.items():
+        if cod in gaff_duenos and d_sp != gaff_duenos[cod]:
+            conflictos.append(f"concordancia {cod}: spunkmeyer={d_sp} vs gaff={gaff_duenos[cod]}")
+
+    for r in catalogos["kaneda"].get("reglas", []):
+        if r.get("dueno") != "kaneda":
+            conflictos.append(f"concordancia kaneda[{r.get('codigo')}]: dueño {r.get('dueno')} != kaneda")
+    for r in catalogos["zhora"].get("reglas", []):
+        if r.get("dueno") != "zhora":
+            conflictos.append(f"concordancia zhora[{r.get('codigo')}]: dueño {r.get('dueno')} != zhora")
+
+    return conflictos
 
 
 def casos(filtro: list[str]) -> list[Path]:
@@ -115,10 +172,13 @@ def main(argv: list[str]) -> int:
     parser.add_argument("casos", nargs="*")
     parser.add_argument("--actualizar", action="store_true")
     parser.add_argument("--solo", metavar="HERRAMIENTA")
+    parser.add_argument("--concordancia", action="store_true", help="Verifica concordancia de dueño único entre analizadores.")
     args = parser.parse_args(argv)
 
     seleccion = casos(args.casos)
     diferencias = [d for caso in seleccion for d in correr_caso(caso, args.actualizar, args.solo)]
+    if args.concordancia:
+        diferencias.extend(verificar_concordancia_catalogos())
     for d in diferencias:
         print(f"✗ {d}")
     print(f"\nCasos: {len(seleccion)} · diferencias: {len(diferencias)}")

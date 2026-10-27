@@ -1,0 +1,15 @@
+descripcion = "Entrega histórica real de TP6 que disparaba SIGSEGV en tree-sitter 0.26 (N-KANEDA-01)"
+origen = "real-anonimizado"
+hallazgo = "N-KANEDA-01"
+
+[herramientas.gaff]
+comando = ["gaff", "check", "repo/", "--json"]
+
+[herramientas.spunkmeyer]
+comando = ["spunkmeyer", "detect", "repo/", "--json"]
+
+[herramientas.kaneda]
+comando = ["kaneda", "audit", "repo/", "--json"]
+
+[herramientas.zhora]
+comando = ["zhora", "check", "repo/", "--json"]
