@@ -2,8 +2,11 @@
 
 from __future__ import annotations
 
+import shutil
 import sys
 from pathlib import Path
+
+import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
@@ -259,5 +262,10 @@ def test_casos_reales_tp1_a_tp8_conectados_y_concordancia():
         "TP8-anon_003",
     ):
         assert esperado in nombres, f"Falta conectar {esperado} en casos/"
+    herramientas = ("gaff", "spunkmeyer", "kaneda", "zhora")
+    faltantes = [h for h in herramientas if shutil.which(h) is None]
+    if faltantes:
+        pytest.skip(f"Analizadores no instalados en PATH: {', '.join(faltantes)}")
+
     assert correr.verificar_concordancia_catalogos() == []
 

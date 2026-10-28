@@ -43,10 +43,10 @@ jobs:
 
       - name: Instalar los analizadores desde git
         run: |
-          for herramienta in gaff kaneda spunkmeyer daedalus vasquez; do
+          for herramienta in gaff kaneda spunkmeyer daedalus vasquez zhora; do
             uv tool install "git+https://github.com/INGCOM-UNRN-P1/${herramienta}"
           done
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
       - name: Correr el corpus
-        run: python3 scripts/correr.py
+        run: python3 scripts/correr.py --concordancia
