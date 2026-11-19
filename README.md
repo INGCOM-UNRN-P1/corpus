@@ -64,3 +64,7 @@ los instala así y corre el corpus todas las semanas.
 Scripts: GPL-3.0-or-later (ver `LICENSE`). Los casos reales se usan solo con
 fines de verificación de las herramientas de la cátedra, según el
 consentimiento de cada estudiante.
+
+## Contacto
+
+Martín René Vilugrón - mrvilugron@unrn.edu.ar - Ingeniería en Computación UNRN Andina
